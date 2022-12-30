@@ -1,0 +1,109 @@
+header{
+    background-color: $bggray;
+    height: 110vh;
+    padding: 25px;
+
+}
+
+@include breakpoint($desktop, $max-width) {
+    header {
+        h1 {
+            max-width: 30rem;
+            font-weight: bold;
+            color: $primary; 
+            font-size: 300;
+            text-transform: lowercase;
+            font-size: 2.5rem;
+            margin-left: 2.5rem;
+        }
+    }
+    #mainnav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: $bggray;
+        padding: 50px 20px 0px 0px;
+
+        #hamburger {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 30vw;
+        }
+        
+        li a{
+            text-transform: uppercase;
+            color: $primary;
+        }
+        
+        li a:hover {
+            text-decoration: underline;
+        }
+    }
+    .dreams {
+        margin-top: 15rem;
+        margin-left: 2.5rem;
+
+        h2 {
+            font-size: 3.55rem;
+            margin-left: 0;
+            color: white;
+            max-width: 60vw;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-left: 0;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            max-width: 40vw;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $primary;
+            border: 1px solid $primary;
+            padding:  0.8rem 1.5rem;
+            border-radius: 10px;
+            margin-top: 50%;
+            color: black;
+        }
+    }
+    .stats {
+        width: 55vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: $primary;
+        padding: 20px;
+        border-radius: 10px;
+
+        div {
+            text-align: center;
+            color: $bggray;
+
+            .number {
+                font-size: 3.5rem;
+                font-weight: bold;
+            }
+    
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
