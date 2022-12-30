@@ -200,8 +200,11 @@ html, body {
 }
 header {
   background-color: hsl(204deg, 5%, 19%);
-  height: 110vh;
+  height: 130vh;
   padding: 25px;
+  display: grid;
+  grid-template-rows: 25vh 20vh 55vh 15vh;
+  grid-template-columns: 20vw 60vw 20vw;
 }
 
 @media (min-width: 37.5rem) and (max-width: 120rem) {
@@ -213,6 +216,8 @@ header {
     text-transform: lowercase;
     font-size: 2.5rem;
     margin-left: 2.5rem;
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
   }
   #mainnav {
     position: fixed;
@@ -229,6 +234,8 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     width: 30vw;
+    grid-row: 1/span 1;
+    grid-column: 2/span 3;
   }
   #mainnav li a {
     text-transform: uppercase;
@@ -238,8 +245,9 @@ header {
     text-decoration: underline;
   }
   .dreams {
-    margin-top: 15rem;
     margin-left: 2.5rem;
+    grid-row: 2/span 2;
+    grid-column: 1/span 2;
   }
   .dreams h2 {
     font-size: 3.55rem;
@@ -247,40 +255,54 @@ header {
     color: white;
     max-width: 60vw;
     margin-bottom: 20px;
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
   }
   .dreams h3 {
     font-size: 1.5rem;
     margin-left: 0;
     color: white;
     margin-bottom: 15px;
+    line-height: 1.5;
   }
   .dreams p {
     color: white;
     font-size: 1.2rem;
     line-height: 1.5;
     max-width: 40vw;
-    margin-bottom: 25px;
+    margin-bottom: 3rem;
   }
   .dreams .button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     background-color: hsl(45deg, 100%, 50%);
     border: 1px solid hsl(45deg, 100%, 50%);
-    padding: 0.8rem 1.5rem;
+    padding: 1.1rem 1.7rem;
     border-radius: 10px;
     margin-top: 50%;
-    color: black;
+    color: hsl(204deg, 5%, 19%);
+  }
+  img {
+    grid-row: 3/span 1;
+    grid-column: 2/span 2;
+    margin-left: 19rem;
+    margin-bottom: 5rem;
+    heigth: 70%;
+    width: auto;
   }
   .stats {
-    width: 55vw;
+    width: 60vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: hsl(45deg, 100%, 50%);
-    padding: 20px;
+    padding: 35px;
+    height: fit-content;
     border-radius: 10px;
-    align-self: center;
+    grid-row: 4/span 1;
+    grid-column: 1/span 1;
+    margin-left: 18vw;
   }
   .stats div {
     text-align: center;

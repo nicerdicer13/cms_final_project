@@ -29,9 +29,10 @@
             <h2>making my dreams come true - and yours, too</h2>
             <h3>Hi, I'm Rick!</h3>
             <p>I’m a lot nicer than I look in this photo, I promise. 
-                Glad you’ve found me - scroll down a bit and get to know me. It’ll be worth your while.<p>
+                Glad you’ve found me - scroll down a bit and get to know me. It’ll be worth your while.</p>
             <a href="#" class="button">START NOW!</a>
         </div>
+        <img alt="this is a picture of me" src="<?php echo get_template_directory_uri();?>/images/rick_transparent_background.png"/>
         <div class="stats">
             <div>
                 <p class="number">3</p>
