@@ -3,7 +3,7 @@ header{
     height: 130vh;
     padding: 25px;
     display: grid;
-    grid-template-rows: 25vh 20vh 55vh 15vh;
+    grid-template-rows: 25vh 14vh 58vh 15vh;
     grid-template-columns: 20vw 60vw 20vw;
 
 }
@@ -98,9 +98,7 @@ header{
     img {
         grid-row: 3/span 1;
         grid-column: 2/span 2;
-        margin-left: 19rem;
-        margin-bottom: 5rem;
-        heigth: 70%;
+        margin-left: 23rem;
         width: auto;
     }
 
