@@ -97,10 +97,9 @@ header{
     .rick-header {
         grid-row: 3/span 1;
         grid-column: 2/span 2;
-        margin-left: 50rem;
+        margin-left: 25rem;
         width: auto;
-        position: absolute;
-        margin-top: 20rem;
+        position: relative;
     }
 
     .stats {
@@ -115,8 +114,7 @@ header{
         grid-row: 4/span 1;
         grid-column: 1/ span 1;
         margin-left: 18vw;
-        position: absolute;
-        margin-top: 48rem;
+        position: relative;
 
         div {
             text-align: center;

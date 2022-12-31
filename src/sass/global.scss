@@ -12,6 +12,7 @@ a:link, a:visited, a:hover, a:active {
 html, body {
     overflow-x: hidden;
     max-width: 100%;
+    background-color: $bggray;
 }
 
 @include breakpoint($desktop, $max-width) {

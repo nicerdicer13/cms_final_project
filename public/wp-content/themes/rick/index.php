@@ -68,6 +68,20 @@
                 <h3>Content Creation</h3>
             </div>
         </div>
+        <div class="cards-second-slide">
+            <div class="card-4">
+                <img alt="youtube content icon" src="<?php echo get_template_directory_uri();?>/images/youtube_content.svg"/>
+                <h3>Youtube Content</h3>
+            </div>
+            <div class="card-5">
+                <img alt="work and travel icon" src="<?php echo get_template_directory_uri();?>/images/work_and_travel.svg"/>
+                <h3>Work and travel</h3>
+            </div>
+            <div class="card-6">
+                <img alt="writing books icon" src="<?php echo get_template_directory_uri();?>/images/writing_books.svg"/>
+                <h3>Writing Books</h3>
+            </div>
+        </div>
     </section>
     <footer></footer>
     <?php wp_footer(); ?>
