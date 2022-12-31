@@ -1,6 +1,5 @@
 header{
     background-color: $bggray;
-    height: 130vh;
 }
 
 @include breakpoint($desktop, $max-width) {
@@ -9,6 +8,8 @@ header{
         grid-template-rows: 25vh 14vh 58vh 15vh;
         grid-template-columns: 20vw 60vw 20vw;
         padding: 25px;
+        height: fit-content;
+        margin-bottom: 10vh;
 
         h1 {
             max-width: 30rem;

@@ -1,0 +1,96 @@
+@include breakpoint($desktop, $max-width) {
+    #books-wrapper {
+        background-color: $bgbooks;
+        height: fit-content;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: $primary;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .display {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: 25px;
+
+            div {
+                h4 {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                    max-width: 50vw;
+                    line-height: 1.5;
+                }
+        
+                p {
+                    color: white;
+                    font-size: 1.2rem;
+                    text-align: left;
+                    max-width: 40vw;
+                    margin-bottom: 3rem;
+                    line-height: 1.7;
+                }
+        
+                .button {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background-color: $primary;
+                    border: 1px solid $primary;
+                    padding:  1.1rem 1.7rem;
+                    border-radius: 10px;
+                    color: $bggray;
+                    width: fit-content;
+                }
+            }
+
+            img {
+                position: relative;
+                right: 10px;
+                bottom: 50px;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 2rem; 
+            text-align: center;
+        }
+
+        .three-books-display {
+            width: fit-content;
+            align-self: center;
+            margin: 1.5rem;
+        }
+
+        .button {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $primary;
+            border: 1px solid $primary;
+            padding:  1.1rem 1.7rem;
+            border-radius: 10px;
+            color: $bggray;
+            width: fit-content;
+            align-self: center;
+        }
+    }
+}
