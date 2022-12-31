@@ -1,15 +1,15 @@
 header{
     background-color: $bggray;
     height: 130vh;
-    padding: 25px;
-    display: grid;
-    grid-template-rows: 25vh 14vh 58vh 15vh;
-    grid-template-columns: 20vw 60vw 20vw;
-
 }
 
 @include breakpoint($desktop, $max-width) {
     header {
+        display: grid;
+        grid-template-rows: 25vh 14vh 58vh 15vh;
+        grid-template-columns: 20vw 60vw 20vw;
+        padding: 25px;
+
         h1 {
             max-width: 30rem;
             font-weight: bold;
@@ -58,7 +58,6 @@ header{
 
         h2 {
             font-size: 3.55rem;
-            margin-left: 0;
             color: white;
             max-width: 60vw;
             margin-bottom: 20px;
@@ -98,8 +97,10 @@ header{
     img {
         grid-row: 3/span 1;
         grid-column: 2/span 2;
-        margin-left: 23rem;
+        margin-left: 50rem;
         width: auto;
+        position: absolute;
+        margin-top: 20rem;
     }
 
     .stats {
@@ -108,12 +109,14 @@ header{
         flex-direction: row;
         justify-content: space-between;
         background-color: $primary;
-        padding: 35px;
+        padding: 40px;
         height: fit-content;
         border-radius: 10px;
         grid-row: 4/span 1;
         grid-column: 1/ span 1;
         margin-left: 18vw;
+        position: absolute;
+        margin-top: 48rem;
 
         div {
             text-align: center;
