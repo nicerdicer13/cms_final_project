@@ -23,7 +23,7 @@ header{
         }
     }
     #mainnav {
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
         background-color: $bggray;
@@ -94,7 +94,7 @@ header{
         }
     }
 
-    img {
+    .rick-header {
         grid-row: 3/span 1;
         grid-column: 2/span 2;
         margin-left: 50rem;

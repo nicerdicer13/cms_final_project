@@ -32,7 +32,7 @@
                 Glad you’ve found me - scroll down a bit and get to know me. It’ll be worth your while.</p>
             <a href="#" class="button">START NOW!</a>
         </div>
-        <img alt="this is a picture of me" src="<?php echo get_template_directory_uri();?>/images/rick_transparent_background.png"/>
+        <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri();?>/images/rick_transparent_background.png"/>
         <div class="stats">
             <div>
                 <p class="number">3</p>
@@ -52,6 +52,23 @@
             </div>
         </div>
     </header>
+    <section id='what_i_do'>
+        <h2>here's some of the stuff I do.</h2>
+        <div class="cards">
+            <div class="card-1">
+                <img alt="web development icon" src="<?php echo get_template_directory_uri();?>/images/web_development.svg"/>
+                <h3>Web Development</h3>
+            </div>
+            <div class="card-2">
+                <img alt="business consulting icon" src="<?php echo get_template_directory_uri();?>/images/consulting.svg"/>
+                <h3>Business Consulting</h3>
+            </div>
+            <div class="card-3">
+                <img alt="content creation icon" src="<?php echo get_template_directory_uri();?>/images/content_creation.svg"/>
+                <h3>Content Creation</h3>
+            </div>
+        </div>
+    </section>
     <footer></footer>
     <?php wp_footer(); ?>
 </body>
