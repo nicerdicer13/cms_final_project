@@ -2,6 +2,17 @@
     font-family: 'Inter';
 }
 
+@include breakpoint(0, $mobile) {
+    #what_i_do {
+        height: fit-content;
+        background-color: $bggray;
+        width: 100vw;
+        text-align: center;
+        display: none;
+    }
+}
+
+
 @include breakpoint($desktop, $max-width) {
     #what_i_do {
         height: 60vh;

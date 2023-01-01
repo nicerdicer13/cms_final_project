@@ -119,7 +119,7 @@ html, body {
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   header {
-    height: 40vh;
+    height: 130vh;
   }
   header h1 {
     max-width: 10rem;
@@ -135,18 +135,19 @@ html, body {
     top: 0;
     width: 100%;
     background-color: hsl(0deg, 0%, 21%);
-    z-index: 99;
+    z-index: 9;
   }
   #mainnav ul {
+    position: fixed;
     padding: 3rem 1rem 1rem 1rem;
     margin-top: 0rem;
-    max-width: 15rem;
     box-shadow: -5px 0 10px 0 rgba(0, 0, 0, 0.1);
     top: 0;
     right: 0;
     background-color: hsl(0deg, 0%, 21%);
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    z-index: 10;
   }
   #mainnav ul li {
     text-align: right;
@@ -159,6 +160,9 @@ html, body {
   }
   #mainnav ul a:hover {
     text-decoration: underline;
+  }
+  .dreams {
+    height: fit-content;
   }
   .dreams h2 {
     font-size: 1.3rem;
@@ -399,6 +403,15 @@ header {
   font-family: "Inter";
 }
 
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #what_i_do {
+    height: fit-content;
+    background-color: hsl(204deg, 5%, 19%);
+    width: 100vw;
+    text-align: center;
+    display: none;
+  }
+}
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #what_i_do {
     height: 60vh;
@@ -583,6 +596,17 @@ header {
   font-family: "Inter";
 }
 
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #books-wrapper {
+    background-color: hsl(204deg, 5%, 18%);
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    display: none;
+  }
+}
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #books-wrapper {
     background-color: hsl(204deg, 5%, 18%);
@@ -671,6 +695,11 @@ header {
   font-family: "Inter";
 }
 
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #business-consulting {
+    display: none;
+  }
+}
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #business-consulting {
     height: fit-content;
@@ -749,13 +778,22 @@ header {
   font-family: "Inter";
 }
 
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #about-me {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    background-color: hsl(204deg, 5%, 18%);
+    display: none;
+  }
+}
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #about-me {
     display: flex;
     flex-direction: row;
     height: fit-content;
     padding: 7% 5% 5% 5%;
-    height: 70vh;
     column-gap: 4vw;
     justify-content: center;
     background-color: hsl(204deg, 5%, 18%);
@@ -789,6 +827,11 @@ footer {
   font-family: "Inter";
 }
 
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  footer {
+    display: none;
+  }
+}
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   footer {
     display: flex;

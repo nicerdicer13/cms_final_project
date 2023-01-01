@@ -2,6 +2,12 @@
     font-family: 'Inter';
 }
 
+@include breakpoint(0, $mobile) { 
+    #business-consulting {
+        display: none;
+    }
+}
+
 @include breakpoint($desktop, $max-width) {
     #business-consulting {
         height: fit-content;

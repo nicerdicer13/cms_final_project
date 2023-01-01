@@ -15,9 +15,9 @@
         </a>
         <nav id="mainnav">
             <button id="hamburger" class="closed">
-                <span class="line-1"></span>
-                <span class="line-2"></span>
-                <span class="line-3"></span>
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
             </button>
             <ul>
                 <li><a href="#workshops">Consulting</a></li>

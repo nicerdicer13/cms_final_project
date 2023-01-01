@@ -3,6 +3,12 @@ footer {
     font-family: 'Inter';
 }
 
+@include breakpoint(0, $mobile) { 
+    footer {
+        display: none;
+    }
+}
+
 @include breakpoint($desktop, $max-width) {
     footer {
         display: flex;

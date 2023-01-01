@@ -2,13 +2,22 @@
     font-family: 'Inter';
 }
 
+@include breakpoint(0, $mobile) { 
+    #about-me {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        justify-content: center;
+        background-color: $bgabout;
+        display: none;
+    }  
+}
 @include breakpoint($desktop, $max-width) {
     #about-me {
         display: flex;
         flex-direction: row;
         height: fit-content;
         padding: 7% 5% 5% 5%;
-        height: 70vh;
         column-gap: 4vw;
         justify-content: center;
         background-color: $bgabout;
