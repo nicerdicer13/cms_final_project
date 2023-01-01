@@ -658,5 +658,157 @@ header {
     align-self: center;
   }
 }
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  #business-consulting {
+    height: fit-content;
+    padding: 10%;
+    width: 100vw;
+  }
+  #business-consulting .button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(45deg, 100%, 50%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 1.1rem 1.7rem;
+    border-radius: 10px;
+    color: hsl(204deg, 5%, 19%);
+  }
+  #business-consulting .succeed {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8vw;
+    margin-bottom: 10vh;
+  }
+  #business-consulting .succeed div h2 {
+    font-size: 2rem;
+    max-width: 45vw;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  #business-consulting .succeed div p {
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    color: white;
+    max-width: 45vw;
+    font-size: 1.2rem;
+  }
+  #business-consulting .succeed img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    bottom: 35px;
+    left: 10px;
+  }
+  #business-consulting .learning-together {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8vw;
+    justify-content: right;
+  }
+  #business-consulting .learning-together div h2 {
+    font-size: 2rem;
+    max-width: 45vw;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+  #business-consulting .learning-together div p {
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    color: white;
+    max-width: 45vw;
+    font-size: 1.2rem;
+    text-align: right;
+  }
+  #business-consulting .learning-together div .button {
+    align-self: right;
+  }
+  #business-consulting .learning-together img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    bottom: 35px;
+    right: 10px;
+  }
+}
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  #about-me {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 0% 5% 5% 5%;
+    height: 70vh;
+    column-gap: 4vw;
+    justify-content: center;
+  }
+  #about-me div h2 {
+    font-size: 2rem;
+    max-width: 45vw;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  #about-me div p {
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    color: white;
+    max-width: 45vw;
+    font-size: 1.2rem;
+  }
+  #about-me div .button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(45deg, 100%, 50%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 1rem 1.6rem;
+    border-radius: 10px;
+    color: hsl(204deg, 5%, 19%);
+  }
+}
+footer {
+  background-color: hsl(0deg, 0%, 12%);
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  footer div h2 {
+    font-size: 1.2rem;
+    color: hsl(45deg, 100%, 50%);
+    line-height: 1.7;
+    font-weight: bold;
+  }
+  footer div h3 {
+    font-size: 1rem;
+    color: hsl(45deg, 100%, 50%);
+  }
+  footer div p {
+    max-width: 40vw;
+    color: white;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  footer div span {
+    color: hsl(45deg, 100%, 50%);
+    position: relative;
+    top: 20px;
+  }
+  footer div a {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: white;
+  }
+  footer .attributions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

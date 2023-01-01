@@ -1,0 +1,87 @@
+@include breakpoint($desktop, $max-width) {
+    #business-consulting {
+        height: fit-content;
+        padding: 10%;
+        width: 100vw;
+
+        .button { 
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $primary;
+            border: 1px solid $primary;
+            padding:  1.1rem 1.7rem;
+            border-radius: 10px;
+            color: $bggray;     
+        }
+
+        .succeed {
+            display: flex;
+            flex-direction: row;
+            column-gap: 8vw;
+            margin-bottom: 10vh;
+
+            div {
+                h2 {
+                    font-size: 2rem;
+                    max-width: 45vw;
+                    color: white;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    line-height: 1.5;
+                    margin-bottom: 3rem;
+                    color: white;
+                    max-width: 45vw;
+                    font-size: 1.2rem;
+                }
+            }
+
+            img {
+                width: 40%;
+                height: auto;
+                position: relative;
+                bottom: 35px;
+                left: 10px;
+            }
+        }
+
+        .learning-together {
+            display: flex;
+            flex-direction: row;
+            column-gap: 8vw;
+            justify-content: right;
+
+            div {
+                h2 {
+                    font-size: 2rem;
+                    max-width: 45vw;
+                    color: white;
+                    margin-bottom: 2rem;
+                    text-align: right;
+                }
+
+                p {
+                    line-height: 1.5;
+                    margin-bottom: 3rem;
+                    color: white;
+                    max-width: 45vw;
+                    font-size: 1.2rem;
+                    text-align: right;
+                }
+                .button {
+                    align-self: right;
+                }
+            }
+
+            img {
+                width: 40%;
+                height: auto;
+                position: relative;
+                bottom: 35px;
+                right: 10px;
+            }
+        }
+    }
+}

@@ -15,9 +15,9 @@
         </a>
         <nav id="mainnav">
             <button id="hamburger" class="closed">
-                <div class="line-1"></div>
-                <div class="line-2"></div>
-                <div class="line-3"></div>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
             </button>
             <ul>
                 <li><a href="#workshops">Consulting</a></li>
@@ -104,7 +104,61 @@
         </div>
         <a class="button" href="#">Purchase now</a>
     </section>
-    <footer></footer>
+    <section id="business-consulting">
+        <div class="succeed">
+            <div>
+                <h2>helping you succeed, one step at a time</h2>
+                <p>I am an experienced business consultant with a burning passion to helping your ideas succeed. 
+                    I'm a firm believer that with the right guidance and support, anyone can achieve their goals and realize their full potential. 
+                    That's why I approach each of my clients with a personalized and easy-going style, taking the time to understand their unique needs and challenges.</p>
+                <a class="button">Start now</a>
+            </div>
+            <img alt="a man metaphorically stepping up to the highest level - he is displayed standing on the highest step of stairs" src="<?php echo get_template_directory_uri();?>/images/helping-you-succeed.svg"/>
+        </div>
+        <div class="learning-together">
+            <img alt="a person teaching another person how to code" src="<?php echo get_template_directory_uri();?>/images/learning-together.svg"/>
+            <div>
+                <h2>learning, growing and achieving together</h2>
+                <p>I believe that everyone has the potential to achieve great things. 
+                    But sometimes, we all need a little guidance and support to help us unlock that potential and turn our dreams into reality. 
+                    Whether you want to start a business, become self employed  or start a career in web development, I'm here to help. 
+                    Join me in one of my upcoming workshops and let's work together to achieve your goals.</p>
+                <a class="button">Start now</a>
+            </div>
+        </div>
+    </section>
+    <section id="about-me">
+        <img alt="a picture of me with my dog, while climbing a mountain" src="<?php echo get_template_directory_uri();?>/images/about-me.png"/>
+        <div>
+            <h2>About me</h2>
+            <p>I believe that new challenges are nothing to be scared of. 
+                They make life and business exciting. 
+                I’m all for creating something new and valuable. 
+                I am passionate about empowering people and companies. 
+                I’m purpose-driven and I thrive to find solutions that make sense in our ever-changing reality.
+                I’m a connector with excellent interpersonal skills. I am a valuable team member, who is driven by creating positive connections. </p>
+            <a class="button">Make me part of your team</a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>rick randy</h2>
+            <p>This is a fictional project by Jason Kenny and Tanja Gruber, 
+            which was created in the course “Content Management Systems” for the bachelor course MultiMediaTechnology at the Salzburg University of Applied Sciences.</p>
+            <span>2022/23</span>
+        </div>
+        <div class="attributions">
+            <div>
+                <h3>illustrations</h3>
+                <a href="https://storyset.com">https://storyset.com</a>
+            </div>
+            <div>
+                <h3>pictures of rick</h3>
+                <a href="https://unsplash.com/@tilldaling">https://unsplash.com/@tilldaling</a>
+            </div>
+
+        </div>
+    </footer>
     <?php wp_footer(); ?>
 </body>
 </html>

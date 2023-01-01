@@ -1,0 +1,39 @@
+@include breakpoint($desktop, $max-width) {
+    #about-me {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        padding: 0% 5% 5% 5%;
+        height: 70vh;
+        column-gap: 4vw;
+        justify-content: center;
+
+        div {
+            h2 {
+                font-size: 2rem;
+                max-width: 45vw;
+                color: white;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                line-height: 1.7;
+                margin-bottom: 3rem;
+                color: white;
+                max-width: 45vw;
+                font-size: 1.2rem;
+            }
+
+            .button { 
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                background-color: $primary;
+                border: 1px solid $primary;
+                padding:  1rem 1.6rem;
+                border-radius: 10px;
+                color: $bggray;     
+            }
+        }
+    }
+}
