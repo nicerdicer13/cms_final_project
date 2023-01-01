@@ -5,7 +5,50 @@ footer {
 
 @include breakpoint(0, $mobile) { 
     footer {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-between;
+        padding: 25px 25px 8vh 25px;
+
+        div {
+            h2 {
+                font-size: 1rem;
+                color: $primary;
+                line-height: 1.9;
+                font-weight: bold;
+            }
+
+            h3 {
+                font-size: 0.8rem;
+                color: $primary;
+            }
+            p {
+                max-width: 40vw;
+                color: white;
+                line-height: 1.5;
+                font-size: 0.8rem;
+            }
+
+            span {
+                color: $primary;
+                position: relative;
+                top: 110px;
+                font-size: 0.8rem;
+            }
+
+            a {
+                font-size: 0.8rem;
+                line-height: 1.7;
+                color: white;
+            }
+        }
+        .attributions {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            text-align: right;
+        }
     }
 }
 

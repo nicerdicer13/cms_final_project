@@ -1105,7 +1105,7 @@ header {
     flex-direction: column;
     height: fit-content;
     background-color: hsl(204deg, 5%, 18%);
-    padding: 30px;
+    padding: 5vh 30px 6vh 30px;
     margin-bottom: 2.5rem;
     align-items: center;
   }
@@ -1183,7 +1183,44 @@ footer {
 
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   footer {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 25px 25px 8vh 25px;
+  }
+  footer div h2 {
+    font-size: 1rem;
+    color: hsl(45deg, 100%, 50%);
+    line-height: 1.9;
+    font-weight: bold;
+  }
+  footer div h3 {
+    font-size: 0.8rem;
+    color: hsl(45deg, 100%, 50%);
+  }
+  footer div p {
+    max-width: 40vw;
+    color: white;
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
+  footer div span {
+    color: hsl(45deg, 100%, 50%);
+    position: relative;
+    top: 110px;
+    font-size: 0.8rem;
+  }
+  footer div a {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: white;
+  }
+  footer .attributions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: right;
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
