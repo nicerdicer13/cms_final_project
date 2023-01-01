@@ -4,7 +4,85 @@
 
 @include breakpoint(0, $mobile) { 
     #business-consulting {
-        display: none;
+        height: fit-content;
+        padding: 10% 10% 2% 10%;
+        width: 100vw;
+        margin-bottom: 10vh;
+
+        .button {
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $primary;
+            border: 1px solid $primary;
+            padding:  0.6rem 1.1rem;
+            border-radius: 10px;
+            margin-top: 35%;
+            color: $bggray;
+        }
+
+        .succeed {
+            display: flex;
+            flex-direction: column-reverse;
+            row-gap: 3vh;
+            margin-bottom: 10vh;
+
+            div {
+                h2 {
+                    font-size: 1.2rem;
+                    max-width: 80vw;
+                    color: white;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    line-height: 1.5;
+                    margin-bottom: 3rem;
+                    color: white;
+                    max-width: 80vw;
+                    font-size: 0.8rem;
+                }
+            }
+
+            img {
+                align-self: center;
+                width: 90%;
+                height: auto;
+                position: relative;
+                margin: 0;
+            }
+        }
+        .learning-together {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3vw;
+            justify-content: right;
+
+            div {
+                h2 {
+                    font-size: 1.2rem;
+                    max-width: 80vw;
+                    color: white;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    line-height: 1.5;
+                    margin-bottom: 3rem;
+                    color: white;
+                    max-width: 80vw;
+                    font-size: 0.8rem;
+                }
+            }
+
+            img {
+                align-self: center;
+                width: 90%;
+                height: auto;
+                position: relative;
+                margin: 0;
+            }
+        }
     }
 }
 
@@ -55,6 +133,7 @@
                 bottom: 35px;
                 left: 10px;
             }
+
         }
 
         .learning-together {
