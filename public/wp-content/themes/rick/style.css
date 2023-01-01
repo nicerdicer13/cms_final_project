@@ -661,7 +661,7 @@ header {
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #business-consulting {
     height: fit-content;
-    padding: 10%;
+    padding: 10% 10% 0% 10%;
     width: 100vw;
   }
   #business-consulting .button {
@@ -737,10 +737,11 @@ header {
     display: flex;
     flex-direction: row;
     height: fit-content;
-    padding: 0% 5% 5% 5%;
+    padding: 7% 5% 5% 5%;
     height: 70vh;
     column-gap: 4vw;
     justify-content: center;
+    background-color: hsl(204deg, 5%, 18%);
   }
   #about-me div h2 {
     font-size: 2rem;
