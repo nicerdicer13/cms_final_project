@@ -1102,11 +1102,44 @@ header {
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: fit-content;
-    justify-content: center;
     background-color: hsl(204deg, 5%, 18%);
-    display: none;
+    padding: 30px;
+    margin-bottom: 2.5rem;
+    align-items: center;
+  }
+  #about-me img {
+    position: relative;
+    height: auto;
+    width: 50vw;
+    margin: 0;
+  }
+  #about-me div h2 {
+    font-size: 1.2rem;
+    max-width: 80vw;
+    color: white;
+    line-height: 2.5;
+    font-weight: bold;
+    text-align: center;
+  }
+  #about-me div p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: white;
+    max-width: 80vw;
+    font-size: 0.8rem;
+  }
+  #about-me div .button {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(45deg, 100%, 50%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 0.6rem 1.1rem;
+    border-radius: 10px;
+    margin-top: 35%;
+    color: hsl(204deg, 5%, 19%);
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
