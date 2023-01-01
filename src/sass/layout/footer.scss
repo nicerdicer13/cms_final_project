@@ -1,5 +1,6 @@
 footer {
     background-color: $bgfooter;
+    font-family: 'Inter';
 }
 
 @include breakpoint($desktop, $max-width) {

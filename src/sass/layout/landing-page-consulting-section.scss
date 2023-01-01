@@ -1,7 +1,11 @@
+#business-consulting {
+    font-family: 'Inter';
+}
+
 @include breakpoint($desktop, $max-width) {
     #business-consulting {
         height: fit-content;
-        padding: 10% 10% 0% 10%;
+        padding: 10% 10% 2% 10%;
         width: 100vw;
 
         .button { 
@@ -71,7 +75,7 @@
                     text-align: right;
                 }
                 .button {
-                    align-self: right;
+                    float: right;
                 }
             }
 

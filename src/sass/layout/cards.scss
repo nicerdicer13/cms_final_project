@@ -1,3 +1,7 @@
+#what_i_do {
+    font-family: 'Inter';
+}
+
 @include breakpoint($desktop, $max-width) {
     #what_i_do {
         height: 60vh;

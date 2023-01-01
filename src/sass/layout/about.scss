@@ -1,3 +1,7 @@
+#about-me {
+    font-family: 'Inter';
+}
+
 @include breakpoint($desktop, $max-width) {
     #about-me {
         display: flex;

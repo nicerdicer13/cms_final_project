@@ -1,5 +1,6 @@
 header{
     background-color: $bggray;
+    font-family: 'Inter';
 }
 
 @include breakpoint($desktop, $max-width) {
