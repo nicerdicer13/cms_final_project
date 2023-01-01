@@ -845,7 +845,7 @@ header {
     align-self: center;
   }
   #books-wrapper .three-books-display img {
-    margin: 7vh 0 0 0;
+    margin-left: 20px;
   }
   #books-wrapper .button {
     font-size: 0.9rem;
