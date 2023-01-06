@@ -1209,6 +1209,9 @@ header {
   font-weight: bold;
   text-align: center;
 }
+.w-flex-container p {
+  text-align: center;
+}
 .w-flex-container .left-block {
   background-color: hsl(0deg, 1%, 15%);
 }
@@ -1257,9 +1260,6 @@ header {
   }
   .w-flex-container .right-block h3::before {
     right: 10%;
-  }
-  .w-flex-container .right-block p {
-    text-align: center;
   }
   .w-flex-container .right-block .button {
     margin-bottom: 10%;
