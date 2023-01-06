@@ -228,6 +228,18 @@ html, body {
   .stats div p {
     font-size: 1rem;
   }
+  .workshop-header {
+    text-align: center;
+  }
+  .workshop-header h2 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: white;
+    max-width: 80vw;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #hamburger {
@@ -365,6 +377,17 @@ header {
     border-radius: 10px;
     margin-top: 50%;
     color: hsl(204deg, 5%, 19%);
+  }
+  .workshop-header {
+    text-align: center;
+    grid-row: 2/span 2;
+    grid-column: 2/span 1;
+  }
+  .workshop-header h2 {
+    font-size: 3.55rem;
+    color: white;
+    max-width: 70vw;
+    margin-bottom: 20px;
   }
   .rick-header {
     grid-row: 3/span 1;
@@ -1174,6 +1197,118 @@ header {
     padding: 1rem 1.6rem;
     border-radius: 10px;
     color: hsl(204deg, 5%, 19%);
+  }
+}
+.w-flex-container {
+  font-family: "Inter";
+  display: flex;
+  height: fit-content;
+  color: white;
+}
+.w-flex-container h3 {
+  font-weight: bold;
+  text-align: center;
+}
+.w-flex-container .left-block {
+  background-color: hsl(0deg, 1%, 15%);
+}
+.w-flex-container .right-block {
+  background-color: hsl(204deg, 5%, 18%);
+  padding-bottom: 5rem;
+}
+.w-flex-container .right-block .button {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: hsl(45deg, 100%, 50%);
+  border: 1px solid hsl(45deg, 100%, 50%);
+  border-radius: 10px;
+  color: hsl(204deg, 5%, 19%);
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  .w-flex-container {
+    margin-top: -30rem;
+  }
+  .w-flex-container h3 {
+    margin-top: 10vh;
+    font-size: 3rem;
+  }
+  .w-flex-container h3::before {
+    content: "";
+    width: 10%;
+    border-bottom: 3px solid hsl(45deg, 100%, 50%);
+    position: absolute;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+  }
+  .w-flex-container p {
+    margin: 8vh 10vh 10vh 10vh;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .w-flex-container .left-block {
+    flex: 60%;
+  }
+  .w-flex-container .left-block h3::before {
+    left: 30%;
+  }
+  .w-flex-container .right-block {
+    flex: 40%;
+  }
+  .w-flex-container .right-block h3::before {
+    right: 10%;
+  }
+  .w-flex-container .right-block .button {
+    margin-bottom: 10%;
+    font-size: 0.8rem;
+    padding: 1.1rem 1.7rem;
+    margin-left: 40%;
+  }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  .w-flex-container {
+    margin-top: -38rem;
+    flex-direction: column;
+  }
+  .w-flex-container h3 {
+    margin-top: 5vh;
+  }
+  .w-flex-container h3::before {
+    content: "";
+    width: 10%;
+    border-bottom: 3px solid hsl(45deg, 100%, 50%);
+    position: absolute;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+  }
+  .w-flex-container p {
+    line-height: 1.8;
+  }
+  .w-flex-container .left-block {
+    flex: 100%;
+  }
+  .w-flex-container .left-block p {
+    margin: 5vh 5vh 7vh 5vh;
+    font-size: 0.8rem;
+  }
+  .w-flex-container .left-block h3::before {
+    left: 50%;
+  }
+  .w-flex-container .right-block {
+    flex: 100%;
+  }
+  .w-flex-container .right-block p {
+    margin: 5vh 5vh 5vh 5vh;
+    font-size: 0.8rem;
+  }
+  .w-flex-container .right-block .button {
+    margin-bottom: 5rem;
+    font-size: 0.6rem;
+    padding: 0.5rem 0.9rem;
+    margin-left: 40%;
+  }
+  .w-flex-container .right-block h3::before {
+    right: 40%;
   }
 }
 footer {

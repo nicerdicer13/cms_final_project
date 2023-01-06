@@ -1,0 +1,142 @@
+
+//Beginning Flex Container
+.w-flex-container {
+    font-family: 'Inter';
+    display: flex;
+    height: fit-content;
+    color: white;
+    
+    h3 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .left-block {
+        background-color:$bgcards;
+    }
+
+    .right-block {
+        background-color: $bgabout;
+        padding-bottom: 5rem;
+        
+        .button {
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $primary;
+            border: 1px solid $primary;
+            border-radius: 10px;
+            color: $bggray;
+        }
+    }
+}
+//Ending General Flex Container
+
+@include breakpoint($desktop, $max-width) {
+    //Beginning Flex Container Desktop
+    .w-flex-container {
+        margin-top: -30rem;
+        
+        h3 {
+            margin-top: 10vh;
+            font-size: 3rem;
+        }
+
+        h3::before {
+            content: '';
+            width: 10%;
+            border-bottom: 3px solid $primary;
+            position: absolute;
+            transform: translateX(-50%);
+            margin-top: 5rem;
+            
+        }
+
+        p {
+            margin: 8vh 10vh 10vh 10vh;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+    
+
+    .left-block {
+        flex: 60%;
+        h3::before {
+            left: 30%;
+        }
+        
+    }
+
+    .right-block {
+        flex: 40%;
+        h3::before {
+            right: 10%;
+        }
+
+        .button {
+            margin-bottom: 10%;
+            font-size: 0.8rem;
+            padding:  1.1rem 1.7rem;
+            margin-left: 40%;
+        }
+    }
+    //Ending Flex Container Desktop
+}
+}
+@include breakpoint(0, $mobile) {
+    //Beginning Flex Container Mobile
+    .w-flex-container{
+        margin-top: -38rem;
+        flex-direction: column;
+
+        h3 {
+            margin-top:5vh;
+        }
+
+        h3::before {
+            content: '';
+            width: 10%;
+            border-bottom: 3px solid $primary;
+            position: absolute;
+            transform: translateX(-50%);
+            margin-top: 2rem;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+       
+        .left-block {   
+            flex:100%;
+
+            p {
+                margin: 5vh 5vh 7vh 5vh;
+                font-size: 0.8rem;
+            }
+
+            h3::before {
+            left: 50%;
+            }
+        }
+
+        .right-block {
+        flex: 100%;
+
+        p {
+            margin: 5vh 5vh 5vh 5vh;
+            font-size: 0.8rem;
+        }
+
+        .button {
+            margin-bottom: 5rem;
+            font-size: 0.6rem;
+            padding:  0.5rem 0.9rem;
+            margin-left: 40%;
+        }
+
+        h3::before {
+            right: 40%;
+        }
+    }
+//Beginning Flex Container Desktop
+}
+}
