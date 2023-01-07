@@ -1,5 +1,6 @@
 #consulting-what-i-do {
     font-family: 'Inter';
+    background-image: url("./images/consulting-background.png");
 }
 
 @include breakpoint($desktop, $max-width) {

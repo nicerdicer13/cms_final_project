@@ -131,6 +131,10 @@
             </div>
         </div>
     </section>
+    <section id="unlock">
+        <h2>Unlock your company's full potential.</h2>
+        <a class="button" href="#">Contact me now</a>
+    </section>
         <?php get_footer(); ?>
         <?php wp_footer(); ?>
     </body>
