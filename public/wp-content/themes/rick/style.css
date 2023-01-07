@@ -119,7 +119,7 @@ html, body {
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   header {
-    height: 90vh;
+    height: 100vh;
   }
   header h1 {
     max-width: 10rem;
@@ -210,7 +210,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 14rem;
+    margin-top: 13rem;
     position: absolute;
     background-color: hsl(45deg, 100%, 50%);
     padding: 20px 0px 20px 0px;
@@ -237,7 +237,7 @@ html, body {
     font-size: 1rem;
     color: white;
     max-width: 80vw;
-    margin-top: 50px;
+    margin-top: 10vh;
     margin-bottom: 20px;
   }
 }
@@ -297,9 +297,6 @@ header {
 
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   header {
-    display: grid;
-    grid-template-rows: 25vh 14vh 58vh 15vh;
-    grid-template-columns: 20vw 60vw 20vw;
     padding: 25px;
     height: fit-content;
     margin-bottom: 10vh;
@@ -342,13 +339,12 @@ header {
   }
   .dreams {
     margin-left: 2.5rem;
-    grid-row: 2/span 2;
-    grid-column: 1/span 2;
+    margin-top: 15vh;
   }
   .dreams h2 {
     font-size: 3.55rem;
     color: white;
-    max-width: 60vw;
+    max-width: 75vw;
     margin-bottom: 20px;
     grid-row: 2/span 1;
     grid-column: 1/span 1;
@@ -380,19 +376,30 @@ header {
   }
   .workshop-header {
     text-align: center;
-    grid-row: 2/span 2;
-    grid-column: 2/span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .workshop-header h2 {
     font-size: 3.55rem;
     color: white;
     max-width: 70vw;
     margin-bottom: 20px;
+    margin-top: 15vh;
+  }
+  .consulting-header {
+    text-align: center;
+    grid-row: 2/span 2;
+    grid-column: 2/span 1;
+  }
+  .consulting-header h2 {
+    font-size: 3.55rem;
+    color: white;
+    max-width: 70vw;
+    margin-bottom: 20px;
   }
   .rick-header {
-    grid-row: 3/span 1;
-    grid-column: 2/span 2;
-    margin-left: 25rem;
+    margin-left: 40rem;
     width: auto;
     position: relative;
   }
@@ -405,10 +412,9 @@ header {
     padding: 40px;
     height: fit-content;
     border-radius: 10px;
-    grid-row: 4/span 1;
-    grid-column: 1/span 1;
     margin-left: 18vw;
     position: relative;
+    bottom: 3vh;
   }
   .stats div {
     text-align: center;
@@ -1229,9 +1235,6 @@ header {
 }
 
 @media (min-width: 37.5rem) and (max-width: 120rem) {
-  .w-flex-container {
-    margin-top: -30rem;
-  }
   .w-flex-container h3 {
     margin-top: 10vh;
     font-size: 3rem;
@@ -1453,6 +1456,353 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+  }
+}
+#consulting-stats {
+  font-family: "Inter";
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  #consulting-stats {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+    width: 100vw;
+    justify-content: center;
+    height: 40vh;
+  }
+  #consulting-stats div {
+    background-color: hsl(204deg, 5%, 18%);
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5vh;
+    box-shadow: 4px 3px 8px 1px;
+    border-radius: 5px;
+  }
+  #consulting-stats div h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  #consulting-stats div p {
+    color: hsl(45deg, 100%, 50%);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+#working-with-me {
+  font-family: "Inter";
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  #working-with-me {
+    height: 100vh;
+    width: 100vw;
+  }
+  #working-with-me div {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-bottom: 5vh;
+  }
+  #working-with-me div img {
+    width: 30vw;
+  }
+  #working-with-me div div {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(204deg, 5%, 18%);
+    padding: 20px;
+    box-shadow: 4px 3px 8px 1px;
+  }
+  #working-with-me div div h2 {
+    color: hsl(45deg, 100%, 50%);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    max-width: 40vw;
+    line-height: 1.5;
+    margin-left: 5vw;
+  }
+  #working-with-me div div li {
+    color: white;
+    max-width: 40vw;
+    line-height: 1.5;
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-left: 5vw;
+  }
+}
+#consulting-my-services {
+  font-family: "Inter";
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  #consulting-my-services {
+    height: 80vh;
+    width: 100vw;
+    text-align: center;
+    margin-top: 15vh;
+  }
+  #consulting-my-services h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  #consulting-my-services div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+    align-items: center;
+    justify-content: center;
+  }
+  #consulting-my-services div div {
+    max-width: 20vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204deg, 5%, 18%);
+    box-shadow: 4px 3px 8px 1px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  #consulting-my-services div div img {
+    width: 5vw;
+  }
+  #consulting-my-services div div h3 {
+    color: white;
+    font-weight: bold;
+  }
+  #consulting-my-services div div p {
+    color: white;
+    max-width: 15vw;
+    line-height: 1.5;
+  }
+}
+#consulting-what-i-do {
+  font-family: "Inter";
+  background-image: url("./images/consulting-background.png");
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  #consulting-what-i-do {
+    height: 60vh;
+    background-color: hsl(204deg, 5%, 19%);
+    width: 100vw;
+    text-align: center;
+  }
+  #consulting-what-i-do h2 {
+    color: white;
+    font-size: 3rem;
+  }
+  #consulting-what-i-do .cards {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    padding: 15%;
+  }
+  #consulting-what-i-do .cards [class^=card-1] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 35vh;
+    width: 30vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards [class^=card-1] img {
+    height: 13vh;
+    width: auto;
+    position: relative;
+    right: 40px;
+    bottom: 9px;
+  }
+  #consulting-what-i-do .cards [class^=card-1] h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 15%;
+  }
+  #consulting-what-i-do .cards [class^=card-2] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    padding: 2% 7% 5% 0%;
+    height: 35vh;
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards [class^=card-2] img {
+    height: 13vh;
+    width: auto;
+    position: relative;
+    left: 35px;
+  }
+  #consulting-what-i-do .cards [class^=card-2] h3 {
+    font-size: 2rem;
+    text-align: left;
+    max-width: 10vw;
+    margin-left: 15%;
+    margin-top: 18%;
+  }
+  #consulting-what-i-do .cards [class^=card-3] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 35vh;
+    width: 30vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards [class^=card-3] img {
+    height: 17vh;
+    width: auto;
+    position: relative;
+    left: 45%;
+    bottom: 15px;
+  }
+  #consulting-what-i-do .cards [class^=card-3] h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+  }
+  #consulting-what-i-do .cards-second-slide {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    padding: 15%;
+    background-color: hsl(204deg, 5%, 19%);
+    display: none;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 35vh;
+    width: 30vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] img {
+    height: 17vh;
+    width: auto;
+    position: relative;
+    left: 45%;
+    bottom: 15px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 3%;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    padding: 2% 7% 5% 0%;
+    height: 35vh;
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] img {
+    height: 13vh;
+    width: auto;
+    position: relative;
+    left: 35px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] h3 {
+    font-size: 2rem;
+    text-align: left;
+    max-width: 10vw;
+    margin-left: 15%;
+    margin-top: 18%;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 35vh;
+    width: 30vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] img {
+    height: 17vh;
+    width: auto;
+    position: relative;
+    right: 35px;
+    bottom: 15px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+  }
+}
+#unlock {
+  font-family: "Inter";
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  #unlock {
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #unlock h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 7vh;
+    text-transform: uppercase;
+  }
+  #unlock .button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(45deg, 100%, 50%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 1.1rem 1.7rem;
+    border-radius: 10px;
+    color: hsl(204deg, 5%, 19%);
+    width: fit-content;
+    align-self: center;
   }
 }
 

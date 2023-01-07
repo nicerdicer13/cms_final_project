@@ -5,9 +5,9 @@ header{
 
 @include breakpoint($desktop, $max-width) {
     header {
-        display: grid;
-        grid-template-rows: 25vh 14vh 58vh 15vh;
-        grid-template-columns: 20vw 60vw 20vw;
+        // display: grid;
+        // grid-template-rows: 25vh 14vh 58vh 15vh;
+        // grid-template-columns: 20vw 60vw 20vw;
         padding: 25px;
         height: fit-content;
         margin-bottom: 10vh;
@@ -55,13 +55,14 @@ header{
     }
     .dreams {
         margin-left: 2.5rem;
-        grid-row: 2/span 2;
-        grid-column: 1/ span 2;
+        // grid-row: 2/span 2;
+        // grid-column: 1/ span 2;
+        margin-top: 15vh;
 
         h2 {
             font-size: 3.55rem;
             color: white;
-            max-width: 60vw;
+            max-width: 75vw;
             margin-bottom: 20px;
             grid-row: 2/span 1;
             grid-column: 1/span 1;
@@ -98,6 +99,23 @@ header{
 
     .workshop-header {
         text-align: center;
+        // grid-row: 2/span 2;
+        // grid-column: 2/ span 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 3.55rem;
+            color: white;
+            max-width: 70vw;
+            margin-bottom: 20px;
+            margin-top: 15vh;
+        }
+    }
+
+    .consulting-header {
+        text-align: center;
         grid-row: 2/span 2;
         grid-column: 2/ span 1;
 
@@ -110,9 +128,9 @@ header{
     }
 
     .rick-header {
-        grid-row: 3/span 1;
-        grid-column: 2/span 2;
-        margin-left: 25rem;
+        // grid-row: 3/span 1;
+        // grid-column: 2/span 2;
+        margin-left: 40rem;
         width: auto;
         position: relative;
     }
@@ -126,10 +144,11 @@ header{
         padding: 40px;
         height: fit-content;
         border-radius: 10px;
-        grid-row: 4/span 1;
-        grid-column: 1/ span 1;
+        // grid-row: 4/span 1;
+        // grid-column: 1/ span 1;
         margin-left: 18vw;
         position: relative;
+        bottom: 3vh;
 
         div {
             text-align: center;
