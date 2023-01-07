@@ -1,0 +1,36 @@
+#consulting-stats {
+    font-family: 'Inter';
+}
+
+@include breakpoint($desktop, $max-width) {
+    #consulting-stats {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5vw;
+        width: 100vw;
+        justify-content: center;
+        height: 40vh;
+        div {
+            background-color: $bgabout;
+            width: 15vw;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5vh;
+            box-shadow: 4px 3px 8px 1px;
+
+            h3 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+            }
+            p { 
+                color: $primary;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
