@@ -6,9 +6,10 @@
 @import "mainnav-mobile";
 @import "hamburger";
 @import "layout/header";
-@import "layout/cards";
-@import "layout/books";
-@import "layout/landing-page-consulting-section";
-@import "layout/about";
-@import "layout/workshop";
+@import "layout/indexpage/cards";
+@import "layout/indexpage/books";
+@import "layout/indexpage/landing-page-consulting-section";
+@import "layout/indexpage/about";
+@import "layout/workshoppage/register";
+@import "layout/workshoppage/workshops";
 @import "layout/footer";

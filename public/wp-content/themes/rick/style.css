@@ -1314,6 +1314,60 @@ header {
     right: 40%;
   }
 }
+.workshops-container {
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
+}
+.workshops-container h4 {
+  color: hsl(45deg, 100%, 50%);
+  text-transform: uppercase;
+}
+.workshops-container .button {
+  font-weight: bold;
+  background-color: hsl(45deg, 100%, 50%);
+  border: 1px solid hsl(45deg, 100%, 50%);
+  border-radius: 10px;
+  color: hsl(204deg, 5%, 19%);
+}
+
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  .workshops-container {
+    margin: 13vh 8vh 8vh 8vh;
+  }
+  .workshops-container .workshop-left h4 {
+    margin: 4vh 3vh 2vh 3vh;
+  }
+  .workshops-container .workshop-left h3 {
+    margin: 0.5vh 3vh 2vh 3vh;
+    font-size: 2rem;
+    max-width: 100vh;
+  }
+  .workshops-container .workshop-left p {
+    margin-left: 3vh;
+    margin-right: 40vh;
+    margin-bottom: 4vh;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  .workshops-container .workshop-left .button {
+    margin-left: 3vh;
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+  .workshops-container .workshop-left .workshop-image-right {
+    width: 30vh;
+    float: right;
+    margin-right: 3vh;
+    margin-bottom: 2vh;
+    margin-top: -20vh;
+  }
+}
 footer {
   background-color: hsl(0deg, 0%, 12%);
   font-family: "Inter";
