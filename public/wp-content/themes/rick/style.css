@@ -1435,6 +1435,7 @@ footer {
     align-items: center;
     row-gap: 5vh;
     box-shadow: 4px 3px 8px 1px;
+    border-radius: 5px;
   }
   #consulting-stats div h3 {
     color: white;
@@ -1500,6 +1501,7 @@ footer {
     height: 80vh;
     width: 100vw;
     text-align: center;
+    margin-top: 15vh;
   }
   #consulting-my-services h2 {
     color: white;
@@ -1512,6 +1514,8 @@ footer {
     display: flex;
     flex-direction: row;
     column-gap: 5vw;
+    align-items: center;
+    justify-content: center;
   }
   #consulting-my-services div div {
     max-width: 20vw;
@@ -1523,6 +1527,7 @@ footer {
     background-color: hsl(204deg, 5%, 18%);
     box-shadow: 4px 3px 8px 1px;
     padding: 20px;
+    border-radius: 5px;
   }
   #consulting-my-services div div img {
     width: 5vw;
@@ -1729,7 +1734,7 @@ footer {
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #unlock {
     text-align: center;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
