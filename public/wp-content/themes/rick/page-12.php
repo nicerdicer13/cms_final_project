@@ -67,7 +67,7 @@
     </section>
 
     <section class="workshops-container">
-        <div class="workshop-left">
+        <div class="workshop-right">
             <h4>Starting a Business, Business Consulting</h4>
             <h3>Fulfill your dreams. Start today.</h3>
             <p>
@@ -93,7 +93,7 @@
         </div>
     </section>
     <section class="workshops-container">
-        <div class="workshop-left">
+        <div class="workshop-right">
             <h4>Content Creation</h4>
             <h3>Content creation is the job of the future.</h3>
             <p>

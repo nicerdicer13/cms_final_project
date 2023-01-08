@@ -23,38 +23,71 @@
 @include breakpoint($desktop, $max-width) {
     .workshops-container {
         margin: 13vh 8vh 8vh 8vh;
-        .workshop-left{
+        
         h4 {
             margin: 4vh 3vh 2vh 3vh;
         }
 
         h3 {
-           margin: 0.5vh 3vh 2vh 3vh;
+            margin: 0.5vh 3vh 2vh 3vh;
             font-size: 2rem;
-            max-width: 100vh;
         }
 
         p {
-            margin-left: 3vh;
-            margin-right: 40vh;
             margin-bottom: 4vh;
             line-height: 1.5;
             font-size: 1.2rem;
         }
 
         .button {
-            margin-left: 3vh;
             font-size: 0.8rem;
             padding:  0.6rem 1rem;
         }
         .workshop-image-right {
             width: 30vh;
-            float: right;
-            margin-right: 3vh;
             margin-bottom: 2vh;
             margin-top: -20vh;
         }
+        .workshop-left{
+            p {
+                margin-left: 3vh;
+                margin-right: 40vh;
+            }
+
+            .button {
+                margin-left: 3vh;
+            }
+            .workshop-image-right {
+                float: right;
+                margin-right: 3vh;
+            }
+        }
+        
+        .workshop-right{
+            h4 {
+                text-align: right;
+            }
+
+            h3 {
+                text-align: right;   
+            }
+
+            p {
+                text-align: right;
+                margin-left: 40vh;
+                margin-right: 3vh;
+            }
+
+            .button {
+                margin-right: 3vh;
+                float: right;
+            }
+            .workshop-image-right {
+                float: left;
+                margin-left: 3vh;
+            }
+        }
+
     }
-}
+}   
     
-}

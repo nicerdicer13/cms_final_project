@@ -1343,32 +1343,56 @@ header {
   .workshops-container {
     margin: 13vh 8vh 8vh 8vh;
   }
-  .workshops-container .workshop-left h4 {
+  .workshops-container h4 {
     margin: 4vh 3vh 2vh 3vh;
   }
-  .workshops-container .workshop-left h3 {
+  .workshops-container h3 {
     margin: 0.5vh 3vh 2vh 3vh;
     font-size: 2rem;
-    max-width: 100vh;
   }
-  .workshops-container .workshop-left p {
-    margin-left: 3vh;
-    margin-right: 40vh;
+  .workshops-container p {
     margin-bottom: 4vh;
     line-height: 1.5;
     font-size: 1.2rem;
   }
-  .workshops-container .workshop-left .button {
-    margin-left: 3vh;
+  .workshops-container .button {
     font-size: 0.8rem;
     padding: 0.6rem 1rem;
   }
-  .workshops-container .workshop-left .workshop-image-right {
+  .workshops-container .workshop-image-right {
     width: 30vh;
-    float: right;
-    margin-right: 3vh;
     margin-bottom: 2vh;
     margin-top: -20vh;
+  }
+  .workshops-container .workshop-left p {
+    margin-left: 3vh;
+    margin-right: 40vh;
+  }
+  .workshops-container .workshop-left .button {
+    margin-left: 3vh;
+  }
+  .workshops-container .workshop-left .workshop-image-right {
+    float: right;
+    margin-right: 3vh;
+  }
+  .workshops-container .workshop-right h4 {
+    text-align: right;
+  }
+  .workshops-container .workshop-right h3 {
+    text-align: right;
+  }
+  .workshops-container .workshop-right p {
+    text-align: right;
+    margin-left: 40vh;
+    margin-right: 3vh;
+  }
+  .workshops-container .workshop-right .button {
+    margin-right: 3vh;
+    float: right;
+  }
+  .workshops-container .workshop-right .workshop-image-right {
+    float: left;
+    margin-left: 3vh;
   }
 }
 footer {
