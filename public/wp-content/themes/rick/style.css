@@ -234,7 +234,7 @@ html, body {
   .workshop-header h2 {
     width: 100%;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: white;
     max-width: 80vw;
     margin-top: 10vh;
@@ -1431,9 +1431,26 @@ header {
   .workshops-container .workshop-image-right {
     width: 10vh;
     position: absolute;
-    top: 1vh;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 7%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 37.5rem) and (max-width: 120rem) {
+  .image-students {
+    position: relative;
+    margin-top: 17vh;
+    margin-bottom: 20vh;
+    width: 100%;
+    z-index: 1;
+  }
+  .students-response {
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    background-color: hsl(0deg, 1%, 15%);
+    margin-bottom: -40rem;
+    z-index: 5;
   }
 }
 footer {
