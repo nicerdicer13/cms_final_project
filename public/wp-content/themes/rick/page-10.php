@@ -135,6 +135,9 @@
         <h2>Unlock your company's full potential.</h2>
         <a class="button" href="#">Contact me now</a>
     </section>
+    <div class="contact-form">
+        <?php echo do_shortcode('[contact-form-7 id="12"]'); ?>
+    </div>
     <?php get_footer(); ?>
     <?php wp_footer(); ?>
 </body>
