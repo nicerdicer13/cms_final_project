@@ -1273,7 +1273,7 @@ header {
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   .w-flex-container {
-    margin-top: -38rem;
+    margin-top: -40rem;
     flex-direction: column;
   }
   .w-flex-container h3 {
@@ -1308,10 +1308,11 @@ header {
     font-size: 0.8rem;
   }
   .w-flex-container .right-block .button {
-    margin-bottom: 5rem;
     font-size: 0.6rem;
     padding: 0.5rem 0.9rem;
-    margin-left: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .w-flex-container .right-block h3::before {
     right: 40%;
@@ -1393,6 +1394,45 @@ header {
   .workshops-container .workshop-right .workshop-image-right {
     float: left;
     margin-left: 3vh;
+  }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  .workshops-container {
+    margin: 5vh 2vh 5vh 2vh;
+    padding-bottom: 4vh;
+    position: relative;
+  }
+  .workshops-container h4 {
+    margin: 12vh 2vh 1vh 2vh;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .workshops-container h3 {
+    margin: 0.5vh 6vh 2vh 6vh;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .workshops-container p {
+    margin-bottom: 4vh;
+    line-height: 1.5;
+    font-size: 0.6rem;
+    margin-left: 4vh;
+    margin-right: 4vh;
+  }
+  .workshops-container .button {
+    font-size: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    position: absolute;
+    bottom: 2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .workshops-container .workshop-image-right {
+    width: 10vh;
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 footer {

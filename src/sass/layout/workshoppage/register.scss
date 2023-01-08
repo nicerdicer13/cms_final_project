@@ -89,7 +89,7 @@
 @include breakpoint(0, $mobile) {
     //Beginning Flex Container Mobile
     .w-flex-container{
-        margin-top: -38rem;
+        margin-top: -40rem;
         flex-direction: column;
 
         h3 {
@@ -131,10 +131,12 @@
         }
 
         .button {
-            margin-bottom: 5rem;
+            
             font-size: 0.6rem;
             padding:  0.5rem 0.9rem;
-            margin-left: 40%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         h3::before {

@@ -90,4 +90,52 @@
 
     }
 }   
+
+@include breakpoint(0, $mobile) {
+    .workshops-container {
+        margin: 5vh 2vh 5vh 2vh;
+        padding-bottom: 4vh;
+        position: relative;
+        
+        h4 {
+            margin: 12vh 2vh 1vh 2vh;
+            font-size: .8rem;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 0.5vh 6vh 2vh 6vh;
+            font-size: 1rem;
+            text-align: center;
+            
+        }
+
+        p {
+            margin-bottom: 4vh;
+            line-height: 1.5;
+            font-size: 0.6rem;
+            margin-left: 4vh;
+            margin-right: 4vh;
+        }
+
+        .button {
+            font-size: 0.5rem;
+            padding:  0.5rem 0.7rem;
+            position: absolute;
+            bottom: 2.5vh;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        .workshop-image-right {
+            width: 10vh;
+            position: absolute;
+            top: 1vh;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+      
+    }
+}
     
