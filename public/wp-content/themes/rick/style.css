@@ -1846,11 +1846,12 @@ footer {
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #unlock {
     text-align: center;
-    height: 50vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 6vh;
   }
   #unlock h2 {
     font-size: 2.5rem;
@@ -1869,6 +1870,54 @@ footer {
     color: hsl(204deg, 5%, 19%);
     width: fit-content;
     align-self: center;
+  }
+  #unlock .contact-form label {
+    color: white;
+    font-size: 1.2rem;
+  }
+  #unlock .contact-form input {
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 10px;
+    background-color: hsl(0deg, 1%, 15%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    color: white;
+    font-size: 1rem;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  #unlock .contact-form textarea {
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 10px;
+    background-color: hsl(0deg, 1%, 15%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    color: white;
+    font-size: 1rem;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  #unlock .contact-form .button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(45deg, 100%, 50%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 1.1rem 1.7rem;
+    border-radius: 10px;
+    color: hsl(204deg, 5%, 19%);
+    width: fit-content;
+    align-self: center;
+  }
+  #unlock .contact-form select {
+    background-color: hsl(0deg, 1%, 15%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  #unlock .contact-form p {
+    margin: 20px;
   }
 }
 
