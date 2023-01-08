@@ -1630,6 +1630,7 @@ footer {
   }
   #consulting-my-services div div {
     max-width: 20vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
