@@ -1275,6 +1275,7 @@ header {
   .w-flex-container {
     margin-top: -40rem;
     flex-direction: column;
+    margin-bottom: 6rem;
   }
   .w-flex-container h3 {
     margin-top: 5vh;
