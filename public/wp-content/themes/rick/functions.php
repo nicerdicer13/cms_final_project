@@ -9,5 +9,5 @@
         $submit_button = str_replace('class="', 'class="button ', $submit_button);
         return $submit_button;
       }
-      add_filter('wpcf7_submit_button', 'my_custom_submit_button');
+    add_filter('wpcf7_submit_button', 'my_custom_submit_button');
 ?>
