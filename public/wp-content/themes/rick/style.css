@@ -1572,34 +1572,74 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    margin-bottom: 5vh;
+    column-gap: 10vw;
   }
   #working-with-me div img {
     width: 30vw;
   }
-  #working-with-me div div {
+  #working-with-me div .img-section-1 {
+    margin-right: 5vw;
+  }
+  #working-with-me div [class^=section-1] {
     display: flex;
     flex-direction: column;
     background-color: hsl(204deg, 5%, 18%);
     padding: 20px;
     box-shadow: 4px 3px 8px 1px;
+    justify-content: center;
+    height: 50vh;
+    border-radius: 10px;
   }
-  #working-with-me div div h2 {
+  #working-with-me div [class^=section-1] h2 {
     color: hsl(45deg, 100%, 50%);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: left;
     max-width: 40vw;
     line-height: 1.5;
     margin-left: 5vw;
   }
-  #working-with-me div div li {
+  #working-with-me div [class^=section-1] li {
     color: white;
     max-width: 40vw;
     line-height: 1.5;
     list-style-type: circle;
-    margin-left: 20px;
+    margin-left: 6.2vw;
+    font-size: 1.2rem;
+    margin-bottom: 3vh;
+  }
+  #working-with-me div [class^=section-2] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(204deg, 5%, 18%);
+    padding: 40px 20px 40px 20px;
+    box-shadow: 4px 3px 8px 1px;
+    justify-content: center;
+    height: 50vh;
+    border-radius: 10px;
+  }
+  #working-with-me div [class^=section-2] h2 {
+    color: hsl(45deg, 100%, 50%);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    max-width: 40vw;
+    line-height: 1.5;
+    margin-left: 5vw;
+  }
+  #working-with-me div [class^=section-2] li {
+    color: white;
+    max-width: 40vw;
+    line-height: 1.5;
+    list-style-type: circle;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+  }
+  #working-with-me div .img-section-2 {
     margin-left: 5vw;
   }
 }

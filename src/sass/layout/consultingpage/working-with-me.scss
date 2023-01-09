@@ -10,23 +10,30 @@
             display: flex;
             flex-direction: row;
             width: 100vw;
-            margin-bottom: 5vh;
+            column-gap: 10vw;
 
             img {
                 width: 30vw;
             }
 
-            div {
+            .img-section-1{
+                margin-right: 5vw;
+            }
+
+            [class^=section-1] {
                 display: flex;
                 flex-direction: column;
                 background-color: $bgabout;
                 padding: 20px;
                 box-shadow: 4px 3px 8px 1px;
+                justify-content: center;
+                height: 50vh;
+                border-radius: 10px;
 
                 h2 {
                     color: $primary;
                     font-weight: bold;
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                     margin-bottom: 1rem;
                     text-align: left;
                     max-width: 40vw;
@@ -39,9 +46,46 @@
                     max-width: 40vw;
                     line-height: 1.5;
                     list-style-type: circle;
-                    margin-left: 20px;
+                    margin-left: 6.2vw;
+                    font-size: 1.2rem;
+                    margin-bottom: 3vh;
+                }
+            }
+
+            [class^=section-2] {
+                display: flex;
+                flex-direction: column;
+                background-color: $bgabout;
+                padding: 40px 20px 40px 20px;
+                box-shadow: 4px 3px 8px 1px;
+                justify-content: center;
+                height: 50vh;
+                border-radius: 10px;
+
+                h2 {
+                    color: $primary;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    text-align: right;
+                    max-width: 40vw;
+                    line-height: 1.5;
                     margin-left: 5vw;
                 }
+
+                li {
+                    color: white;
+                    max-width: 40vw;
+                    line-height: 1.5;
+                    list-style-type: circle;
+                    text-align: right;
+                    font-size: 1.2rem;
+                    margin-bottom: 3vh;
+                    margin-left: 5vw;
+                }
+            }
+            .img-section-2 {
+                margin-left: 5vw;
             }
         }
     }
