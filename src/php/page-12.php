@@ -107,11 +107,22 @@
 
     <section class="students-section">
         <div class="students-response">
+            <h3>
+                From My Students
+            </h3>
+            <img class="quotation_mark" src="<?php echo get_template_directory_uri(); ?>/images/workshop_quotation_mark.svg" alt="quotation mark">
+            <p>Rick is a knowledgeable and passionate instructor who makes the material easy to understand and apply.
+                His easy-going personality and sense of humor makes it enjoyable and I left feeling confident in my newfound skills.
+                <br><br>
+                - Samantha Smith
+            </p>
 
         </div>
-        <img class="image-students" src="<?php echo get_template_directory_uri(); ?>/images/workshop_students.jpeg" alt="Picture of students sitting on stairs">
-
     </section>
+
+    <img class="image-students" src="<?php echo get_template_directory_uri(); ?>/images/workshop_students.jpeg" alt="Picture of students sitting on stairs">
+
+
 
 
 
