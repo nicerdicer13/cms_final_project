@@ -33,7 +33,6 @@
         </nav>
         <div class='workshop-header'>
             <h2>learn from my experience. <br>don’t make the same mistakes I have.</h2>
-            <div class="border"></div>
         </div>
     </header>
     <section class="w-flex-container">
@@ -105,6 +104,17 @@
             <img alt="this is a picture of me" class="workshop-image-right" src="<?php echo get_template_directory_uri(); ?>/images/workshop_content.svg" />
         </div>
     </section>
+
+    <section>
+        <div class="students-response">
+
+        </div>
+        <img class="image-students" src="<?php echo get_template_directory_uri(); ?>/images/workshop_students.jpeg" alt="Picture of students sitting on stairs">
+
+    </section>
+
+
+
 
     <?php get_footer(); ?>
     <?php wp_footer(); ?>

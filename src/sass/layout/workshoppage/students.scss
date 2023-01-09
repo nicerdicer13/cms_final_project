@@ -1,0 +1,19 @@
+
+@include breakpoint($desktop, $max-width) {
+    .image-students {
+        position: relative;
+        margin-top:17vh;
+        margin-bottom: 20vh;
+        width: 100%;
+        z-index: 1;
+        
+    }
+    .students-response {
+        position: absolute;
+        height: 20vh;
+        width: 20vh;
+        background-color: $bgcards;
+        margin-bottom: -40rem;
+        z-index: 5;
+    }
+}
