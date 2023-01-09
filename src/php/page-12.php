@@ -105,7 +105,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="students-section">
         <div class="students-response">
 
         </div>

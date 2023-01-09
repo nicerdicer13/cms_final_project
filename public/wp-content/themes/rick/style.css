@@ -1437,19 +1437,18 @@ header {
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
-  .image-students {
+  .students-section .image-students {
     position: relative;
     margin-top: 17vh;
     margin-bottom: 20vh;
     width: 100%;
     z-index: 1;
   }
-  .students-response {
+  .students-section .students-response {
     position: absolute;
     height: 20vh;
     width: 20vh;
     background-color: hsl(0deg, 1%, 15%);
-    margin-bottom: -40rem;
     z-index: 5;
   }
 }
