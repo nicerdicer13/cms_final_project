@@ -1489,20 +1489,20 @@ header {
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   .image-students {
-    margin-top: 8vh;
     margin-bottom: 15vh;
     width: 100%;
+    height: auto;
   }
   .students-section {
     margin-left: 5vh;
     margin-right: 15vh;
-    margin-top: 6rem;
+    margin-top: 7rem;
     max-width: fit-content;
     padding-bottom: 2rem;
   }
   .students-section .students-response h3 {
     margin-left: 3vh;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     font-size: 1rem;
   }
   .students-section .students-response h3::before {
@@ -1513,7 +1513,7 @@ header {
     margin-top: 1.5rem;
   }
   .students-section .students-response p {
-    margin-top: 3rem;
+    margin-top: 3.4rem;
     margin-left: 3vh;
     margin-right: 3vh;
     max-width: 35vh;
@@ -1521,8 +1521,8 @@ header {
     font-size: 0.6rem;
   }
   .students-section .students-response .quotation_mark {
-    width: 2vh;
-    margin-top: -5.4rem;
+    width: 2.5vh;
+    margin-top: -5rem;
     margin-left: 3vh;
   }
 }
