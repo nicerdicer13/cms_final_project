@@ -1931,7 +1931,7 @@ footer {
 
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #unlock {
-    text-align: center;
+    text-align: left;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -1957,31 +1957,25 @@ footer {
     width: fit-content;
     align-self: center;
   }
-  #unlock .contact-form label {
+  #unlock .contact-form form label {
     color: white;
     font-size: 1.2rem;
+    text-align: left;
   }
-  #unlock .contact-form input {
+  #unlock .contact-form form input[type=text],
+  #unlock .contact-form form input[type=email],
+  #unlock .contact-form form textarea,
+  #unlock .contact-form form select {
     border: 1px solid hsl(45deg, 100%, 50%);
     padding: 10px;
     background-color: hsl(0deg, 1%, 15%);
     border: 1px solid hsl(45deg, 100%, 50%);
     color: white;
     font-size: 1rem;
-    margin: 20px;
+    margin: 20px 0 10px 0;
     border-radius: 5px;
   }
-  #unlock .contact-form textarea {
-    border: 1px solid hsl(45deg, 100%, 50%);
-    padding: 10px;
-    background-color: hsl(0deg, 1%, 15%);
-    border: 1px solid hsl(45deg, 100%, 50%);
-    color: white;
-    font-size: 1rem;
-    margin: 20px;
-    border-radius: 5px;
-  }
-  #unlock .contact-form .button {
+  #unlock .contact-form form input[type=submit] {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -1992,17 +1986,10 @@ footer {
     color: hsl(204deg, 5%, 19%);
     width: fit-content;
     align-self: center;
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
   }
-  #unlock .contact-form select {
-    background-color: hsl(0deg, 1%, 15%);
-    border: 1px solid hsl(45deg, 100%, 50%);
-    color: white;
-    font-size: 1rem;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
-  }
-  #unlock .contact-form p {
+  #unlock .contact-form form p {
     margin: 20px;
   }
 }
