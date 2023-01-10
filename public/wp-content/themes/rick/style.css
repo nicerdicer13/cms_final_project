@@ -309,8 +309,6 @@ header {
     text-transform: lowercase;
     font-size: 2.5rem;
     margin-left: 2.5rem;
-    grid-row: 1/span 1;
-    grid-column: 1/span 1;
   }
   #mainnav {
     position: absolute;
@@ -327,8 +325,6 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     width: 30vw;
-    grid-row: 1/span 1;
-    grid-column: 2/span 3;
   }
   #mainnav li a {
     text-transform: uppercase;
@@ -346,8 +342,6 @@ header {
     color: white;
     max-width: 75vw;
     margin-bottom: 20px;
-    grid-row: 2/span 1;
-    grid-column: 1/span 1;
   }
   .dreams h3 {
     font-size: 1.5rem;

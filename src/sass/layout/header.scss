@@ -5,9 +5,6 @@ header{
 
 @include breakpoint($desktop, $max-width) {
     header {
-        // display: grid;
-        // grid-template-rows: 25vh 14vh 58vh 15vh;
-        // grid-template-columns: 20vw 60vw 20vw;
         padding: 25px;
         height: fit-content;
         margin-bottom: 10vh;
@@ -20,8 +17,6 @@ header{
             text-transform: lowercase;
             font-size: 2.5rem;
             margin-left: 2.5rem;
-            grid-row: 1/span 1;
-            grid-column: 1/span 1;
         }
     }
     #mainnav {
@@ -39,9 +34,7 @@ header{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width: 30vw;
-            grid-row: 1/span 1;
-            grid-column: 2/ span 3;
+            width: 30vw; 
         }
         
         li a{
@@ -55,8 +48,6 @@ header{
     }
     .dreams {
         margin-left: 2.5rem;
-        // grid-row: 2/span 2;
-        // grid-column: 1/ span 2;
         margin-top: 15vh;
 
         h2 {
@@ -64,8 +55,6 @@ header{
             color: white;
             max-width: 75vw;
             margin-bottom: 20px;
-            grid-row: 2/span 1;
-            grid-column: 1/span 1;
         }
 
         h3 {
@@ -99,8 +88,6 @@ header{
 
     .workshop-header {
         text-align: center;
-        // grid-row: 2/span 2;
-        // grid-column: 2/ span 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -128,8 +115,6 @@ header{
     }
 
     .rick-header {
-        // grid-row: 3/span 1;
-        // grid-column: 2/span 2;
         margin-left: 40rem;
         width: auto;
         position: relative;
@@ -144,8 +129,6 @@ header{
         padding: 40px;
         height: fit-content;
         border-radius: 10px;
-        // grid-row: 4/span 1;
-        // grid-column: 1/ span 1;
         margin-left: 18vw;
         position: relative;
         bottom: 3vh;
