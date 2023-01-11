@@ -103,6 +103,8 @@
         </div>
     </section>
     <section id='consulting-what-i-do'>
+        <div class="what-i-do-image"></div>
+        <div class="what-i-do-dark-background"></div>
         <div class="cards">
             <div class="card-1">
                 <img alt="web design icon" src="<?php echo get_template_directory_uri(); ?>/images/web-design-icon.svg" />

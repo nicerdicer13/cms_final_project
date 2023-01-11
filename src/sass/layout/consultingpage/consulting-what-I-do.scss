@@ -1,14 +1,29 @@
 #consulting-what-i-do {
     font-family: 'Inter';
-    background-image: url("./images/consulting-background.png");
 }
 
 @include breakpoint($desktop, $max-width) {
     #consulting-what-i-do {
-        height: 60vh;
+        height: 100vh;
         background-color: $bggray;
         width: 100vw;
-        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 30%;
+        margin-bottom: 5vh;
+
+        .what-i-do-image {
+            grid-row: 1/ span 1;
+            background-image: url("./images/consulting-background.png");
+            background-size: 100%;
+            width: 100vw;
+        }
+
+        .what-i-do-dark-background {
+            background-color: $bgconsulting;
+            width: 100vw;
+            grid-row: 2/ span 1;
+        }
 
         h2 {
             color: white;
@@ -24,6 +39,8 @@
             align-items: center;
             column-gap: 80px;
             padding: 15%;
+            position: relative;
+            bottom: 60vh;
 
             [class^=card-1] {
                 display: flex;
@@ -92,11 +109,11 @@
                 border-radius: 10px;
 
                 img {
-                    height: 17vh;
+                    height: 13vh;
                     width: auto;
                     position: relative;
                     left: 45%;
-                    bottom: 15px;
+                    bottom: 2px;
                 }
 
                 h3 {
@@ -104,6 +121,7 @@
                     text-align: left;
                     margin-left: 15%;
                     max-width: 10vw;
+                    margin-top: 20%;
                 }
             }
         }
@@ -132,11 +150,11 @@
                 border-radius: 10px;
 
                 img {
-                    height: 17vh;
+                    height: 13vh;
                     width: auto;
                     position: relative;
                     left: 45%;
-                    bottom: 15px;
+                    bottom: 2px;
                 }
 
                 h3 {
@@ -144,7 +162,7 @@
                     text-align: left;
                     margin-left: 15%;
                     max-width: 10vw;
-                    margin-top: 3%;
+                    margin-top: 15%;
                 }
             }
 
@@ -187,11 +205,11 @@
                 border-radius: 10px;
 
                 img {
-                    height: 17vh;
+                    height: 13vh;
                     width: auto;
                     position: relative;
-                    right: 35px;
-                    bottom: 15px;
+                    right: 40px;
+                    bottom: 9px;
                 }
 
                 h3 {
@@ -199,6 +217,7 @@
                     text-align: left;
                     margin-left: 15%;
                     max-width: 10vw;
+                    margin-top: 20%;
                 }
             }
         }
