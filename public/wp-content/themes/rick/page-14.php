@@ -8,6 +8,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
     <?php wp_head(); ?>
 </head>
 <?php wp_body_open(); ?>
@@ -54,7 +55,7 @@
     </section>
     <section id="working-with-me">
         <div>
-            <div>
+            <div class="section-1">
                 <h2>What I bring to the table</h2>
                 <ul>
                     <li>strong leadership skills</li>
@@ -63,11 +64,11 @@
                     <li>excellent problem solving skills</li>
                 </ul>
             </div>
-            <img alt="This is a guy explaining something to a woman and using statistics." src="<?php echo get_template_directory_uri(); ?>/images/what-i-bring-to-the-table.svg" />
+            <img alt="This is a person explaining something to another person and using statistics." class="img-section-1" src="<?php echo get_template_directory_uri(); ?>/images/what-i-bring-to-the-table.svg" />
         </div>
         <div>
-            <img alt="This is a woman consulting a man on how he can improve his business." src="<?php echo get_template_directory_uri(); ?>/images/working-with-me.svg" />
-            <div>
+            <img alt="This is a person consulting another person on how he can improve his business." class="img-section-2" src="<?php echo get_template_directory_uri(); ?>/images/working-with-me.svg" />
+            <div class="section-2">
                 <h2>What to expect when working with me</h2>
                 <ul>
                     <li>expert advice on how your company can maximise strategy, increase profits, add value and resolve issues</li>
@@ -134,10 +135,10 @@
     <section id="unlock">
         <h2>Unlock your company's full potential. Contact me now.</h2>
         <div class="contact-form">
-            <?php echo do_shortcode('[contact-form-7 id="12"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="16"]'); ?>
         </div>
     </section>
-    
+
     <?php get_footer(); ?>
     <?php wp_footer(); ?>
 </body>
