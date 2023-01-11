@@ -30,7 +30,7 @@
                 <li><a href="#news">Youtube</a></li>
             </ul>
         </nav>
-        <div class='workshop-header'>
+        <div class='consulting-header'>
             <h2>consulting is a people business - it’s what I do best.</h2>
             <div class="border"></div>
         </div>

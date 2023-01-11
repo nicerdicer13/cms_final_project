@@ -2,6 +2,48 @@
     font-family: 'Inter';
 }
 
+
+@include breakpoint(0, $mobile) { 
+    #consulting-stats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 5vh;
+        column-gap: 5vw;
+        width: 100vw;
+        justify-content: center;
+        height: fit-content;
+        // position: relative;
+        // bottom: 70vh;
+
+        div {
+            background-color: $bgabout;
+            width: 35vw;
+            height: 16vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 3vh;
+            box-shadow: 4px 3px 8px 1px;
+            border-radius: 5px;
+
+            h3 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                font-weight: bold;
+                text-align: center;
+            }
+            p { 
+                color: $primary;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 @include breakpoint($desktop, $max-width) {
     #consulting-stats {
         display: flex;
@@ -10,6 +52,7 @@
         width: 100vw;
         justify-content: center;
         height: 40vh;
+
         div {
             background-color: $bgabout;
             width: 15vw;
