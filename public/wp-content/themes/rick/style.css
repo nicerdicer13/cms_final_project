@@ -1508,8 +1508,10 @@ header {
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   .image-students {
     margin-bottom: 15vh;
-    width: 100%;
+    width: 100vw;
     height: auto;
+    left: 0;
+    right: 0;
   }
   .students-section {
     margin-left: 5vh;
@@ -1645,8 +1647,6 @@ footer {
     width: 100vw;
     justify-content: center;
     height: fit-content;
-    position: relative;
-    bottom: 70vh;
   }
   #consulting-stats div {
     background-color: hsl(204deg, 5%, 18%);
@@ -1709,6 +1709,7 @@ footer {
   font-family: "Inter";
 }
 
+<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #working-with-me {
     position: relative;
@@ -1784,6 +1785,8 @@ footer {
     margin-bottom: 3vh;
   }
 }
+=======
+>>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #working-with-me {
     height: fit-content;
@@ -1875,6 +1878,7 @@ footer {
   font-family: "Inter";
 }
 
+<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #consulting-my-services {
     position: relative;
@@ -1933,6 +1937,8 @@ footer {
     background-color: hsl(204deg, 5%, 18%);
   }
 }
+=======
+>>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #consulting-my-services {
     height: 80vh;
@@ -1984,6 +1990,7 @@ footer {
   font-family: "Inter";
 }
 
+<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #consulting-what-i-do {
     width: 100vw;
@@ -2180,6 +2187,8 @@ footer {
     margin-top: 3%;
   }
 }
+=======
+>>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #consulting-what-i-do {
     height: 100vh;
@@ -2382,6 +2391,7 @@ footer {
   font-family: "Inter";
 }
 
+<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #unlock {
     position: relative;
@@ -2437,6 +2447,8 @@ footer {
     margin: 20px;
   }
 }
+=======
+>>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #unlock {
     text-align: left;

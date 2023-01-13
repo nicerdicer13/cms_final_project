@@ -8,7 +8,7 @@
     <title>Rick Randy | Workshops</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg"/>
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
     <?php wp_head(); ?>
 </head>
 <?php wp_body_open(); ?>
@@ -27,28 +27,51 @@
                 <div class="line-3"></div>
             </button>
             <ul>
-                <li><a href="#workshops">Consulting</a></li>
+                <li><a href="consulting">Consulting</a></li>
                 <li><a href="#">Workshops</a></li>
                 <li><a href="#news">Youtube</a></li>
             </ul>
         </nav>
         <div class='workshop-header'>
-            <h2>learn from my experience. <br>don’t make the same mistakes I have.</h2>
+            <?php
+            $header_query = new WP_Query(array('p' => 18));
+            if ($header_query->have_posts()) :
+                while ($header_query->have_posts()) : $header_query->the_post(); ?>
+                    <h2>
+                        <?php the_title(); ?>
+                    </h2>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </header>
     <section class="w-flex-container">
         <div class="left-block">
-            <h3>About My Workshops</h3>
-            <p>Come join me for one of my workshops and learn from a self-employed web developer
-                and business consultant! I offer a variety of workshops on topics such as web development,
-                starting a business, business consulting, self employment, work and travel, and content creation.
-                I'm passionate about what I do and love sharing my knowledge and experience with others.
-            </p>
+            <?php
+            $about_query = new WP_Query(array('p' => 20));
+            if ($about_query->have_posts()) :
+                while ($about_query->have_posts()) : $about_query->the_post(); ?>
+                    <h3>
+                        <?php the_title(); ?>
+                    </h3>
+                    <?php the_content(); ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
         <div class="right-block">
-            <h3>Register Today</h3>
-            <p>Sign up for one of my workshops today and take the first step towards reaching your goals!</p>
-            <a href="#" class="button">Join Now</a>
+            <?php
+            $register_query = new WP_Query(array('p' => 22));
+            if ($register_query->have_posts()) :
+                while ($register_query->have_posts()) : $register_query->the_post(); ?>
+                    <h3>
+                        <?php the_title(); ?>
+                    </h3>
+                    <?php the_content(); ?>
+                    <a href="#" class="button">Join Now</a>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </section>
 
