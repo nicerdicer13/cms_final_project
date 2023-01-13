@@ -26,7 +26,7 @@
             </button>
             <ul>
                 <li><a href="#">Consulting</a></li>
-                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="workshops">Workshops</a></li>
                 <li><a href="#news">Youtube</a></li>
             </ul>
         </nav>

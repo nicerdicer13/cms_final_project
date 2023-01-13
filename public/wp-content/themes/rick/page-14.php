@@ -26,11 +26,11 @@
             </button>
             <ul>
                 <li><a href="#">Consulting</a></li>
-                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="workshops">Workshops</a></li>
                 <li><a href="#news">Youtube</a></li>
             </ul>
         </nav>
-        <div class='workshop-header'>
+        <div class='consulting-header'>
             <h2>consulting is a people business - it’s what I do best.</h2>
             <div class="border"></div>
         </div>
@@ -103,6 +103,8 @@
         </div>
     </section>
     <section id='consulting-what-i-do'>
+        <div class="what-i-do-image"></div>
+        <div class="what-i-do-dark-background"></div>
         <div class="cards">
             <div class="card-1">
                 <img alt="web design icon" src="<?php echo get_template_directory_uri(); ?>/images/web-design-icon.svg" />
@@ -138,7 +140,6 @@
             <?php echo do_shortcode('[contact-form-7 id="16"]'); ?>
         </div>
     </section>
-
     <?php get_footer(); ?>
     <?php wp_footer(); ?>
 </body>

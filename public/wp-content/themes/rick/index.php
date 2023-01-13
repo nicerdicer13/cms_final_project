@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick Randy</title>
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg"/>
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
     <?php wp_head(); ?>
 </head>
 
@@ -23,7 +23,7 @@
                 <div class="line-3"></div>
             </button>
             <ul>
-                <li><a href="#what_i_do">Consulting</a></li>
+                <li><a href="consulting">Consulting</a></li>
                 <li><a href="workshops">Workshops</a></li>
                 <li><a href="#business-consulting">Youtube</a></li>
             </ul>
