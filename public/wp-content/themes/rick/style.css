@@ -130,6 +130,13 @@ html, body {
     padding-left: 25px;
     padding-top: 25px;
   }
+  header img {
+    position: absolute;
+    height: 25vh;
+    width: auto;
+    margin-top: 2rem;
+    margin-left: 8rem;
+  }
   #mainnav {
     right: 0;
     top: 0;
@@ -198,13 +205,6 @@ html, body {
     margin-top: 35%;
     color: hsl(204deg, 5%, 19%);
     margin-left: 25px;
-  }
-  img {
-    position: absolute;
-    height: 25vh;
-    width: auto;
-    margin-top: 2rem;
-    margin-left: 8rem;
   }
   .stats {
     display: flex;
@@ -395,6 +395,9 @@ header {
     margin-top: 15vh;
   }
   .consulting-header {
+    height: 40vh;
+  }
+  .consulting-header div {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1711,7 +1714,7 @@ footer {
     position: relative;
     bottom: 60vh;
     height: fit-content;
-    width: 100vw;
+    width: 90vw;
   }
   #working-with-me div {
     display: flex;
@@ -1719,46 +1722,24 @@ footer {
     width: 90vw;
   }
   #working-with-me img {
-    width: 70vw;
+    width: 60vw;
     align-self: center;
     margin: 0;
   }
   #working-with-me [class^=section-1] {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    margin-bottom: 10vh;
+    flex-direction: column-reverse;
+    margin-bottom: 5vh;
   }
-  #working-with-me [class^=section-1] h2 {
-    color: hsl(45deg, 100%, 50%);
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    max-width: 80vw;
-    line-height: 1.5;
-  }
-  #working-with-me [class^=section-1] li {
-    color: white;
-    max-width: 80vw;
-    line-height: 1.5;
-    list-style-type: circle;
-    text-align: left;
-    font-size: 0.8rem;
-    margin-bottom: 3vh;
-  }
-  #working-with-me [class^=section-2] {
+  #working-with-me [class^=section-1] div {
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    width: 100vw;
   }
-  #working-with-me [class^=section-2] h2 {
+  #working-with-me [class^=section-1] div h2 {
     color: hsl(45deg, 100%, 50%);
     font-weight: bold;
     font-size: 1rem;
@@ -1767,7 +1748,7 @@ footer {
     max-width: 80vw;
     line-height: 1.5;
   }
-  #working-with-me [class^=section-2] li {
+  #working-with-me [class^=section-1] div li {
     color: white;
     max-width: 80vw;
     line-height: 1.5;
@@ -1776,8 +1757,31 @@ footer {
     font-size: 0.8rem;
     margin-bottom: 3vh;
   }
-  #working-with-me .img-section-2 {
-    margin-left: 5vw;
+  #working-with-me [class^=section-2] div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  #working-with-me [class^=section-2] div h2 {
+    color: hsl(45deg, 100%, 50%);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 80vw;
+    line-height: 1.5;
+  }
+  #working-with-me [class^=section-2] div li {
+    color: white;
+    max-width: 80vw;
+    line-height: 1.5;
+    list-style-type: circle;
+    text-align: left;
+    font-size: 0.8rem;
+    margin-bottom: 3vh;
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
@@ -1785,19 +1789,19 @@ footer {
     height: fit-content;
     width: 100vw;
   }
-  #working-with-me div {
+  #working-with-me img {
+    width: 30vw;
+  }
+  #working-with-me .img-section-1 {
+    margin-right: 5vw;
+  }
+  #working-with-me .section-1 {
     display: flex;
     flex-direction: row;
     width: 100vw;
     column-gap: 10vw;
   }
-  #working-with-me div img {
-    width: 30vw;
-  }
-  #working-with-me div .img-section-1 {
-    margin-right: 5vw;
-  }
-  #working-with-me div [class^=section-1] {
+  #working-with-me .section-1 div {
     display: flex;
     flex-direction: column;
     background-color: hsl(204deg, 5%, 18%);
@@ -1808,7 +1812,7 @@ footer {
     border-radius: 10px;
     margin-bottom: 10vh;
   }
-  #working-with-me div [class^=section-1] h2 {
+  #working-with-me .section-1 div h2 {
     color: hsl(45deg, 100%, 50%);
     font-weight: bold;
     font-size: 1.5rem;
@@ -1818,7 +1822,7 @@ footer {
     line-height: 1.5;
     margin-left: 5vw;
   }
-  #working-with-me div [class^=section-1] li {
+  #working-with-me .section-1 div li {
     color: white;
     max-width: 40vw;
     line-height: 1.5;
@@ -1827,7 +1831,13 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 3vh;
   }
-  #working-with-me div [class^=section-2] {
+  #working-with-me .section-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    column-gap: 10vw;
+  }
+  #working-with-me .section-2 div {
     display: flex;
     flex-direction: column;
     background-color: hsl(204deg, 5%, 18%);
@@ -1837,7 +1847,7 @@ footer {
     height: 50vh;
     border-radius: 10px;
   }
-  #working-with-me div [class^=section-2] h2 {
+  #working-with-me .section-2 div h2 {
     color: hsl(45deg, 100%, 50%);
     font-weight: bold;
     font-size: 1.5rem;
@@ -1847,7 +1857,7 @@ footer {
     line-height: 1.5;
     margin-left: 5vw;
   }
-  #working-with-me div [class^=section-2] li {
+  #working-with-me .section-2 div li {
     color: white;
     max-width: 40vw;
     line-height: 1.5;
@@ -1857,7 +1867,7 @@ footer {
     margin-bottom: 3vh;
     margin-left: 5vw;
   }
-  #working-with-me div .img-section-2 {
+  #working-with-me .img-section-2 {
     margin-left: 5vw;
   }
 }
@@ -1867,7 +1877,60 @@ footer {
 
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #consulting-my-services {
-    display: none;
+    position: relative;
+    bottom: 50vh;
+    height: fit-content;
+    width: 100vw;
+  }
+  #consulting-my-services h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 80vw;
+    line-height: 1.5;
+  }
+  #consulting-my-services div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #consulting-my-services div div {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  #consulting-my-services div div img {
+    width: 15vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #consulting-my-services div div h3 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  #consulting-my-services div div p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: white;
+    max-width: 40vw;
+  }
+  #consulting-my-services div .consulting {
+    background: hsl(204deg, 5%, 18%);
+  }
+  #consulting-my-services div .strategy {
+    background-color: hsl(0deg, 0%, 12%);
+  }
+  #consulting-my-services div .mission {
+    background-color: hsl(0deg, 0%, 12%);
+  }
+  #consulting-my-services div .investment {
+    background-color: hsl(204deg, 5%, 18%);
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
@@ -1923,7 +1986,198 @@ footer {
 
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #consulting-what-i-do {
+    width: 100vw;
+    height: 40vh;
+    background-color: hsl(204deg, 5%, 19%);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    position: relative;
+    bottom: 40vh;
+  }
+  #consulting-what-i-do .what-i-do-image {
+    grid-row: 1/span 1;
+    background-image: url("./images/consulting-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+  }
+  #consulting-what-i-do .what-i-do-dark-background {
+    background-color: hsl(0deg, 0%, 12%);
+    width: 100vw;
+    grid-row: 2/span 1;
+  }
+  #consulting-what-i-do h2 {
+    color: white;
+    font-size: 3rem;
+  }
+  #consulting-what-i-do .cards {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    position: relative;
+    bottom: 30vh;
+  }
+  #consulting-what-i-do .cards [class^=card-1] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 22vh;
+    width: 41vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards [class^=card-1] img {
+    width: 50%;
+    position: relative;
+    right: -13px;
+    bottom: -10px;
+  }
+  #consulting-what-i-do .cards [class^=card-1] h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 35%;
+  }
+  #consulting-what-i-do .cards [class^=card-2] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 22vh;
+    width: 41vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
     display: none;
+  }
+  #consulting-what-i-do .cards [class^=card-2] img {
+    width: 50%;
+    position: relative;
+    right: 58px;
+    bottom: 29px;
+  }
+  #consulting-what-i-do .cards [class^=card-2] h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 3%;
+  }
+  #consulting-what-i-do .cards [class^=card-3] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 22vh;
+    width: 41vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+  }
+  #consulting-what-i-do .cards [class^=card-3] img {
+    width: 70%;
+    position: relative;
+    right: 125px;
+    bottom: 34px;
+  }
+  #consulting-what-i-do .cards [class^=card-3] h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 3%;
+  }
+  #consulting-what-i-do .cards-second-slide {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    padding: 15%;
+    background-color: hsl(204deg, 5%, 19%);
+    display: none;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 22vh;
+    width: 41vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] img {
+    width: 50%;
+    position: relative;
+    right: 58px;
+    bottom: 29px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 3%;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 22vh;
+    width: 41vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] img {
+    width: 70%;
+    position: relative;
+    right: 125px;
+    bottom: 34px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 3%;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 1%, 15%);
+    color: white;
+    height: 22vh;
+    width: 41vw;
+    padding: 2% 7% 5% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] img {
+    width: 50%;
+    position: relative;
+    right: 58px;
+    bottom: 29px;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 10vw;
+    margin-top: 3%;
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
@@ -2130,7 +2384,57 @@ footer {
 
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #unlock {
-    display: none;
+    position: relative;
+    bottom: 30vh;
+    text-align: left;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw;
+  }
+  #unlock h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+  }
+  #unlock .contact-form form label {
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+  }
+  #unlock .contact-form form input[type=text],
+  #unlock .contact-form form input[type=email],
+  #unlock .contact-form form textarea,
+  #unlock .contact-form form select {
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 10px;
+    background-color: hsl(0deg, 1%, 15%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    color: white;
+    font-size: 0.8rem;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+  }
+  #unlock .contact-form form input[type=submit] {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(45deg, 100%, 50%);
+    border: 1px solid hsl(45deg, 100%, 50%);
+    padding: 0.6rem 1.1rem;
+    border-radius: 10px;
+    color: hsl(204deg, 5%, 19%);
+    align-self: center;
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+  }
+  #unlock .contact-form form p {
+    margin: 20px;
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
@@ -2141,7 +2445,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6vh;
+    padding: 6vh 6vw;
   }
   #unlock h2 {
     font-size: 2.5rem;

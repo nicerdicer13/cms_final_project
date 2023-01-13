@@ -11,6 +11,14 @@
             padding-left: 25px;
             padding-top: 25px;
         }
+
+        img {
+            position: absolute;
+            height: 25vh;
+            width: auto;
+            margin-top: 2rem;
+            margin-left: 8rem;
+        }
     }
     #mainnav {
         right: 0;
@@ -89,14 +97,6 @@
             margin-left: 25px;
         }
 
-    }
-
-    img {
-        position: absolute;
-        height: 25vh;
-        width: auto;
-        margin-top: 2rem;
-        margin-left: 8rem;
     }
 
     .stats {

@@ -102,12 +102,14 @@ header{
     }
 
     .consulting-header {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15vh;
-
+        height: 40vh;
+        div {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15vh;
+        }
         h2 {
             font-size: 3.55rem;
             color: white;

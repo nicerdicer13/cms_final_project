@@ -32,7 +32,6 @@
         </nav>
         <div class='consulting-header'>
             <h2>consulting is a people business - it’s what I do best.</h2>
-            <div class="border"></div>
         </div>
     </header>
     <section id="consulting-stats">
@@ -54,8 +53,8 @@
         </div>
     </section>
     <section id="working-with-me">
-        <div>
-            <div class="section-1">
+        <div class="section-1">
+            <div>
                 <h2>What I bring to the table</h2>
                 <ul>
                     <li>strong leadership skills</li>
@@ -66,9 +65,9 @@
             </div>
             <img alt="This is a person explaining something to another person and using statistics." class="img-section-1" src="<?php echo get_template_directory_uri(); ?>/images/what-i-bring-to-the-table.svg" />
         </div>
-        <div>
+        <div class="section-2">
             <img alt="This is a person consulting another person on how he can improve his business." class="img-section-2" src="<?php echo get_template_directory_uri(); ?>/images/working-with-me.svg" />
-            <div class="section-2">
+            <div>
                 <h2>What to expect when working with me</h2>
                 <ul>
                     <li>expert advice on how your company can maximise strategy, increase profits, add value and resolve issues</li>
@@ -80,22 +79,22 @@
     <section id="consulting-my-services">
         <h2>My services.</h2>
         <div>
-            <div>
+            <div class="consulting">
                 <img alt="this is an icon with coins and a dollar sign" src="<?php echo get_template_directory_uri(); ?>/images/consulting-icon.svg" />
                 <h3>Consulting</h3>
                 <p>With a wealth of knowledge and experience, I am a trusted consultant who can help your business identify and overcome challenges, optimize your operations, and achieve your goals.</p>
             </div>
-            <div>
+            <div class="strategy">
                 <img alt="this is an icon containing an arrow that points from one circle to a higher placed cicle" src="<?php echo get_template_directory_uri(); ?>/images/strategy-icon.svg" />
                 <h3>Strategy</h3>
                 <p>My consulting strategy is focused on understanding your business's unique needs and challenges, and providing customized solutions to help you reach your full potential.</p>
             </div>
-            <div>
+            <div class="mission">
                 <img alt="this is an icon of a yellow flag" src="<?php echo get_template_directory_uri(); ?>/images/mission-icon.svg" />
                 <h3>Mission</h3>
                 <p>My mission as a consultant is to empower your business to succeed by providing you with the knowledge, resources, and support you need to thrive in your industry.</p>
             </div>
-            <div>
+            <div class="investment">
                 <img alt="this is an icon of a diagram" src="<?php echo get_template_directory_uri(); ?>/images/investment-icon.svg" />
                 <h3>Investment</h3>
                 <p>My investment strategy in consulting is focused on building long-term partnerships your business and providing ongoing support to help you achieve their goals and reach their full potential.</p>
