@@ -102,7 +102,7 @@ header{
     }
 
     .consulting-header {
-        height: 40vh;
+        height: 20vh;
         div {
             text-align: center;
             display: flex;
@@ -113,8 +113,11 @@ header{
         h2 {
             font-size: 3.55rem;
             color: white;
-            max-width: 70vw;
+            //max-width: 70vw;
             margin-bottom: 20px;
+            margin-top: 15vh;
+            text-align: center;
+            padding: 0 10vw;
         }
     }
 

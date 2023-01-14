@@ -107,7 +107,7 @@
                 display: flex;
                 flex-direction: row;
                 width: 100vw;
-                column-gap: 10vw;
+                justify-content: space-between;
 
                 div {
                     display: flex;
@@ -119,6 +119,7 @@
                     height: 50vh;
                     border-radius: 10px;
                     margin-bottom: 10vh;
+                    min-width: 50vw;
 
                     h2 {
                         color: $primary;
@@ -147,7 +148,7 @@
                 display: flex;
                 flex-direction: row;
                 width: 100vw;
-                column-gap: 10vw;
+                justify-content: space-between;
 
                 div {
                     display: flex;
@@ -158,6 +159,7 @@
                     justify-content: center;
                     height: 50vh;
                     border-radius: 10px;
+                    min-width: 50vw;
 
                     h2 {
                         color: $primary;

@@ -395,7 +395,7 @@ header {
     margin-top: 15vh;
   }
   .consulting-header {
-    height: 40vh;
+    height: 20vh;
   }
   .consulting-header div {
     text-align: center;
@@ -407,8 +407,10 @@ header {
   .consulting-header h2 {
     font-size: 3.55rem;
     color: white;
-    max-width: 70vw;
     margin-bottom: 20px;
+    margin-top: 15vh;
+    text-align: center;
+    padding: 0 10vw;
   }
   .rick-header {
     margin-left: 40rem;
@@ -1647,6 +1649,8 @@ footer {
     width: 100vw;
     justify-content: center;
     height: fit-content;
+    position: relative;
+    bottom: 70vh;
   }
   #consulting-stats div {
     background-color: hsl(204deg, 5%, 18%);
@@ -1709,7 +1713,6 @@ footer {
   font-family: "Inter";
 }
 
-<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #working-with-me {
     position: relative;
@@ -1785,8 +1788,6 @@ footer {
     margin-bottom: 3vh;
   }
 }
-=======
->>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #working-with-me {
     height: fit-content;
@@ -1802,7 +1803,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    column-gap: 10vw;
+    justify-content: space-between;
   }
   #working-with-me .section-1 div {
     display: flex;
@@ -1814,6 +1815,7 @@ footer {
     height: 50vh;
     border-radius: 10px;
     margin-bottom: 10vh;
+    min-width: 50vw;
   }
   #working-with-me .section-1 div h2 {
     color: hsl(45deg, 100%, 50%);
@@ -1838,7 +1840,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    column-gap: 10vw;
+    justify-content: space-between;
   }
   #working-with-me .section-2 div {
     display: flex;
@@ -1849,6 +1851,7 @@ footer {
     justify-content: center;
     height: 50vh;
     border-radius: 10px;
+    min-width: 50vw;
   }
   #working-with-me .section-2 div h2 {
     color: hsl(45deg, 100%, 50%);
@@ -1878,7 +1881,6 @@ footer {
   font-family: "Inter";
 }
 
-<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #consulting-my-services {
     position: relative;
@@ -1937,8 +1939,6 @@ footer {
     background-color: hsl(204deg, 5%, 18%);
   }
 }
-=======
->>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #consulting-my-services {
     height: 80vh;
@@ -1990,7 +1990,6 @@ footer {
   font-family: "Inter";
 }
 
-<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #consulting-what-i-do {
     width: 100vw;
@@ -2187,8 +2186,6 @@ footer {
     margin-top: 3%;
   }
 }
-=======
->>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #consulting-what-i-do {
     height: 100vh;
@@ -2391,7 +2388,6 @@ footer {
   font-family: "Inter";
 }
 
-<<<<<<< HEAD
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #unlock {
     position: relative;
@@ -2447,8 +2443,6 @@ footer {
     margin: 20px;
   }
 }
-=======
->>>>>>> 7cfb925086f03b3242f2e61b48ea858d8e87bd44
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #unlock {
     text-align: left;
