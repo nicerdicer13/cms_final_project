@@ -1426,13 +1426,13 @@ header {
     position: relative;
   }
   .workshops-container .workshop-left {
-    padding: 30px;
+    padding: 70px 30px 30px 30px;
   }
   .workshops-container .workshop-right {
-    padding: 30px;
+    padding: 70px 30px 30px 30px;
   }
   .workshops-container h4 {
-    margin: 12vh 2vh 1vh 2vh;
+    margin: 10vh 2vh 1vh 2vh;
     font-size: 0.8rem;
     text-align: center;
     line-height: 1.5;
@@ -1460,7 +1460,7 @@ header {
     transform: translateX(-50%);
   }
   .workshops-container .workshop-image-right {
-    width: 10vh;
+    width: 15vh;
     position: absolute;
     top: 15%;
     left: 50%;
