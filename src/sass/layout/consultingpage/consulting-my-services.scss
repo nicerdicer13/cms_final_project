@@ -72,10 +72,11 @@
 
 @include breakpoint($desktop, $max-width) {
     #consulting-my-services {
-        max-height: 80vh;
+        height: 80vh;
         width: 100vw;
         text-align: center;
         margin-top: 15vh;
+        margin-bottom: 15vh;
 
         h2 {
             color: white;
@@ -94,7 +95,7 @@
 
             div {
                 max-width: 20vw;
-                height: 50vh;
+                height: fit-content;
                 display: flex;
                 flex-direction: column;
                 row-gap: 15px;
@@ -104,7 +105,7 @@
                 box-shadow: 4px 3px 8px 1px;
                 padding: 20px;
                 border-radius: 5px;
-
+                padding-bottom: 5rem;
                 img {
                     width: 5vw;
                 }

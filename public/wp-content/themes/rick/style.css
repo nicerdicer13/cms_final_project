@@ -1947,10 +1947,11 @@ footer {
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
   #consulting-my-services {
-    max-height: 80vh;
+    height: 80vh;
     width: 100vw;
     text-align: center;
     margin-top: 15vh;
+    margin-bottom: 15vh;
   }
   #consulting-my-services h2 {
     color: white;
@@ -1968,7 +1969,7 @@ footer {
   }
   #consulting-my-services div div {
     max-width: 20vw;
-    height: 50vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
@@ -1978,6 +1979,7 @@ footer {
     box-shadow: 4px 3px 8px 1px;
     padding: 20px;
     border-radius: 5px;
+    padding-bottom: 5rem;
   }
   #consulting-my-services div div img {
     width: 5vw;
