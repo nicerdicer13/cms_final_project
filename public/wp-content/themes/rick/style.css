@@ -1380,10 +1380,6 @@ header {
     margin-bottom: 2vh;
     margin-top: -20vh;
   }
-  .workshops-container .workshop-left {
-    height: 50vh;
-    padding: 5vh 5vw 0 5vw;
-  }
   .workshops-container .workshop-left p {
     margin-left: 3vh;
     margin-right: 40vh;
@@ -1394,10 +1390,6 @@ header {
   .workshops-container .workshop-left .workshop-image-right {
     float: right;
     margin-right: 3vh;
-  }
-  .workshops-container .workshop-right {
-    height: 50vh;
-    padding: 5vh 5vw 0 5vw;
   }
   .workshops-container .workshop-right h4 {
     text-align: right;
@@ -1552,7 +1544,7 @@ header {
     margin-top: 1.5rem;
   }
   .students-section .students-response p {
-    margin-top: 3.4rem;
+    margin-top: 1rem;
     margin-left: 3vh;
     margin-right: 3vh;
     max-width: 35vh;
@@ -1560,8 +1552,8 @@ header {
     font-size: 0.6rem;
   }
   .students-section .students-response .quotation_mark {
-    width: 2.5vh;
-    margin-top: -5rem;
+    width: 3vh;
+    padding-top: 1.3rem;
     margin-left: 3vh;
   }
 }
