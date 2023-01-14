@@ -116,7 +116,6 @@
                     padding: 20px;
                     box-shadow: 4px 3px 8px 1px;
                     justify-content: center;
-                    height: 50vh;
                     border-radius: 10px;
                     margin-bottom: 10vh;
                     min-width: 50vw;
@@ -137,7 +136,7 @@
                         max-width: 40vw;
                         line-height: 1.5;
                         list-style-type: circle;
-                        margin-left: 6.2vw;
+                        margin-left: 9vw;
                         font-size: 1.2rem;
                         margin-bottom: 3vh;
                     }
@@ -157,7 +156,7 @@
                     padding: 40px 20px 40px 20px;
                     box-shadow: 4px 3px 8px 1px;
                     justify-content: center;
-                    height: 50vh;
+                    
                     border-radius: 10px;
                     min-width: 50vw;
 
@@ -169,7 +168,7 @@
                         text-align: right;
                         max-width: 40vw;
                         line-height: 1.5;
-                        margin-left: 5vw;
+                        margin-right: 5vw;
                     }
 
                     li {
@@ -180,7 +179,8 @@
                         text-align: right;
                         font-size: 1.2rem;
                         margin-bottom: 3vh;
-                        margin-left: 5vw;
+                        margin-right: 5vw;
+                       
                     }
                 }
             }

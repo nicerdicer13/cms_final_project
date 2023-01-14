@@ -72,7 +72,7 @@
 
 @include breakpoint($desktop, $max-width) {
     #consulting-my-services {
-        height: 80vh;
+        max-height: 80vh;
         width: 100vw;
         text-align: center;
         margin-top: 15vh;
