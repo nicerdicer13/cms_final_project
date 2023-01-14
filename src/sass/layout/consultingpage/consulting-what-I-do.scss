@@ -250,14 +250,14 @@
         }
 
         .cards {
-            height: 50vh;
-            width: 100vw;
+            height: fit-content;
+            width: fit-content;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            column-gap: 80px;
-            padding: 15%;
+            column-gap: 2%;
+            
             position: relative;
             bottom: 60vh;
 
@@ -271,9 +271,9 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
+                margin-left: 2rem;
 
                 img {
-                    height: 13vh;
                     width: auto;
                     position: relative;
                     right: 40px;
@@ -301,7 +301,6 @@
                 border-radius: 10px;
 
                 img {
-                    height: 13vh;
                     width: auto;
                     position: relative;
                     left: 35px;
@@ -326,9 +325,10 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
+                margin-right: 2rem;
 
                 img {
-                    height: 13vh;
+                    
                     width: auto;
                     position: relative;
                     left: 45%;

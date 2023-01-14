@@ -2220,14 +2220,13 @@ footer {
     font-size: 3rem;
   }
   #consulting-what-i-do .cards {
-    height: 50vh;
-    width: 100vw;
+    height: fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 80px;
-    padding: 15%;
+    column-gap: 2%;
     position: relative;
     bottom: 60vh;
   }
@@ -2241,9 +2240,9 @@ footer {
     padding: 2% 7% 5% 0%;
     border: 1px solid black;
     border-radius: 10px;
+    margin-left: 2rem;
   }
   #consulting-what-i-do .cards [class^=card-1] img {
-    height: 13vh;
     width: auto;
     position: relative;
     right: 40px;
@@ -2268,7 +2267,6 @@ footer {
     border-radius: 10px;
   }
   #consulting-what-i-do .cards [class^=card-2] img {
-    height: 13vh;
     width: auto;
     position: relative;
     left: 35px;
@@ -2290,9 +2288,9 @@ footer {
     padding: 2% 7% 5% 0%;
     border: 1px solid black;
     border-radius: 10px;
+    margin-right: 2rem;
   }
   #consulting-what-i-do .cards [class^=card-3] img {
-    height: 13vh;
     width: auto;
     position: relative;
     left: 45%;
