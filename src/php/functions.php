@@ -5,9 +5,5 @@
     }
     add_action('wp_enqueue_scripts', 'load_styles_and_scripts');
 
-    function my_custom_submit_button($submit_button) {
-        $submit_button = str_replace('class="', 'class="button ', $submit_button);
-        return $submit_button;
-      }
-    add_filter('wpcf7_submit_button', 'my_custom_submit_button');
+    add_theme_support('post-thumbnails');
 ?>

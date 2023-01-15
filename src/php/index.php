@@ -1,3 +1,15 @@
+<?php
+  $whitelist = array('127.0.0.1', '::1');
+  $ids_array;
+
+  if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+      // Localhost
+      $ids_array = [14, 38, 43, 46];
+  } else {
+      // Server
+      $ids_array = [];  
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,62 +40,84 @@
                 <li><a href="#business-consulting">Youtube</a></li>
             </ul>
         </nav>
-        <div class='dreams'>
-            <h2>making my dreams come true - and yours, too</h2>
-            <h3>Hi, I'm Rick!</h3>
-            <p>I’m a lot nicer than I look in this photo, I promise.
-                Glad you’ve found me - scroll down a bit and get to know me. It’ll be worth your while.</p>
-            <a href="#" class="button">START NOW!</a>
-        </div>
-        <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png" />
-        <div class="stats">
-            <div>
-                <p class="number">3</p>
-                <p>books published</p>
-            </div>
-            <div>
-                <p class="number">1M+</p>
-                <p>copies sold</p>
-            </div>
-            <div>
-                <p class="number">150</p>
-                <p>thousand subscribers</p>
-            </div>
-            <div>
-                <p class="number">14</p>
-                <p>years of experience</p>
-            </div>
-        </div>
+            <?php
+            $header_query = new WP_Query(array("p" => $ids_array[0]));
+            if ($header_query->have_posts()) :
+                while ($header_query->have_posts()) : $header_query->the_post();
+                ?>
+                <div class="dreams">
+                    <h2><?php the_title(); ?></h2>
+                    <h3>Hi, I'm Rick</h3>
+                    <?php the_content(); ?>
+                    <a href="#" class="button">START NOW!</a> 
+                </div>
+                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png"/>
+
+                <div class="stats">
+                    <div>
+                        <p class="number">3</p>
+                        <p>books published</p>
+                    </div>
+                    <div>
+                        <p class="number">1M+</p>
+                        <p>copies sold</p>
+                    </div>
+                    <div>
+                        <p class="number">150</p>
+                        <p>thousand subscribers</p>
+                    </div>
+                    <div>
+                        <p class="number">14</p>
+                        <p>years of experience</p>
+                    </div>
+                </div>
+
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
     </header>
+    <main>
     <section id='what_i_do'>
         <h2>here's some of the stuff I do.</h2>
         <div class="cards">
-            <div class="card-1">
-                <img alt="web development icon" src="<?php echo get_template_directory_uri(); ?>/images/web_development.svg" />
-                <h3>Web Development</h3>
-            </div>
-            <div class="card-2">
-                <img alt="business consulting icon" src="<?php echo get_template_directory_uri(); ?>/images/consulting.svg" />
-                <h3>Business Consulting</h3>
-            </div>
-            <div class="card-3">
-                <img alt="content creation icon" src="<?php echo get_template_directory_uri(); ?>/images/content_creation.svg" />
-                <h3>Content Creation</h3>
-            </div>
+            <?php 
+                $counter = 1;
+                $what_i_do_query = new WP_Query(array('category_name' => 'what-i-do', 'order' => 'ASC'));
+                if ($what_i_do_query->have_posts()) :
+                    while ($what_i_do_query->have_posts()) : $what_i_do_query->the_post(); ?>
+
+                    <div class="<?php echo "card-" . strval($counter) ?>">
+                        <?php if (has_post_thumbnail()) {?>
+                            <img alt="icon" src="<?php the_post_thumbnail(); ?>
+                        <?php } ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                    </div>
+                    <?php $counter++ ?>
+            <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
+
         <div class="cards-second-slide">
-            <div class="card-4">
-                <img alt="youtube content icon" src="<?php echo get_template_directory_uri(); ?>/images/youtube_content.svg" />
-                <h3>Youtube Content</h3>
-            </div>
-            <div class="card-5">
-                <img alt="work and travel icon" src="<?php echo get_template_directory_uri(); ?>/images/work_and_travel.svg" />
-                <h3>Work and travel</h3>
-            </div>
-            <div class="card-6">
-                <img alt="writing books icon" src="<?php echo get_template_directory_uri(); ?>/images/writing_books.svg" />
-                <h3>Writing Books</h3>
-            </div>
+        <?php 
+                $what_i_do_second_slide_query = new WP_Query(array('category_name' => 'what-i-do-second-slide', 'order' => 'ASC'));
+                if ($what_i_do_second_slide_query->have_posts()) :
+                    while ($what_i_do_second_slide_query->have_posts()) : $what_i_do_second_slide_query->the_post(); ?>
+
+                    <div class="<?php echo "card-" . strval($counter) ?>">
+                        <?php if (has_post_thumbnail()) {?>
+                            <img alt="icon" src="<?php the_post_thumbnail(); ?> 
+                        <?php } ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                    </div>
+                    <?php $counter++ ?>
+            <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
     </section>
     <section id="books-wrapper">
@@ -111,40 +145,55 @@
     </section>
     <section id="business-consulting">
         <div class="succeed">
-            <div>
-                <h2>helping you succeed, one step at a time</h2>
-                <p>I am an experienced business consultant with a burning passion to helping your ideas succeed.
-                    I'm a firm believer that with the right guidance and support, anyone can achieve their goals and realize their full potential.
-                    That's why I approach each of my clients with a personalized and easy-going style, taking the time to understand their unique needs and challenges.</p>
-                <a class="button">Start now</a>
-            </div>
-            <img alt="a man metaphorically stepping up to the highest level - he is displayed standing on the highest step of stairs" src="<?php echo get_template_directory_uri(); ?>/images/helping-you-succeed.svg" />
+            <?php $succeed_query = new WP_Query(array("p" => $ids_array[1])); 
+                if ($succeed_query->have_posts()) :
+                    while ($succeed_query->have_posts()) : $succeed_query->the_post();?>
+                    <div>
+                        <h2><?php the_title(); ?></h2>
+                        <?php the_content(); ?>
+                        <a class="button">Start now</a>
+                    </div>
+                    <?php if (has_post_thumbnail()) {?>
+                            <img alt="a man metaphorically stepping up to the highest level - he is displayed standing on the highest step of stairs" src="<?php the_post_thumbnail(); ?>
+                    <?php } ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
         <div class="learning-together">
-            <img alt="a person teaching another person how to code" src="<?php echo get_template_directory_uri(); ?>/images/learning-together.svg" />
-            <div>
-                <h2>learning, growing and achieving together</h2>
-                <p>I believe that everyone has the potential to achieve great things.
-                    But sometimes, we all need a little guidance and support to help us unlock that potential and turn our dreams into reality.
-                    Whether you want to start a business, become self employed or start a career in web development, I'm here to help.
-                    Join me in one of my upcoming workshops and let's work together to achieve your goals.</p>
-                <a class="button">Start now</a>
-            </div>
+            <?php $learning_together_query = new WP_Query(array("p" => $ids_array[2])); 
+                if ($learning_together_query->have_posts()) :
+                    while ($learning_together_query->have_posts()) : $learning_together_query->the_post();
+                        if (has_post_thumbnail()) {?>
+                            <img alt="a person teaching another person how to code" src="<?php the_post_thumbnail();?> 
+                    <?php } ?>
+                    <div>
+                        <h2><?php the_title(); ?></h2>
+                        <?php the_content(); ?>
+                        <a class="button">Start now</a>
+                    </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
     </section>
     <section id="about-me">
-        <img alt="a picture of me with my dog, while climbing a mountain" src="<?php echo get_template_directory_uri(); ?>/images/about-me.png" />
-        <div>
-            <h2>About me</h2>
-            <p>I believe that new challenges are nothing to be scared of.
-                They make life and business exciting.
-                I’m all for creating something new and valuable.
-                I am passionate about empowering people and companies.
-                I’m purpose-driven and I thrive to find solutions that make sense in our ever-changing reality.
-                I’m a connector with excellent interpersonal skills. I am a valuable team member, who is driven by creating positive connections. </p>
-            <a class="button">Make me part of your team</a>
-        </div>
+        <?php $about_me_query = new WP_Query(array("p" => $ids_array[3])); 
+                if ($about_me_query->have_posts()) :
+                    while ($about_me_query->have_posts()) : $about_me_query->the_post();
+                        if (has_post_thumbnail()) {?>
+                            <img alt="a picture of me with my dog, while climbing a mountain" src="<?php the_post_thumbnail();?> 
+                    <?php } ?>
+                    <div>
+                        <h2><?php the_title(); ?></h2>
+                        <?php the_content(); ?>
+                        <a class="button">Make me part of your team</a>
+                    </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
     </section>
+</main>
     <?php get_footer(); ?>
     <?php wp_footer(); ?>
 </body>
