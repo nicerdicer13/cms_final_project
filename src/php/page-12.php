@@ -1,3 +1,16 @@
+<?php
+  $whitelist = array('127.0.0.1', '::1');
+  $ids_array;
+
+  if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+      // Localhost
+      $ids_array = [53, 49, 51, 56, 59, 62, 65];
+  } else {
+      // Server
+      $ids_array = [];  
+  }
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -34,7 +47,7 @@
         </nav>
         <div class='workshop-header'>
             <?php
-            $header_query = new WP_Query(array('p' => 18));
+            $header_query = new WP_Query(array('p' => $ids_array[0]));
             if ($header_query->have_posts()) :
                 while ($header_query->have_posts()) : $header_query->the_post(); ?>
                     <h2>
@@ -48,7 +61,7 @@
     <section class="w-flex-container">
         <div class="left-block">
             <?php
-            $about_query = new WP_Query(array('p' => 20));
+            $about_query = new WP_Query(array('p' => $ids_array[1]));
             if ($about_query->have_posts()) :
                 while ($about_query->have_posts()) : $about_query->the_post(); ?>
                     <h3>
@@ -61,7 +74,7 @@
         </div>
         <div class="right-block">
             <?php
-            $register_query = new WP_Query(array('p' => 22));
+            $register_query = new WP_Query(array('p' => $ids_array[2]));
             if ($register_query->have_posts()) :
                 while ($register_query->have_posts()) : $register_query->the_post(); ?>
                     <h3>
@@ -77,55 +90,91 @@
 
     <section class="workshops-container">
         <div class="workshop-left">
-            <h4>Web Development, Self Employment</h4>
-            <h3>Become part of the best community there is.</h3>
-            <p>
-                Are you tired of your dead-end job and ready to take control of your career?
-                My workshop on web development and self employment is here to save the day!
-                Sign up now and let's get started right away!
-            </p>
-            <a href="#" class="button">Sign up Now</a>
-            <img alt="this is a picture of me" class="workshop-image-right" src="<?php echo get_template_directory_uri(); ?>/images/workshop_webdev.svg" />
+            <?php
+            $workshop_query = new WP_Query(array('p' => $ids_array[3]));
+            if ($workshop_query->have_posts()) :
+                while ($workshop_query->have_posts()) : $workshop_query->the_post(); ?>
+                    <h4>Web Development, Self Employment</h4>
+                    <h3>
+                        <?php the_title(); ?>
+                    </h3>
+                    <?php the_content(); ?>
+                    <a href="#" class="button">Sign up Now</a>
+                    <?php if (has_post_thumbnail()) {?>
+                        <span class="workshop-image-right">
+                        <?php the_post_thumbnail(); ?>
+                        </span>
+                    <?php } ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </section>
 
     <section class="workshops-container">
         <div class="workshop-right">
-            <h4>Starting a Business, Business Consulting</h4>
-            <h3>Fulfill your dreams. Start today.</h3>
-            <p>
-                I am a business consultant with over 10 years of experience.
-                I have a burning passion for helping others become their best.
-                What are you waiting for?
-            </p>
-            <a href="#" class="button">Sign up Now</a>
-            <img alt="this is a picture of me" class="workshop-image-right" src="<?php echo get_template_directory_uri(); ?>/images/workshop_consulting.svg" />
+            <?php
+            $workshop_query = new WP_Query(array('p' => $ids_array[4]));
+            if ($workshop_query->have_posts()) :
+                while ($workshop_query->have_posts()) : $workshop_query->the_post(); ?>
+                    <h4>Starting a Business, Business Consulting</h4>
+                    <h3>
+                        <?php the_title(); ?>
+                    </h3>
+                    <?php the_content(); ?>
+                    <a href="#" class="button">Sign up Now</a>
+                    <?php if (has_post_thumbnail()) {?>
+                        <span class="workshop-image-right">
+                        <?php the_post_thumbnail(); ?>
+                        </span>
+                    <?php } ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </section>
     <section class="workshops-container">
         <div class="workshop-left">
-            <h4>Work and Travel, self Employment</h4>
-            <h3>I’m living the dream. You can, too.</h3>
-            <p>
-                Travelling the world while working jobs I love has always been a dream.
-                Well, except for when I was a kid and wanted to become a world-renowned scientist.
-                Let me teach you my ways and enable you to live your dream.
-            </p>
-            <a href="#" class="button">Sign up Now</a>
-            <img alt="this is a picture of me" class="workshop-image-right" src="<?php echo get_template_directory_uri(); ?>/images/workshop_travel.svg" />
+            <?php
+            $workshop_query = new WP_Query(array('p' => $ids_array[5]));
+            if ($workshop_query->have_posts()) :
+                while ($workshop_query->have_posts()) : $workshop_query->the_post(); ?>
+                    <h4>Work and Travel, Self Employment</h4>
+                    <h3>
+                        <?php the_title(); ?>
+                    </h3>
+                    <?php the_content(); ?>
+                    <a href="#" class="button">Sign up Now</a>
+                    <?php if (has_post_thumbnail()) {?>
+                        <span class="workshop-image-right">
+                        <?php the_post_thumbnail(); ?>
+                        </span>
+                    <?php } ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </section>
     <section class="workshops-container">
         <div class="workshop-right">
-            <h4>Content Creation</h4>
-            <h3>Content creation is the job of the future.</h3>
-            <p>
-                People all over the world are consuming more digital content than ever before.
-                This is amazing news, if you are striving to be a content creator!
-                Let me show you how to start and keep growing.
-            </p>
-            <a href="#" class="button">Sign up Now</a>
-            <img alt="this is a picture of me" class="workshop-image-right" src="<?php echo get_template_directory_uri(); ?>/images/workshop_content.svg" />
+            <?php
+            $workshop_query = new WP_Query(array('p' => $ids_array[6]));
+            if ($workshop_query->have_posts()) :
+                while ($workshop_query->have_posts()) : $workshop_query->the_post(); ?>
+                    <h4>Content Creation</h4>
+                    <h3>
+                        <?php the_title(); ?>
+                    </h3>
+                    <?php the_content(); ?>
+                    <a href="#" class="button">Sign up Now</a>
+                    <?php if (has_post_thumbnail()) {?>
+                        <span class="workshop-image-right">
+                        <?php the_post_thumbnail(); ?>
+                        </span>
+                    <?php } ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </section>
 
@@ -144,7 +193,7 @@
         </div>
     </section>
 
-    <img class="image-students" src="<?php echo get_template_directory_uri(); ?>/images/workshop_students.jpeg" alt="Picture of students sitting on stairs">
+    <img class="image-students" src="<?php echo get_template_directory_uri(); ?>/images/workshops-students-2.jpg" alt="Picture of students sitting on stairs">
 
 
 

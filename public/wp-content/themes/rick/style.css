@@ -1376,7 +1376,11 @@ header {
     padding: 0.6rem 1rem;
   }
   .workshops-container .workshop-image-right {
+    height: fit-content;
+  }
+  .workshops-container .workshop-image-right img {
     width: 30vh;
+    height: auto;
     margin-bottom: 2vh;
     margin-top: -20vh;
   }
@@ -1387,7 +1391,7 @@ header {
   .workshops-container .workshop-left .button {
     margin-left: 3vh;
   }
-  .workshops-container .workshop-left .workshop-image-right {
+  .workshops-container .workshop-left .workshop-image-right img {
     float: right;
     margin-right: 3vh;
   }
@@ -1452,7 +1456,11 @@ header {
     transform: translateX(-50%);
   }
   .workshops-container .workshop-image-right {
+    height: fit-content;
+  }
+  .workshops-container .workshop-image-right img {
     width: 15vh;
+    height: auto;
     position: absolute;
     top: 15%;
     left: 50%;
