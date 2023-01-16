@@ -1729,14 +1729,14 @@ footer {
     box-shadow: 4px 3px 8px 1px;
     border-radius: 5px;
   }
-  #consulting-stats div h3 {
+  #consulting-stats div .consulting-number-text {
     color: white;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: bold;
     text-align: center;
   }
-  #consulting-stats div p {
+  #consulting-stats div .consulting-number {
     color: hsl(45deg, 100%, 50%);
     font-size: 3rem;
     font-weight: bold;
@@ -1763,12 +1763,12 @@ footer {
     box-shadow: 4px 3px 8px 1px;
     border-radius: 5px;
   }
-  #consulting-stats div h3 {
+  #consulting-stats div .consulting-number-text {
     color: white;
     text-transform: uppercase;
     font-size: 0.8rem;
   }
-  #consulting-stats div p {
+  #consulting-stats div .consulting-number {
     color: hsl(45deg, 100%, 50%);
     font-size: 3rem;
     font-weight: bold;
@@ -1858,11 +1858,8 @@ footer {
     height: fit-content;
     width: 100vw;
   }
-  #working-with-me img {
+  #working-with-me span img {
     width: 30vw;
-  }
-  #working-with-me .img-section-1 {
-    margin-right: 5vw;
   }
   #working-with-me .section-1 {
     display: flex;
@@ -1900,6 +1897,12 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 3vh;
   }
+  #working-with-me .section-1 .img-section-1 {
+    height: fit-content;
+  }
+  #working-with-me .section-1 .img-section-1 img {
+    margin-right: 5vw;
+  }
   #working-with-me .section-2 {
     display: flex;
     flex-direction: row;
@@ -1936,7 +1939,10 @@ footer {
     margin-bottom: 3vh;
     margin-right: 5vw;
   }
-  #working-with-me .img-section-2 {
+  #working-with-me .section-2 .img-section-2 {
+    height: fit-content;
+  }
+  #working-with-me .section-2 .img-section-2 img {
     margin-left: 5vw;
   }
 }
@@ -1970,9 +1976,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 50vh;
   }
-  #consulting-my-services div div img {
+  #consulting-my-services div div .icon-wrapper img {
     width: 15vw;
     height: auto;
     margin-bottom: 20px;
@@ -2037,7 +2043,7 @@ footer {
     border-radius: 5px;
     padding-bottom: 5rem;
   }
-  #consulting-my-services div div img {
+  #consulting-my-services div div .icon-wrapper img {
     width: 5vw;
   }
   #consulting-my-services div div h3 {
