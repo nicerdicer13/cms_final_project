@@ -225,7 +225,7 @@ html, body {
     font-size: 2rem;
     font-weight: bold;
   }
-  .stats div p {
+  .stats div .number-text {
     font-size: 1rem;
   }
   .workshop-header {
@@ -438,7 +438,7 @@ header {
     font-size: 3.5rem;
     font-weight: bold;
   }
-  .stats div p {
+  .stats div .number-text {
     font-size: 1.2rem;
   }
 }
@@ -477,7 +477,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards [class^=card-1] img {
+  #what_i_do .cards [class^=card-1] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards [class^=card-1] .icon-wrapper img {
     width: 70%;
     position: relative;
     right: 125px;
@@ -501,7 +504,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards [class^=card-2] img {
+  #what_i_do .cards [class^=card-2] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards [class^=card-2] .icon-wrapper img {
     width: 50%;
     position: relative;
     right: 58px;
@@ -526,20 +532,23 @@ header {
     border-radius: 10px;
     display: none;
   }
-  #what_i_do .cards [class^=card-3] img {
+  #what_i_do .cards [class^=card-3] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards [class^=card-3] .icon-wrapper img {
     width: 70%;
     position: relative;
     right: 125px;
     bottom: 34px;
   }
-  #what_i_do .cards [class^=card-3] h3 {
+  #what_i_do .cards h3 {
     font-size: 1rem;
     text-align: left;
     margin-left: 15%;
     max-width: 10vw;
     margin-top: 3%;
   }
-  #what_i_do .cards-second-slide {
+  .cards-second-slide {
     height: 50vh;
     width: 100vw;
     display: flex;
@@ -551,7 +560,7 @@ header {
     background-color: hsl(204deg, 5%, 19%);
     display: none;
   }
-  #what_i_do .cards-second-slide [class^=card-4] {
+  .cards-second-slide [class^=card-4] {
     display: flex;
     flex-direction: column;
     background-color: hsl(0deg, 1%, 15%);
@@ -562,20 +571,23 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards-second-slide [class^=card-4] img {
+  .cards-second-slide [class^=card-4] .icon-wrapper {
+    height: fit-content;
+  }
+  .cards-second-slide [class^=card-4] .icon-wrapper img {
     width: 50%;
     position: relative;
     right: 58px;
     bottom: 29px;
   }
-  #what_i_do .cards-second-slide [class^=card-4] h3 {
+  .cards-second-slide [class^=card-4] h3 {
     font-size: 1rem;
     text-align: left;
     margin-left: 15%;
     max-width: 10vw;
     margin-top: 3%;
   }
-  #what_i_do .cards-second-slide [class^=card-5] {
+  .cards-second-slide [class^=card-5] {
     display: flex;
     flex-direction: column;
     background-color: hsl(0deg, 1%, 15%);
@@ -586,20 +598,23 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards-second-slide [class^=card-5] img {
+  .cards-second-slide [class^=card-5] .icon-wrapper {
+    height: fit-content;
+  }
+  .cards-second-slide [class^=card-5] .icon-wrapper img {
     width: 70%;
     position: relative;
     right: 125px;
     bottom: 34px;
   }
-  #what_i_do .cards-second-slide [class^=card-5] h3 {
+  .cards-second-slide [class^=card-5] h3 {
     font-size: 1rem;
     text-align: left;
     margin-left: 15%;
     max-width: 10vw;
     margin-top: 3%;
   }
-  #what_i_do .cards-second-slide [class^=card-6] {
+  .cards-second-slide [class^=card-6] {
     display: flex;
     flex-direction: column;
     background-color: hsl(0deg, 1%, 15%);
@@ -610,13 +625,16 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards-second-slide [class^=card-6] img {
+  .cards-second-slide [class^=card-6] .icon-wrapper {
+    height: fit-content;
+  }
+  .cards-second-slide [class^=card-6] .icon-wrapper img {
     width: 50%;
     position: relative;
     right: 58px;
     bottom: 29px;
   }
-  #what_i_do .cards-second-slide [class^=card-6] h3 {
+  .cards-second-slide [class^=card-6] h3 {
     font-size: 1rem;
     text-align: left;
     margin-left: 15%;
@@ -656,7 +674,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards [class^=card-1] img {
+  #what_i_do .cards [class^=card-1] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards [class^=card-1] .icon-wrapper img {
     height: 17vh;
     width: auto;
     position: relative;
@@ -681,7 +702,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards [class^=card-2] img {
+  #what_i_do .cards [class^=card-2] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards [class^=card-2] .icon-wrapper img {
     height: 13vh;
     width: auto;
     position: relative;
@@ -705,7 +729,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards [class^=card-3] img {
+  #what_i_do .cards [class^=card-3] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards [class^=card-3] .icon-wrapper img {
     height: 17vh;
     width: auto;
     position: relative;
@@ -741,7 +768,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards-second-slide [class^=card-4] img {
+  #what_i_do .cards-second-slide [class^=card-4] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards-second-slide [class^=card-4] .icon-wrapper img {
     height: 17vh;
     width: auto;
     position: relative;
@@ -766,7 +796,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards-second-slide [class^=card-5] img {
+  #what_i_do .cards-second-slide [class^=card-5] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards-second-slide [class^=card-5] .icon-wrapper img {
     height: 13vh;
     width: auto;
     position: relative;
@@ -790,7 +823,10 @@ header {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #what_i_do .cards-second-slide [class^=card-6] img {
+  #what_i_do .cards-second-slide [class^=card-6] .icon-wrapper {
+    height: fit-content;
+  }
+  #what_i_do .cards-second-slide [class^=card-6] .icon-wrapper img {
     height: 17vh;
     width: auto;
     position: relative;
@@ -1030,7 +1066,10 @@ header {
     max-width: 80vw;
     font-size: 0.8rem;
   }
-  #business-consulting .succeed img {
+  #business-consulting .succeed .icon-wrapper {
+    height: fit-content;
+  }
+  #business-consulting .succeed .icon-wrapper img {
     align-self: center;
     width: 90%;
     height: auto;
@@ -1056,7 +1095,10 @@ header {
     max-width: 80vw;
     font-size: 0.8rem;
   }
-  #business-consulting .learning-together img {
+  #business-consulting .learning-together .icon-wrapper {
+    height: fit-content;
+  }
+  #business-consulting .learning-together .icon-wrapper img {
     align-self: center;
     width: 90%;
     height: auto;
@@ -1099,8 +1141,11 @@ header {
     max-width: 45vw;
     font-size: 1.2rem;
   }
-  #business-consulting .succeed img {
-    width: 40%;
+  #business-consulting .succeed .icon-wrapper {
+    height: fit-content;
+  }
+  #business-consulting .succeed .icon-wrapper img {
+    width: 100%;
     height: auto;
     position: relative;
     bottom: 35px;
@@ -1130,8 +1175,11 @@ header {
   #business-consulting .learning-together div .button {
     float: right;
   }
-  #business-consulting .learning-together img {
-    width: 40%;
+  #business-consulting .learning-together .icon-wrapper {
+    height: fit-content;
+  }
+  #business-consulting .learning-together .icon-wrapper img {
+    width: 100%;
     height: auto;
     position: relative;
     bottom: 35px;

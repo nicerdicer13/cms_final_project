@@ -55,20 +55,20 @@
 
                 <div class="stats">
                     <div>
-                        <p class="number">3</p>
-                        <p>books published</p>
+                        <p class="number"><?php echo get_post_custom_values('number')[0]; ?></p>
+                        <p class="number-text"><?php echo get_post_custom_values('number-text')[0]; ?></p>
                     </div>
                     <div>
-                        <p class="number">1M+</p>
-                        <p>copies sold</p>
+                        <p class="number"><?php echo get_post_custom_values('number')[1]; ?></p>
+                        <p class="number-text"><?php echo get_post_custom_values('number-text')[1]; ?></p>
                     </div>
                     <div>
-                        <p class="number">150</p>
-                        <p>thousand subscribers</p>
+                        <p class="number"><?php echo get_post_custom_values('number')[2]; ?></p>
+                        <p class="number-text"><?php echo get_post_custom_values('number-text')[2]; ?></p>
                     </div>
                     <div>
-                        <p class="number">14</p>
-                        <p>years of experience</p>
+                        <p class="number"><?php echo get_post_custom_values('number')[3]; ?></p>
+                        <p class="number-text"><?php echo get_post_custom_values('number-text')[3]; ?></p>
                     </div>
                 </div>
 
@@ -88,7 +88,9 @@
 
                     <div class="<?php echo "card-" . strval($counter) ?>">
                         <?php if (has_post_thumbnail()) {?>
-                            <img alt="icon" src="<?php the_post_thumbnail(); ?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
                         <?php } ?>
                         <h3>
                             <?php the_title(); ?>
@@ -108,7 +110,9 @@
 
                     <div class="<?php echo "card-" . strval($counter) ?>">
                         <?php if (has_post_thumbnail()) {?>
-                            <img alt="icon" src="<?php the_post_thumbnail(); ?> 
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
                         <?php } ?>
                         <h3>
                             <?php the_title(); ?>
@@ -153,9 +157,11 @@
                         <?php the_content(); ?>
                         <a class="button">Start now</a>
                     </div>
-                    <?php if (has_post_thumbnail()) {?>
-                            <img alt="a man metaphorically stepping up to the highest level - he is displayed standing on the highest step of stairs" src="<?php the_post_thumbnail(); ?>
-                    <?php } ?>
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
@@ -165,8 +171,10 @@
                 if ($learning_together_query->have_posts()) :
                     while ($learning_together_query->have_posts()) : $learning_together_query->the_post();
                         if (has_post_thumbnail()) {?>
-                            <img alt="a person teaching another person how to code" src="<?php the_post_thumbnail();?> 
-                    <?php } ?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
                     <div>
                         <h2><?php the_title(); ?></h2>
                         <?php the_content(); ?>
@@ -191,18 +199,7 @@
                     </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
-        <!-- <img alt="a picture of me with my dog, while climbing a mountain" src="<?php echo get_template_directory_uri(); ?>/images/about-me.png" />
-        <div>
-            <h2>About me</h2>
-            <p>I believe that new challenges are nothing to be scared of.
-                They make life and business exciting.
-                I’m all for creating something new and valuable.
-                I am passionate about empowering people and companies.
-                I’m purpose-driven and I thrive to find solutions that make sense in our ever-changing reality.
-                I’m a connector with excellent interpersonal skills. I am a valuable team member, who is driven by creating positive connections. </p>
-            <a class="button">Make me part of your team</a>
-        </div> -->
+            <?php wp_reset_postdata(); ?>
     </section>
 </main>
     <?php get_footer(); ?>
