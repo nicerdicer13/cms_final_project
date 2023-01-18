@@ -51,7 +51,7 @@
             <ul>
                 <li><a href="#">Consulting</a></li>
                 <li><a href="workshops">Workshops</a></li>
-                <li><a href="#news">Youtube</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
             </ul>
         </nav>
         <div class='consulting-header'>
