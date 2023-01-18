@@ -17,7 +17,7 @@
                     <div>
                         <h2> <?php the_title(); ?> </h2>
                         <?php the_content(); ?>
-                        <span><?php echo get_post_custom_values('year')[0]; ?><span>
+                        <span><?php echo get_post_custom_values('year')[0]; ?></span>
                     </div>
                     <div class="attributions">
                         <div>
