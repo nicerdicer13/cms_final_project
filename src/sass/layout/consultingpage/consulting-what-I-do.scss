@@ -2,7 +2,7 @@
     font-family: 'Inter';
 }
 
-@include breakpoint(0, $mobile) { 
+@include breakpoint(0, $mobile) {
     #consulting-what-i-do {
         width: 100vw;
         height: 40vh;
@@ -12,7 +12,6 @@
         grid-template-rows: 70% 30%;
         position: relative;
         bottom: 40vh;
-
         .what-i-do-image {
             grid-row: 1/ span 1;
             background-image: url("./images/consulting-background.png");
@@ -20,18 +19,15 @@
             background-repeat: no-repeat;
             width: 100vw;
         }
-
         .what-i-do-dark-background {
             background-color: $bgconsulting;
             width: 100vw;
             grid-row: 2/ span 1;
         }
-
         h2 {
             color: white;
             font-size: 3rem;
         }
-
         .cards {
             height: 30vh;
             width: 100vw;
@@ -41,7 +37,6 @@
             column-gap: 20px;
             position: relative;
             bottom: 30vh;
-
             [class^=card-1] {
                 display: flex;
                 flex-direction: column;
@@ -52,14 +47,15 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    width: 50%;
-                    position: relative;
-                    right: -13px;
-                    bottom: -10px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: 50%;
+                        position: relative;
+                        right: -13px;
+                        bottom: -10px;
+                    }
                 }
-
                 h3 {
                     font-size: 1rem;
                     text-align: left;
@@ -79,14 +75,15 @@
                 border: 1px solid black;
                 border-radius: 10px;
                 display: none;
-
-                img {
-                    width: 50%;
-                    position: relative;
-                    right: 58px;
-                    bottom: 29px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: 50%;
+                        position: relative;
+                        right: 58px;
+                        bottom: 29px;
+                    }
                 }
-
                 h3 {
                     font-size: 1rem;
                     text-align: left;
@@ -95,7 +92,6 @@
                     margin-top: 3%;
                 }
             }
-
             [class^=card-3] {
                 display: flex;
                 flex-direction: column;
@@ -107,14 +103,15 @@
                 border: 1px solid black;
                 border-radius: 10px;
                 display: none;
-
-                img {
-                    width: 70%;
-                    position: relative;
-                    right: 125px;
-                    bottom: 34px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: 70%;
+                        position: relative;
+                        right: 125px;
+                        bottom: 34px;
+                    }
                 }
-
                 h3 {
                     font-size: 1rem;
                     text-align: left;
@@ -124,7 +121,6 @@
                 }
             }
         }
-
         .cards-second-slide {
             height: 50vh;
             width: 100vw;
@@ -136,7 +132,6 @@
             padding: 15%;
             background-color: $bggray;
             display: none;
-
             [class^=card-4] {
                 display: flex;
                 flex-direction: column;
@@ -147,14 +142,15 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    width: 50%;
-                    position: relative;
-                    right: 58px;
-                    bottom: 29px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: 50%;
+                        position: relative;
+                        right: 58px;
+                        bottom: 29px;
+                    }
                 }
-
                 h3 {
                     font-size: 1rem;
                     text-align: left;
@@ -163,7 +159,6 @@
                     margin-top: 3%;
                 }
             }
-
             [class^=card-5] {
                 display: flex;
                 flex-direction: column;
@@ -174,14 +169,15 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    width: 70%;
-                    position: relative;
-                    right: 125px;
-                    bottom: 34px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: 70%;
+                        position: relative;
+                        right: 125px;
+                        bottom: 34px;
+                    }
                 }
-
                 h3 {
                     font-size: 1rem;
                     text-align: left;
@@ -190,7 +186,6 @@
                     margin-top: 3%;
                 }
             }
-
             [class^=card-6] {
                 display: flex;
                 flex-direction: column;
@@ -201,14 +196,15 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    width: 50%;
-                    position: relative;
-                    right: 58px;
-                    bottom: 29px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: 50%;
+                        position: relative;
+                        right: 58px;
+                        bottom: 29px;
+                    }
                 }
-
                 h3 {
                     font-size: 1rem;
                     text-align: left;
@@ -221,7 +217,8 @@
     }
 }
 
-@include breakpoint($desktop, $max-width) {
+@include breakpoint($desktop,
+$max-width) {
     #consulting-what-i-do {
         height: 100vh;
         background-color: $bggray;
@@ -230,25 +227,21 @@
         grid-template-columns: 100%;
         grid-template-rows: 70% 30%;
         margin-bottom: 5vh;
-
         .what-i-do-image {
             grid-row: 1/ span 1;
             background-image: url("./images/consulting-background.png");
             background-size: 100%;
             width: 100vw;
         }
-
         .what-i-do-dark-background {
             background-color: $bgconsulting;
             width: 100vw;
             grid-row: 2/ span 1;
         }
-
         h2 {
             color: white;
             font-size: 3rem;
         }
-
         .cards {
             height: fit-content;
             width: fit-content;
@@ -257,10 +250,8 @@
             justify-content: center;
             align-items: center;
             column-gap: 2%;
-            
             position: relative;
             bottom: 60vh;
-
             [class^=card-1] {
                 display: flex;
                 flex-direction: column;
@@ -272,14 +263,15 @@
                 border: 1px solid black;
                 border-radius: 10px;
                 margin-left: 2rem;
-
-                img {
-                    width: auto;
-                    position: relative;
-                    right: 40px;
-                    bottom: 9px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: auto;
+                        position: relative;
+                        right: 40px;
+                        bottom: 9px;
+                    }
                 }
-
                 h3 {
                     font-size: 2rem;
                     text-align: left;
@@ -288,7 +280,6 @@
                     margin-top: 15%;
                 }
             }
-
             [class^=card-2] {
                 display: flex;
                 flex-direction: column;
@@ -299,13 +290,14 @@
                 width: 30vw;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    width: auto;
-                    position: relative;
-                    left: 35px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: auto;
+                        position: relative;
+                        left: 35px;
+                    }
                 }
-
                 h3 {
                     font-size: 2rem;
                     text-align: left;
@@ -314,7 +306,6 @@
                     margin-top: 18%;
                 }
             }
-
             [class^=card-3] {
                 display: flex;
                 flex-direction: column;
@@ -326,15 +317,15 @@
                 border: 1px solid black;
                 border-radius: 10px;
                 margin-right: 2rem;
-
-                img {
-                    
-                    width: auto;
-                    position: relative;
-                    left: 45%;
-                    bottom: 2px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        width: auto;
+                        position: relative;
+                        left: 45%;
+                        bottom: 2px;
+                    }
                 }
-
                 h3 {
                     font-size: 2rem;
                     text-align: left;
@@ -344,7 +335,6 @@
                 }
             }
         }
-
         .cards-second-slide {
             height: 50vh;
             width: 100vw;
@@ -356,7 +346,6 @@
             padding: 15%;
             background-color: $bggray;
             display: none;
-
             [class^=card-4] {
                 display: flex;
                 flex-direction: column;
@@ -367,15 +356,16 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    height: 13vh;
-                    width: auto;
-                    position: relative;
-                    left: 45%;
-                    bottom: 2px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        height: 13vh;
+                        width: auto;
+                        position: relative;
+                        left: 45%;
+                        bottom: 2px;
+                    }
                 }
-
                 h3 {
                     font-size: 2rem;
                     text-align: left;
@@ -384,7 +374,6 @@
                     margin-top: 15%;
                 }
             }
-
             [class^=card-5] {
                 display: flex;
                 flex-direction: column;
@@ -395,14 +384,15 @@
                 width: 30vw;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    height: 13vh;
-                    width: auto;
-                    position: relative;
-                    left: 35px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        height: 13vh;
+                        width: auto;
+                        position: relative;
+                        left: 35px;
+                    }
                 }
-
                 h3 {
                     font-size: 2rem;
                     text-align: left;
@@ -411,7 +401,6 @@
                     margin-top: 18%;
                 }
             }
-
             [class^=card-6] {
                 display: flex;
                 flex-direction: column;
@@ -422,15 +411,16 @@
                 padding: 2% 7% 5% 0%;
                 border: 1px solid black;
                 border-radius: 10px;
-
-                img {
-                    height: 13vh;
-                    width: auto;
-                    position: relative;
-                    right: 40px;
-                    bottom: 9px;
+                .icon-wrapper {
+                    height: fit-content;
+                    img {
+                        height: 13vh;
+                        width: auto;
+                        position: relative;
+                        right: 40px;
+                        bottom: 9px;
+                    }
                 }
-
                 h3 {
                     font-size: 2rem;
                     text-align: left;

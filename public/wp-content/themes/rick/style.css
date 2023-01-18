@@ -854,7 +854,7 @@ header {
     padding: 2rem 1rem 2rem 1rem;
   }
   #books-wrapper .book-desktop {
-    display: none;
+    height: 30vh;
   }
   #books-wrapper h3 {
     text-transform: uppercase;
@@ -872,7 +872,7 @@ header {
   }
   #books-wrapper .display {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: relative;
     left: 25px;
     margin-bottom: 7vh;
@@ -922,9 +922,10 @@ header {
     flex-direction: row;
     width: fit-content;
     align-self: center;
+    margin-left: 25vw;
   }
   #books-wrapper .three-books-display img {
-    margin-left: 20px;
+    margin-left: -110px;
   }
   #books-wrapper .button {
     font-size: 0.9rem;
@@ -946,9 +947,6 @@ header {
     display: flex;
     flex-direction: column;
     padding: 3rem;
-  }
-  #books-wrapper .book-phone {
-    display: none;
   }
   #books-wrapper h3 {
     text-transform: uppercase;
@@ -2108,7 +2106,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards [class^=card-1] img {
+  #consulting-what-i-do .cards [class^=card-1] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards [class^=card-1] .icon-wrapper img {
     width: 50%;
     position: relative;
     right: -13px;
@@ -2133,7 +2134,10 @@ footer {
     border-radius: 10px;
     display: none;
   }
-  #consulting-what-i-do .cards [class^=card-2] img {
+  #consulting-what-i-do .cards [class^=card-2] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards [class^=card-2] .icon-wrapper img {
     width: 50%;
     position: relative;
     right: 58px;
@@ -2158,7 +2162,10 @@ footer {
     border-radius: 10px;
     display: none;
   }
-  #consulting-what-i-do .cards [class^=card-3] img {
+  #consulting-what-i-do .cards [class^=card-3] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards [class^=card-3] .icon-wrapper img {
     width: 70%;
     position: relative;
     right: 125px;
@@ -2194,7 +2201,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards-second-slide [class^=card-4] img {
+  #consulting-what-i-do .cards-second-slide [class^=card-4] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] .icon-wrapper img {
     width: 50%;
     position: relative;
     right: 58px;
@@ -2218,7 +2228,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards-second-slide [class^=card-5] img {
+  #consulting-what-i-do .cards-second-slide [class^=card-5] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] .icon-wrapper img {
     width: 70%;
     position: relative;
     right: 125px;
@@ -2242,7 +2255,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards-second-slide [class^=card-6] img {
+  #consulting-what-i-do .cards-second-slide [class^=card-6] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] .icon-wrapper img {
     width: 50%;
     position: relative;
     right: 58px;
@@ -2304,7 +2320,10 @@ footer {
     border-radius: 10px;
     margin-left: 2rem;
   }
-  #consulting-what-i-do .cards [class^=card-1] img {
+  #consulting-what-i-do .cards [class^=card-1] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards [class^=card-1] .icon-wrapper img {
     width: auto;
     position: relative;
     right: 40px;
@@ -2328,7 +2347,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards [class^=card-2] img {
+  #consulting-what-i-do .cards [class^=card-2] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards [class^=card-2] .icon-wrapper img {
     width: auto;
     position: relative;
     left: 35px;
@@ -2352,7 +2374,10 @@ footer {
     border-radius: 10px;
     margin-right: 2rem;
   }
-  #consulting-what-i-do .cards [class^=card-3] img {
+  #consulting-what-i-do .cards [class^=card-3] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards [class^=card-3] .icon-wrapper img {
     width: auto;
     position: relative;
     left: 45%;
@@ -2388,7 +2413,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards-second-slide [class^=card-4] img {
+  #consulting-what-i-do .cards-second-slide [class^=card-4] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-4] .icon-wrapper img {
     height: 13vh;
     width: auto;
     position: relative;
@@ -2413,7 +2441,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards-second-slide [class^=card-5] img {
+  #consulting-what-i-do .cards-second-slide [class^=card-5] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-5] .icon-wrapper img {
     height: 13vh;
     width: auto;
     position: relative;
@@ -2437,7 +2468,10 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
   }
-  #consulting-what-i-do .cards-second-slide [class^=card-6] img {
+  #consulting-what-i-do .cards-second-slide [class^=card-6] .icon-wrapper {
+    height: fit-content;
+  }
+  #consulting-what-i-do .cards-second-slide [class^=card-6] .icon-wrapper img {
     height: 13vh;
     width: auto;
     position: relative;

@@ -139,7 +139,6 @@
         <h3>Preorder my new book now</h3>
         <h2>JavaScript - The Apocalypse is coming</h2>
         <div class="display">
-            <img class="book-phone" alt="the cover of my new book" src="<?php echo get_template_directory_uri(); ?>/images/book-3-phone.svg" />
             <div>
                 <h4>Releasing the third book of my popular series ”Why you rightfully hate JavaScript!</h4>
                 <p>Hey everyone! I am excited to announce that my new book is releasing in just a few weeks.
@@ -153,9 +152,7 @@
         <div class="three-books-display">
             <img class="book-desktop" alt="the cover of the first book" src="<?php echo get_template_directory_uri(); ?>/images/book-1-desktop.svg" />
             <img class="book-desktop" alt="the cover of the second book" src="<?php echo get_template_directory_uri(); ?>/images/book-2-desktop.svg" />
-            <img class="book-desktop" alt="the cover of the third (and new) book" src="<?php echo get_template_directory_uri(); ?>/images/book-3-small-desktop.svg" />
-            <img class="book-phone" alt="the cover of all three books" src="<?php echo get_template_directory_uri(); ?>/images/books-phone-trio.svg" />
-        </div>
+            <img class="book-desktop" alt="the cover of the third (and new) book" src="<?php echo get_template_directory_uri(); ?>/images/book-3-small-desktop.svg" />        </div>
         <a class="button" href="#">Purchase now</a>
     </section>
     <section id="business-consulting">
