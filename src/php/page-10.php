@@ -21,6 +21,17 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a fictional project by Jason Kenny and Tanja Gruber, which was created in the course 
+                                        “Content Management Systems” for the bachelor course MultiMediaTechnology at the Salzburg 
+                                        University of Applied Sciences. Rick Randy is a super entertaining senior web developer with 
+                                        150.000 followers on Youtube. He is the author of the beloved book series 
+                                        'Why you rightfully hate JavaScript'.">
+    <meta name="robots" content="index, follow"> 
+    <meta property="og:title" content="Rick Randy">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rick Randy is a fictional project by Jason Kenny and Tanja Gruber.">
+    <meta property="og:locale" content="de_DE"> 
+    <meta property="og:url" content="http://vm-alabaster.multimediatechnology.at/rick">  
     <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
     <?php wp_head(); ?>
 </head>
@@ -179,32 +190,71 @@
         <div class="what-i-do-image"></div>
         <div class="what-i-do-dark-background"></div>
         <div class="cards">
-            <div class="card-1">
+            <!-- <div class="card-1">
                 <img alt="web design icon" src="<?php echo get_template_directory_uri(); ?>/images/web-design-icon.svg" />
-                <h3>Web Development</h3>
+                <h3>Web Design</h3>
             </div>
             <div class="card-2">
                 <img alt="development icon" src="<?php echo get_template_directory_uri(); ?>/images/development-icon.svg" />
-                <h3>Business Consulting</h3>
+                <h3>Development</h3>
             </div>
             <div class="card-3">
                 <img alt="branding icon" src="<?php echo get_template_directory_uri(); ?>/images/branding-icon.svg" />
-                <h3>Content Creation</h3>
-            </div>
+                <h3>Branding</h3>
+            </div> -->
+            <?php 
+                $counter = 1;
+                $consulting_what_i_do_query = new WP_Query(array('category_name' => 'consulting-what-i-do', 'order' => 'ASC'));
+                if ($consulting_what_i_do_query->have_posts()) :
+                    while ($consulting_what_i_do_query->have_posts()) : $consulting_what_i_do_query->the_post(); ?>
+
+                    <div class="<?php echo "card-" . strval($counter) ?>">
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                    </div>
+                    <?php $counter++ ?>
+            <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
         <div class="cards-second-slide">
-            <div class="card-4">
+            <!-- <div class="card-4">
                 <img alt="social media icon" src="<?php echo get_template_directory_uri(); ?>/images/social-media-icon.svg" />
-                <h3>Youtube Content</h3>
+                <h3>Social Media</h3>
             </div>
             <div class="card-5">
                 <img alt="strategy icon" src="<?php echo get_template_directory_uri(); ?>/images/strategy-icon-cards.svg" />
-                <h3>Work and travel</h3>
+                <h3>Strategy</h3>
             </div>
             <div class="card-6">
                 <img alt="ecommerce icon" src="<?php echo get_template_directory_uri(); ?>/images/ecommerce-icon.svg" />
-                <h3>Writing Books</h3>
-            </div>
+                <h3>Ecommerce</h3>
+            </div> -->
+            <?php 
+                $second_slide_query = new WP_Query(array('category_name' => 'consulting-what-i-do-second-slide', 'order' => 'ASC'));
+                if ($second_slide_query->have_posts()) :
+                    while ($second_slide_query->have_posts()) : $second_slide_query->the_post(); ?>
+
+                    <div class="<?php echo "card-" . strval($counter) ?>">
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                    </div>
+                    <?php $counter++ ?>
+            <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
     </section>
     <section id="unlock">

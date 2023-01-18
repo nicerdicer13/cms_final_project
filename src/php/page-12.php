@@ -21,6 +21,17 @@
     <title>Rick Randy | Workshops</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a fictional project by Jason Kenny and Tanja Gruber, which was created in the course 
+                                        “Content Management Systems” for the bachelor course MultiMediaTechnology at the Salzburg 
+                                        University of Applied Sciences. Rick Randy is a super entertaining senior web developer with 
+                                        150.000 followers on Youtube. He is the author of the beloved book series 
+                                        'Why you rightfully hate JavaScript'.">
+    <meta name="robots" content="index, follow"> 
+    <meta property="og:title" content="Rick Randy">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rick Randy is a fictional project by Jason Kenny and Tanja Gruber.">
+    <meta property="og:locale" content="de_DE"> 
+    <meta property="og:url" content="http://vm-alabaster.multimediatechnology.at/rick">  
     <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
     <?php wp_head(); ?>
 </head>
