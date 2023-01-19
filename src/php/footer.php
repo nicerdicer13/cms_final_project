@@ -7,7 +7,7 @@
       $ids_array = [109];
   } else {
       // Server
-      $ids_array = [];  
+      $ids_array = [109];  
   }
 ?>
 <footer>
