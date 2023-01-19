@@ -188,10 +188,6 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
-                    
-            <!-- <img class="book-desktop" alt="the cover of the first book" src="<?php echo get_template_directory_uri(); ?>/images/book-1-desktop.svg" /> -->
-            <!-- <img class="book-desktop" alt="the cover of the second book" src="<?php echo get_template_directory_uri(); ?>/images/book-2-desktop.svg" />
-            <img class="book-desktop" alt="the cover of the third (and new) book" src="<?php echo get_template_directory_uri(); ?>/images/book-3-small-desktop.svg" />  --->      
         </div> 
         <a class="button" href="#">Purchase now</a>
         <?php endwhile; ?>

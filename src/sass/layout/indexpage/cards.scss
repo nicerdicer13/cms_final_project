@@ -31,12 +31,12 @@
                 border: 1px solid black;
                 border-radius: 10px;
                 .icon-wrapper {
-                    height: fit-content;
+                    height: 12vh;
                     img {
                         width: 70%;
                         position: relative;
-                        right: 125px;
-                        bottom: 34px;
+                        right: 15px;
+                        bottom: 55px;
                     }
                 }
                 h3 {
@@ -58,11 +58,11 @@
                 border: 1px solid black;
                 border-radius: 10px;
                 .icon-wrapper {
-                    height: fit-content;
+                    height: 12vh;
                     img {
                         width: 50%;
                         position: relative;
-                        right: 58px;
+                        right: -40px;
                         bottom: 29px;
                     }
                 }
@@ -312,6 +312,8 @@
             padding: 15%;
             background-color: $bggray;
             display: none;
+            position: relative;
+            bottom: 50vh;
             [class^=card-4] {
                 display: flex;
                 flex-direction: column;

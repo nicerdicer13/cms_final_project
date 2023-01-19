@@ -4,7 +4,7 @@
 
   if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
       // Localhost
-      $ids_array = [73, 75, 77, 79, 82, 85, 88, 10, 7];
+      $ids_array = [73, 75, 77, 79, 82, 85, 88, 10, 7, 141];
   } else {
       // Server
       $ids_array = [];  
@@ -190,18 +190,6 @@
         <div class="what-i-do-image"></div>
         <div class="what-i-do-dark-background"></div>
         <div class="cards">
-            <!-- <div class="card-1">
-                <img alt="web design icon" src="<?php echo get_template_directory_uri(); ?>/images/web-design-icon.svg" />
-                <h3>Web Design</h3>
-            </div>
-            <div class="card-2">
-                <img alt="development icon" src="<?php echo get_template_directory_uri(); ?>/images/development-icon.svg" />
-                <h3>Development</h3>
-            </div>
-            <div class="card-3">
-                <img alt="branding icon" src="<?php echo get_template_directory_uri(); ?>/images/branding-icon.svg" />
-                <h3>Branding</h3>
-            </div> -->
             <?php 
                 $counter = 1;
                 $consulting_what_i_do_query = new WP_Query(array('category_name' => 'consulting-what-i-do', 'order' => 'ASC'));
@@ -224,18 +212,6 @@
                 <?php wp_reset_postdata(); ?>
         </div>
         <div class="cards-second-slide">
-            <!-- <div class="card-4">
-                <img alt="social media icon" src="<?php echo get_template_directory_uri(); ?>/images/social-media-icon.svg" />
-                <h3>Social Media</h3>
-            </div>
-            <div class="card-5">
-                <img alt="strategy icon" src="<?php echo get_template_directory_uri(); ?>/images/strategy-icon-cards.svg" />
-                <h3>Strategy</h3>
-            </div>
-            <div class="card-6">
-                <img alt="ecommerce icon" src="<?php echo get_template_directory_uri(); ?>/images/ecommerce-icon.svg" />
-                <h3>Ecommerce</h3>
-            </div> -->
             <?php 
                 $second_slide_query = new WP_Query(array('category_name' => 'consulting-what-i-do-second-slide', 'order' => 'ASC'));
                 if ($second_slide_query->have_posts()) :
@@ -258,7 +234,13 @@
         </div>
     </section>
     <section id="unlock">
-        <h2>Unlock your company's full potential. Contact me now.</h2>
+        <?php $unlock_query = new WP_Query(array("p" => $ids_array[9]));
+                if ($unlock_query->have_posts()) :
+                    while ($unlock_query->have_posts()) : $unlock_query->the_post(); ?>
+                        <h2><?php the_title();?></h2>
+                     <?php endwhile; ?>
+            <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
         <div class="contact-form">
             <?php echo do_shortcode('[contact-form-7 id="12"]'); ?>
         </div>
