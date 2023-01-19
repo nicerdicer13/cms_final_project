@@ -4,7 +4,7 @@
 
   if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
       // Localhost
-      $ids_array = [14, 38, 43, 46];
+      $ids_array = [14, 112, 135, 137, 139, 38, 43, 46, 10, 7];
   } else {
       // Server
       $ids_array = [];  
@@ -35,7 +35,7 @@
 
 <body>
     <?php wp_body_open(); ?>
-    <header>
+    <header class="index-header">
         <a href="/">
             <h1>Rick Randy</h1>
         </a>
@@ -46,8 +46,8 @@
                 <div class="line-3"></div>
             </button>
             <ul>
-                <li><a href="consulting">Consulting</a></li>
-                <li><a href="workshops">Workshops</a></li>
+                <li><a href="<?php echo get_permalink($ids_array[8]); ?>">Consulting</a></li>
+                <li><a href="<?php echo get_permalink($ids_array[9]); ?> ">Workshops</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
             </ul>
         </nav>
@@ -136,28 +136,71 @@
         </div>
     </section>
     <section id="books-wrapper">
-        <h3>Preorder my new book now</h3>
-        <h2>JavaScript - The Apocalypse is coming</h2>
+    <?php $books_query = new WP_Query(array("p" => $ids_array[1])); 
+                if ($books_query->have_posts()) :
+                    while ($books_query->have_posts()) : $books_query->the_post();?>
+        <h3 class="super-headline"><?php echo get_post_custom_values('super-headline')[0]; ?></h3>
+        <h2><?php the_title();?></h2>
         <div class="display">
             <div>
-                <h4>Releasing the third book of my popular series ”Why you rightfully hate JavaScript!</h4>
-                <p>Hey everyone! I am excited to announce that my new book is releasing in just a few weeks.
-                    I explore the potential dangers and consequences of this powerful programming language and its impact on the future of technology.
-                    So don't wait - pre-order your copy now and get ready for the JavaScript apocalypse!</p>
+                <h4 class="sub-heading"><?php echo get_post_custom_values('sub-heading')[0]; ?></h4>
+                <p><?php the_content();?></p>
                 <a class="button" href="#">Preorder</a>
             </div>
-            <img class="book-desktop" alt="the cover of my new book" src="<?php echo get_template_directory_uri(); ?>/images/book-3-desktop.svg" />
+            <?php if (has_post_thumbnail()) {?>
+                <span class="icon-wrapper">
+                    <?php the_post_thumbnail(); ?>
+                </span>
+            <?php } ?>
         </div>
-        <p> Don't miss out - get the complete series now! </p>
+        <p class="small-books-sub-heading"><?php echo get_post_custom_values('small-books-sub-heading')[0]; ?></p>
         <div class="three-books-display">
-            <img class="book-desktop" alt="the cover of the first book" src="<?php echo get_template_directory_uri(); ?>/images/book-1-desktop.svg" />
-            <img class="book-desktop" alt="the cover of the second book" src="<?php echo get_template_directory_uri(); ?>/images/book-2-desktop.svg" />
-            <img class="book-desktop" alt="the cover of the third (and new) book" src="<?php echo get_template_directory_uri(); ?>/images/book-3-small-desktop.svg" />        </div>
+            <?php $book_1 = new WP_Query(array("p" => $ids_array[2])); 
+                if ($book_1->have_posts()) :
+                    while ($book_1->have_posts()) : $book_1->the_post();
+                        if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
+                <?php $book_2 = new WP_Query(array("p" => $ids_array[3])); 
+                if ($book_2->have_posts()) :
+                    while ($book_2->have_posts()) : $book_2->the_post();
+                        if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
+                <?php $book_3 = new WP_Query(array("p" => $ids_array[3])); 
+                if ($book_3->have_posts()) :
+                    while ($book_3->have_posts()) : $book_3->the_post();
+                        if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
+                    
+            <!-- <img class="book-desktop" alt="the cover of the first book" src="<?php echo get_template_directory_uri(); ?>/images/book-1-desktop.svg" /> -->
+            <!-- <img class="book-desktop" alt="the cover of the second book" src="<?php echo get_template_directory_uri(); ?>/images/book-2-desktop.svg" />
+            <img class="book-desktop" alt="the cover of the third (and new) book" src="<?php echo get_template_directory_uri(); ?>/images/book-3-small-desktop.svg" />  --->      
+        </div> 
         <a class="button" href="#">Purchase now</a>
+        <?php endwhile; ?>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
     </section>
     <section id="business-consulting">
         <div class="succeed">
-            <?php $succeed_query = new WP_Query(array("p" => $ids_array[1])); 
+            <?php $succeed_query = new WP_Query(array("p" => $ids_array[5])); 
                 if ($succeed_query->have_posts()) :
                     while ($succeed_query->have_posts()) : $succeed_query->the_post();?>
                     <div>
@@ -175,7 +218,7 @@
                 <?php wp_reset_postdata(); ?>
         </div>
         <div class="learning-together">
-            <?php $learning_together_query = new WP_Query(array("p" => $ids_array[2])); 
+            <?php $learning_together_query = new WP_Query(array("p" => $ids_array[6])); 
                 if ($learning_together_query->have_posts()) :
                     while ($learning_together_query->have_posts()) : $learning_together_query->the_post();
                         if (has_post_thumbnail()) {?>
@@ -194,7 +237,7 @@
         </div>
     </section>
     <section id="about-me">
-        <?php $about_me_query = new WP_Query(array("p" => $ids_array[3])); 
+        <?php $about_me_query = new WP_Query(array("p" => $ids_array[7])); 
                 if ($about_me_query->have_posts()) :
                     while ($about_me_query->have_posts()) : $about_me_query->the_post();
                         if (has_post_thumbnail()) {?>

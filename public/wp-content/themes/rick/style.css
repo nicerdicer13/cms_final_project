@@ -228,6 +228,9 @@ html, body {
   .stats div .number-text {
     font-size: 1rem;
   }
+  .index-header {
+    height: 80vh;
+  }
   .workshop-header {
     text-align: center;
   }
@@ -906,11 +909,11 @@ header {
     color: hsl(204deg, 5%, 19%);
     align-self: center;
   }
-  #books-wrapper img {
+  #books-wrapper .display .icon-wrapper img {
+    height: 40vh;
     position: relative;
-    right: 10px;
-    bottom: 50px;
-    margin: 10% 0% 0% -8%;
+    right: 120px;
+    bottom: 40px;
   }
   #books-wrapper p {
     color: white;
@@ -922,10 +925,13 @@ header {
     flex-direction: row;
     width: fit-content;
     align-self: center;
-    margin-left: 25vw;
+    margin-left: 65vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
-  #books-wrapper .three-books-display img {
-    margin-left: -110px;
+  #books-wrapper .three-books-display .icon-wrapper img {
+    margin-left: -250px;
+    height: 20vh;
   }
   #books-wrapper .button {
     font-size: 0.9rem;
@@ -997,8 +1003,8 @@ header {
   }
   #books-wrapper .display img {
     position: relative;
-    right: 10px;
-    bottom: 50px;
+    right: 40px;
+    bottom: 24px;
   }
   #books-wrapper p {
     color: white;
@@ -1790,21 +1796,17 @@ footer {
   }
   #working-with-me img {
     width: 60vw;
-    align-self: center;
-    margin: 0;
+    height: auto;
   }
   #working-with-me [class^=section-1] {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
   }
   #working-with-me [class^=section-1] div {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    justify-content: center;
     align-items: center;
-    width: 100vw;
   }
   #working-with-me [class^=section-1] div h2 {
     color: hsl(45deg, 100%, 50%);
@@ -1823,6 +1825,16 @@ footer {
     text-align: left;
     font-size: 0.8rem;
     margin-bottom: 3vh;
+  }
+  #working-with-me .img-section-1 {
+    height: fit-content;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #working-with-me .img-section-1 img {
+    margin-right: 5vw;
   }
   #working-with-me [class^=section-2] div {
     display: flex;
@@ -1849,6 +1861,16 @@ footer {
     text-align: left;
     font-size: 0.8rem;
     margin-bottom: 3vh;
+  }
+  #working-with-me .img-section-2 {
+    height: fit-content;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #working-with-me .img-section-2 img {
+    margin-right: 5vw;
   }
 }
 @media (min-width: 37.5rem) and (max-width: 120rem) {
@@ -1935,7 +1957,7 @@ footer {
     text-align: right;
     font-size: 1.2rem;
     margin-bottom: 3vh;
-    margin-right: 5vw;
+    margin-right: 4vw;
   }
   #working-with-me .section-2 .img-section-2 {
     height: fit-content;
@@ -2026,6 +2048,8 @@ footer {
     column-gap: 5vw;
     align-items: center;
     justify-content: center;
+    height: fit-content;
+    min-height: 60vh;
   }
   #consulting-my-services div div {
     max-width: 20vw;

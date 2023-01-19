@@ -4,7 +4,7 @@
 
   if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
       // Localhost
-      $ids_array = [53, 49, 51, 56, 59, 62, 65];
+      $ids_array = [53, 49, 51, 56, 59, 62, 65, 10, 7];
   } else {
       // Server
       $ids_array = [];  
@@ -51,8 +51,8 @@
                 <div class="line-3"></div>
             </button>
             <ul>
-                <li><a href="consulting">Consulting</a></li>
-                <li><a href="#">Workshops</a></li>
+                <li><a href="<?php echo get_permalink($ids_array[7]); ?>">Consulting</a></li>
+                <li><a href="<?php echo get_permalink($ids_array[8]); ?>">Workshops</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
             </ul>
         </nav>
