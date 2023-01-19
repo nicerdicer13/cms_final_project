@@ -191,18 +191,7 @@
                     </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
-        <!-- <img alt="a picture of me with my dog, while climbing a mountain" src="<?php echo get_template_directory_uri(); ?>/images/about-me.png" />
-        <div>
-            <h2>About me</h2>
-            <p>I believe that new challenges are nothing to be scared of.
-                They make life and business exciting.
-                I’m all for creating something new and valuable.
-                I am passionate about empowering people and companies.
-                I’m purpose-driven and I thrive to find solutions that make sense in our ever-changing reality.
-                I’m a connector with excellent interpersonal skills. I am a valuable team member, who is driven by creating positive connections. </p>
-            <a class="button">Make me part of your team</a>
-        </div> -->
+            <?php wp_reset_postdata(); ?>
     </section>
 </main>
     <?php get_footer(); ?>
