@@ -2,8 +2,7 @@
     font-family: 'Inter';
 }
 
-
-@include breakpoint(0, $mobile) { 
+@include breakpoint(0, $mobile) {
     #consulting-stats {
         display: flex;
         flex-direction: row;
@@ -15,7 +14,6 @@
         height: fit-content;
         position: relative;
         bottom: 70vh;
-
         div {
             background-color: $bgabout;
             width: 35vw;
@@ -27,15 +25,14 @@
             row-gap: 3vh;
             box-shadow: 4px 3px 8px 1px;
             border-radius: 5px;
-
-            h3 {
+            .consulting-number-text {
                 color: white;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 font-weight: bold;
                 text-align: center;
             }
-            p { 
+            .consulting-number {
                 color: $primary;
                 font-size: 3rem;
                 font-weight: bold;
@@ -52,7 +49,6 @@
         width: 100vw;
         justify-content: center;
         height: 40vh;
-
         div {
             background-color: $bgabout;
             width: 15vw;
@@ -64,13 +60,12 @@
             row-gap: 5vh;
             box-shadow: 4px 3px 8px 1px;
             border-radius: 5px;
-
-            h3 {
+            .consulting-number-text {
                 color: white;
                 text-transform: uppercase;
                 font-size: 0.8rem;
             }
-            p { 
+            .consulting-number {
                 color: $primary;
                 font-size: 3rem;
                 font-weight: bold;

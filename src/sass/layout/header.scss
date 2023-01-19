@@ -1,4 +1,4 @@
-header{
+header {
     background-color: $bggray;
     font-family: 'Inter';
 }
@@ -8,11 +8,10 @@ header{
         padding: 25px;
         height: fit-content;
         margin-bottom: 10vh;
-
         h1 {
             max-width: 30rem;
             font-weight: bold;
-            color: $primary; 
+            color: $primary;
             font-size: 300;
             text-transform: lowercase;
             font-size: 2.5rem;
@@ -25,23 +24,19 @@ header{
         top: 0;
         background-color: $bggray;
         padding: 50px 20px 0px 0px;
-
         #hamburger {
             display: none;
         }
-
         ul {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width: 30vw; 
+            width: 30vw;
         }
-        
-        li a{
+        li a {
             text-transform: uppercase;
             color: $primary;
         }
-        
         li a:hover {
             text-decoration: underline;
         }
@@ -49,14 +44,12 @@ header{
     .dreams {
         margin-left: 2.5rem;
         margin-top: 15vh;
-
         h2 {
             font-size: 3.55rem;
             color: white;
             max-width: 75vw;
             margin-bottom: 20px;
         }
-
         h3 {
             font-size: 1.5rem;
             margin-left: 0;
@@ -64,7 +57,6 @@ header{
             margin-bottom: 15px;
             line-height: 1.5;
         }
-
         p {
             color: white;
             font-size: 1.2rem;
@@ -72,26 +64,23 @@ header{
             max-width: 40vw;
             margin-bottom: 3rem;
         }
-
         .button {
             font-size: 1.2rem;
             font-weight: bold;
             text-transform: uppercase;
             background-color: $primary;
             border: 1px solid $primary;
-            padding:  1.1rem 1.7rem;
+            padding: 1.1rem 1.7rem;
             border-radius: 10px;
             margin-top: 50%;
             color: $bggray;
         }
     }
-
     .workshop-header {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-
         h2 {
             font-size: 3.55rem;
             color: white;
@@ -100,7 +89,6 @@ header{
             margin-top: 15vh;
         }
     }
-
     .consulting-header {
         height: 20vh;
         div {
@@ -120,13 +108,11 @@ header{
             padding: 0 10vw;
         }
     }
-
     .rick-header {
         margin-left: 40rem;
         width: auto;
         position: relative;
     }
-
     .stats {
         width: 60vw;
         display: flex;
@@ -139,17 +125,14 @@ header{
         margin-left: 18vw;
         position: relative;
         bottom: 3vh;
-
         div {
             text-align: center;
             color: $bggray;
-
             .number {
                 font-size: 3.5rem;
                 font-weight: bold;
             }
-    
-            p {
+            .number-text {
                 font-size: 1.2rem;
             }
         }

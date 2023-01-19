@@ -1,17 +1,15 @@
 @include breakpoint(0, $mobile) {
     header {
         height: 100vh;
-
         h1 {
             max-width: 10rem;
             font-weight: bold;
-            color: $primary; 
+            color: $primary;
             text-transform: lowercase;
             font-size: 1.2rem;
             padding-left: 25px;
             padding-top: 25px;
         }
-
         img {
             position: absolute;
             height: 25vh;
@@ -24,9 +22,8 @@
         right: 0;
         top: 0;
         width: 100%;
-        background-color: hsl(0,0%,21%);
+        background-color: hsl(0, 0%, 21%);
         z-index: 9;
-        
         ul {
             position: fixed;
             padding: 3rem 1rem 1rem 1rem;
@@ -34,22 +31,19 @@
             box-shadow: -5px 0 10px 0 rgb(0 0 0 / 0.1);
             top: 0;
             right: 0;
-            background-color: hsl(0,0%,21%);
+            background-color: hsl(0, 0%, 21%);
             width: 100%;
             height: 100vh;
             z-index: 10;
-            
-            li { 
+            li {
                 text-align: right;
                 margin-top: 24px;
             }
-
             a {
                 color: $primary;
                 list-style-type: none;
                 text-transform: uppercase;
             }
-
             a:hover {
                 text-decoration: underline;
             }
@@ -57,7 +51,6 @@
     }
     .dreams {
         height: fit-content;
-
         h2 {
             font-size: 1.3rem;
             color: white;
@@ -66,7 +59,6 @@
             margin-top: 50px;
             padding-left: 25px;
         }
-
         h3 {
             font-size: 0.9rem;
             margin-left: 0;
@@ -74,7 +66,6 @@
             margin-bottom: 15px;
             padding-left: 25px;
         }
-
         p {
             color: white;
             font-size: 0.9rem;
@@ -83,22 +74,19 @@
             margin-bottom: 2rem;
             padding-left: 25px;
         }
-
         .button {
             font-size: 0.9rem;
             font-weight: bold;
             text-transform: uppercase;
             background-color: $primary;
             border: 1px solid $primary;
-            padding:  0.6rem 1.1rem;
+            padding: 0.6rem 1.1rem;
             border-radius: 10px;
             margin-top: 35%;
             color: $bggray;
             margin-left: 25px;
         }
-
     }
-
     .stats {
         display: flex;
         flex-direction: row;
@@ -109,21 +97,20 @@
         padding: 20px 0px 20px 0px;
         height: fit-content;
         width: 100vw;
-
-
         div {
             text-align: center;
             color: $bggray;
-
             .number {
                 font-size: 2rem;
                 font-weight: bold;
             }
-    
-            p {
+            .number-text {
                 font-size: 1rem;
             }
         }
+    }
+    .index-header {
+        height: 80vh;
     }
     .workshop-header {
         text-align: center;
@@ -134,10 +121,9 @@
             color: white;
             max-width: 80vw;
             margin-top: 10vh;
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
     }
-
     .consulting-header {
         height: fit-content;
         text-align: center;
@@ -152,4 +138,3 @@
         }
     }
 }
-

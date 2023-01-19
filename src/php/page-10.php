@@ -1,3 +1,16 @@
+<?php
+  $whitelist = array('127.0.0.1', '::1');
+  $ids_array;
+
+  if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+      // Localhost
+      $ids_array = [73, 75, 77, 79, 82, 85, 88, 10, 7];
+  } else {
+      // Server
+      $ids_array = [];  
+  }
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -8,6 +21,17 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a fictional project by Jason Kenny and Tanja Gruber, which was created in the course 
+                                        “Content Management Systems” for the bachelor course MultiMediaTechnology at the Salzburg 
+                                        University of Applied Sciences. Rick Randy is a super entertaining senior web developer with 
+                                        150.000 followers on Youtube. He is the author of the beloved book series 
+                                        'Why you rightfully hate JavaScript'.">
+    <meta name="robots" content="index, follow"> 
+    <meta property="og:title" content="Rick Randy">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rick Randy is a fictional project by Jason Kenny and Tanja Gruber.">
+    <meta property="og:locale" content="de_DE"> 
+    <meta property="og:url" content="http://vm-alabaster.multimediatechnology.at/rick">  
     <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
     <?php wp_head(); ?>
 </head>
@@ -25,79 +49,140 @@
                 <div class="line-3"></div>
             </button>
             <ul>
-                <li><a href="#">Consulting</a></li>
-                <li><a href="workshops">Workshops</a></li>
-                <li><a href="#news">Youtube</a></li>
+                <li><a href="<?php echo get_permalink($ids_array[7]); ?>">Consulting</a></li>
+                <li><a href="<?php echo get_permalink($ids_array[8]); ?>">Workshops</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
             </ul>
         </nav>
         <div class='consulting-header'>
-            <h2>consulting is a people business - it’s what I do best.</h2>
+            <?php
+                $header_query = new WP_Query(array('p' => $ids_array[0]));
+                if ($header_query->have_posts()) :
+                    while ($header_query->have_posts()) : $header_query->the_post(); ?>
+                        <h2>
+                            <?php the_title(); ?>
+                    </h2>
         </div>
     </header>
     <section id="consulting-stats">
         <div>
-            <h3>Awards won</h3>
-            <p>7</p>
+            <h3 class="consulting-number-text"><?php echo get_post_custom_values('consulting-number-text')[3]; ?></h3>
+            <p class="consulting-number"><?php echo get_post_custom_values('consulting-number')[3]; ?></p>
         </div>
         <div>
-            <h3>Years of experience</h3>
-            <p>12+</p>
+            <h3 class="consulting-number-text"><?php echo get_post_custom_values('consulting-number-text')[0]; ?></h3>
+            <p class="consulting-number"><?php echo get_post_custom_values('consulting-number')[0]; ?></p>
         </div>
         <div>
-            <h3>Projects</h3>
-            <p>102</p>
+            <h3 class="consulting-number-text"><?php echo get_post_custom_values('consulting-number-text')[1]; ?></h3>
+            <p class="consulting-number"><?php echo get_post_custom_values('consulting-number')[1]; ?></p>
         </div>
         <div>
-            <h3>Clients</h3>
-            <p>53</p>
+            <h3 class="consulting-number-text"><?php echo get_post_custom_values('consulting-number-text')[2]; ?></h3>
+            <p class="consulting-number"><?php echo get_post_custom_values('consulting-number')[2]; ?></p>
         </div>
     </section>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    <?php wp_reset_postdata(); ?>
     <section id="working-with-me">
         <div class="section-1">
-            <div>
-                <h2>What I bring to the table</h2>
-                <ul>
-                    <li>strong leadership skills</li>
-                    <li>creativity</li>
-                    <li>a burning passion</li>
-                    <li>excellent problem solving skills</li>
-                </ul>
-            </div>
-            <img alt="This is a person explaining something to another person and using statistics." class="img-section-1" src="<?php echo get_template_directory_uri(); ?>/images/what-i-bring-to-the-table.svg" />
+            <?php $working_with_me = new WP_Query(array("p" => $ids_array[1])); 
+                if ($working_with_me->have_posts()) :
+                    while ($working_with_me->have_posts()) : $working_with_me->the_post(); ?>
+                    <div>
+                        <h2><?php the_title(); ?></h2>
+                        <?php the_content(); ?>
+                    </div>
+                    <?php if (has_post_thumbnail()) {?>
+                            <span class="img-section-1">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
         <div class="section-2">
-            <img alt="This is a person consulting another person on how he can improve his business." class="img-section-2" src="<?php echo get_template_directory_uri(); ?>/images/working-with-me.svg" />
-            <div>
-                <h2>What to expect when working with me</h2>
-                <ul>
-                    <li>expert advice on how your company can maximise strategy, increase profits, add value and resolve issues</li>
-                    <li>development and implementation of strategies, which are adapted to the members of your company in order to improve performance</li>
-                </ul>
-            </div>
+        <?php $working_with_me = new WP_Query(array("p" => $ids_array[2])); 
+                if ($working_with_me->have_posts()) :
+                    while ($working_with_me->have_posts()) : $working_with_me->the_post(); ?>
+                    <?php if (has_post_thumbnail()) {?>
+                        <span class="img-section-2">
+                            <?php the_post_thumbnail(); ?>
+                        </span>
+                    <?php } ?>
+                    <div>
+                        <h2><?php the_title(); ?></h2>
+                        <?php the_content(); ?>
+                    </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </section>
     <section id="consulting-my-services">
-        <h2>My services.</h2>
+        <h2 class="consulting-services-headline">My services.</h2>
         <div>
             <div class="consulting">
-                <img alt="this is an icon with coins and a dollar sign" src="<?php echo get_template_directory_uri(); ?>/images/consulting-icon.svg" />
-                <h3>Consulting</h3>
-                <p>With a wealth of knowledge and experience, I am a trusted consultant who can help your business identify and overcome challenges, optimize your operations, and achieve your goals.</p>
+                <?php $consulting_query = new WP_Query(array("p" => $ids_array[3])); 
+                    if ($consulting_query->have_posts()) :
+                        while ($consulting_query->have_posts()) : $consulting_query->the_post(); ?>
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_content(); ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
             </div>
             <div class="strategy">
-                <img alt="this is an icon containing an arrow that points from one circle to a higher placed cicle" src="<?php echo get_template_directory_uri(); ?>/images/strategy-icon.svg" />
-                <h3>Strategy</h3>
-                <p>My consulting strategy is focused on understanding your business's unique needs and challenges, and providing customized solutions to help you reach your full potential.</p>
+                <?php $consulting_query = new WP_Query(array("p" => $ids_array[4])); 
+                    if ($consulting_query->have_posts()) :
+                        while ($consulting_query->have_posts()) : $consulting_query->the_post(); ?>
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_content(); ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
             <div class="mission">
-                <img alt="this is an icon of a yellow flag" src="<?php echo get_template_directory_uri(); ?>/images/mission-icon.svg" />
-                <h3>Mission</h3>
-                <p>My mission as a consultant is to empower your business to succeed by providing you with the knowledge, resources, and support you need to thrive in your industry.</p>
+                <?php $consulting_query = new WP_Query(array("p" => $ids_array[5])); 
+                    if ($consulting_query->have_posts()) :
+                        while ($consulting_query->have_posts()) : $consulting_query->the_post(); ?>
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_content(); ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
             </div>
             <div class="investment">
-                <img alt="this is an icon of a diagram" src="<?php echo get_template_directory_uri(); ?>/images/investment-icon.svg" />
-                <h3>Investment</h3>
-                <p>My investment strategy in consulting is focused on building long-term partnerships your business and providing ongoing support to help you achieve their goals and reach their full potential.</p>
+                <?php $consulting_query = new WP_Query(array("p" => $ids_array[6])); 
+                    if ($consulting_query->have_posts()) :
+                        while ($consulting_query->have_posts()) : $consulting_query->the_post(); ?>
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_content(); ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
             </div>
         </div>
     </section>
@@ -105,32 +190,71 @@
         <div class="what-i-do-image"></div>
         <div class="what-i-do-dark-background"></div>
         <div class="cards">
-            <div class="card-1">
+            <!-- <div class="card-1">
                 <img alt="web design icon" src="<?php echo get_template_directory_uri(); ?>/images/web-design-icon.svg" />
-                <h3>Web Development</h3>
+                <h3>Web Design</h3>
             </div>
             <div class="card-2">
                 <img alt="development icon" src="<?php echo get_template_directory_uri(); ?>/images/development-icon.svg" />
-                <h3>Business Consulting</h3>
+                <h3>Development</h3>
             </div>
             <div class="card-3">
                 <img alt="branding icon" src="<?php echo get_template_directory_uri(); ?>/images/branding-icon.svg" />
-                <h3>Content Creation</h3>
-            </div>
+                <h3>Branding</h3>
+            </div> -->
+            <?php 
+                $counter = 1;
+                $consulting_what_i_do_query = new WP_Query(array('category_name' => 'consulting-what-i-do', 'order' => 'ASC'));
+                if ($consulting_what_i_do_query->have_posts()) :
+                    while ($consulting_what_i_do_query->have_posts()) : $consulting_what_i_do_query->the_post(); ?>
+
+                    <div class="<?php echo "card-" . strval($counter) ?>">
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                    </div>
+                    <?php $counter++ ?>
+            <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
         <div class="cards-second-slide">
-            <div class="card-4">
+            <!-- <div class="card-4">
                 <img alt="social media icon" src="<?php echo get_template_directory_uri(); ?>/images/social-media-icon.svg" />
-                <h3>Youtube Content</h3>
+                <h3>Social Media</h3>
             </div>
             <div class="card-5">
                 <img alt="strategy icon" src="<?php echo get_template_directory_uri(); ?>/images/strategy-icon-cards.svg" />
-                <h3>Work and travel</h3>
+                <h3>Strategy</h3>
             </div>
             <div class="card-6">
                 <img alt="ecommerce icon" src="<?php echo get_template_directory_uri(); ?>/images/ecommerce-icon.svg" />
-                <h3>Writing Books</h3>
-            </div>
+                <h3>Ecommerce</h3>
+            </div> -->
+            <?php 
+                $second_slide_query = new WP_Query(array('category_name' => 'consulting-what-i-do-second-slide', 'order' => 'ASC'));
+                if ($second_slide_query->have_posts()) :
+                    while ($second_slide_query->have_posts()) : $second_slide_query->the_post(); ?>
+
+                    <div class="<?php echo "card-" . strval($counter) ?>">
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                    </div>
+                    <?php $counter++ ?>
+            <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </div>
     </section>
     <section id="unlock">
