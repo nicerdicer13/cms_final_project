@@ -659,6 +659,7 @@ header {
     font-size: 3rem;
   }
   #what_i_do .cards {
+    margin-top: 10rem;
     height: 50vh;
     width: 100vw;
     display: flex;
