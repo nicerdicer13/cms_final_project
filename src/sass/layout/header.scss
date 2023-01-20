@@ -24,6 +24,7 @@ header {
         top: 0;
         background-color: $bggray;
         padding: 50px 20px 0px 0px;
+        margin-right: 2rem;
         #hamburger {
             display: none;
         }
@@ -36,6 +37,7 @@ header {
         li a {
             text-transform: uppercase;
             color: $primary;
+            padding-left: 1rem;
         }
         li a:hover {
             text-decoration: underline;
