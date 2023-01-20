@@ -93,9 +93,9 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
             <h2>here's some of the stuff I do.</h2>
 
             <div class="cards">
-                <?php $header_query = new WP_Query(array("p" => $ids_array[13])); ?>
+                <?php $header_query = new WP_Query(array("p" => $ids_array[165])); ?>
                 <?php
-                echo do_shortcode('[smartslider3 slider="2"]');
+                echo do_shortcode('[smartslider3 slider="3"]');
                 ?>
             </div>
 
