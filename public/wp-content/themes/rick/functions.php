@@ -6,6 +6,8 @@
     add_action('wp_enqueue_scripts', 'load_styles_and_scripts');
 
     add_theme_support('post-thumbnails');
+    add_theme_support( 'post-thumbnails', array( 'post' ) );
+    add_theme_support( 'post-thumbnails', array( 'page' ) );
 
     function cc_mime_types($mimes)
     {
