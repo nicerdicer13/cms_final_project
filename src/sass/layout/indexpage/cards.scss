@@ -201,7 +201,7 @@
 
 @include breakpoint($desktop, $max-width) {
     #what_i_do {
-        height: 60vh;
+        height: fit-content;
         background-color: $bggray;
         width: 100vw;
         text-align: center;
@@ -209,7 +209,7 @@
         h2 {
             color: white;
             font-size: 3rem;
-            
+            margin-bottom: 5rem;
         }
         .cards {
             height: 50vh;
