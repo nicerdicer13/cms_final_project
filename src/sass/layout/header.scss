@@ -28,19 +28,21 @@ header {
         #hamburger {
             display: none;
         }
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 30vw;
-        }
-        li a {
-            text-transform: uppercase;
-            color: $primary;
-            padding-left: 1rem;
-        }
-        li a:hover {
-            text-decoration: underline;
+        .menu-header-menu-container {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 30vw;
+            }
+            li a {
+                text-transform: uppercase;
+                color: $primary;
+                padding-left: 1rem;
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
         }
     }
     .dreams {

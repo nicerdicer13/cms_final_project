@@ -4,10 +4,10 @@
 
   if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
       // Localhost
-      $ids_array = [53, 49, 51, 56, 59, 62, 65, 10, 7];
+      $ids_array = [53, 49, 51, 56, 59, 62, 65, 10, 7, 156];
   } else {
       // Server
-      $ids_array = [53, 49, 51, 56, 59, 62, 65, 10, 7];  
+      $ids_array = [53, 49, 51, 56, 59, 62, 65, 10, 7, 172];  
   }
 ?>
 
@@ -50,11 +50,7 @@
                 <div class="line-2"></div>
                 <div class="line-3"></div>
             </button>
-            <ul>
-                <li><a href="<?php echo get_permalink($ids_array[7]); ?>">Consulting</a></li>
-                <li><a href="<?php echo get_permalink($ids_array[8]); ?>">Workshops</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
-            </ul>
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
         </nav>
         <div class='workshop-header'>
             <?php
@@ -191,25 +187,23 @@
 
     <section class="students-section">
         <div class="students-response">
-            <h3>
-                From My Students
-            </h3>
-            <img class="quotation_mark" src="<?php echo get_template_directory_uri(); ?>/images/workshop_quotation_mark.svg" alt="quotation mark">
-            <p>Rick is a knowledgeable and passionate instructor who makes the material easy to understand and apply.
-                His easy-going personality and sense of humor makes it enjoyable and I left feeling confident in my newfound skills.
-                <br><br>
-                - Samantha Smith
-            </p>
-
+            <?php $students_query = new WP_Query(array('p' => $ids_array[9]));
+                if ($students_query->have_posts()) :
+                    while ($students_query->have_posts()) : $students_query->the_post(); ?>
+                        <h3><?php the_title();?></h3>
+                        <?php if (has_post_thumbnail()) {?>
+                            <span class="quotation_mark">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
+                        <?php } ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
     </section>
 
     <img class="image-students" src="<?php echo get_template_directory_uri(); ?>/images/workshops-students-2.jpg" alt="Picture of students sitting on stairs">
-
-
-
-
-
 
     <?php get_footer(); ?>
     <?php wp_footer(); ?>

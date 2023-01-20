@@ -16,12 +16,12 @@
     }
     add_filter('upload_mimes', 'cc_mime_types');
 
-    function register_my_menus() {
+    function register_new_menu() {
         register_nav_menus(
                 array(
                         'header-menu' => 'Header',
                 )
         );
      }
-     add_action('init', 'register_my_menus');
+     add_action('init', 'register_new_menu');
 ?>

@@ -45,11 +45,7 @@
                 <div class="line-2"></div>
                 <div class="line-3"></div>
             </button>
-            <ul>
-                <li><a href="<?php echo get_permalink($ids_array[8]); ?>">Consulting</a></li>
-                <li><a href="<?php echo get_permalink($ids_array[9]); ?> ">Workshops</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
-            </ul>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
         </nav>
             <?php
             $header_query = new WP_Query(array("p" => $ids_array[0]));
