@@ -67,7 +67,8 @@
 
 @include breakpoint(0, $mobile) {
     .image-students {
-        margin-bottom: 40vh;
+        margin-top: 5vh;
+        margin-bottom: 20vh;
         width: 100vw;
         height: auto;
         left: 0;

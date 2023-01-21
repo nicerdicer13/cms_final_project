@@ -89,7 +89,7 @@
 @include breakpoint(0, $mobile) {
     //Beginning Flex Container Mobile
     .w-flex-container{
-        margin-top: -40rem;
+        margin-top: -80vh;
         flex-direction: column;
         margin-bottom: 6rem;
 
