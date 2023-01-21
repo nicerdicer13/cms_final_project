@@ -40,7 +40,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
 
 
     <header>
-        <a href="/">
+        <a href="/rick">
             <h1>Rick Randy</h1>
         </a>
         <nav id="mainnav">
@@ -48,13 +48,8 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
-<<<<<<< HEAD
             </div>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
-=======
-            </button>
-            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
->>>>>>> ffc028cd3b13d39d9fe92d769259ef794f1aa18d
         </nav>
         <div class='workshop-header'>
             <?php

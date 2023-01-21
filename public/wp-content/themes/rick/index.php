@@ -36,7 +36,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
 <body>
     <?php wp_body_open(); ?>
     <header class="index-header">
-        <a href="/">
+        <a href="/rick">
             <h1>Rick Randy</h1>
         </a>
         <nav id="mainnav">
