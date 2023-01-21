@@ -13,13 +13,12 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Rick Randy | Consulting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is a fictional project by Jason Kenny and Tanja Gruber, which was created in the course 
                                         “Content Management Systems” for the bachelor course MultiMediaTechnology at the Salzburg 

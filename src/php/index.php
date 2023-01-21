@@ -110,7 +110,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                             <a class="button" href="#">Preorder</a>
                         </div>
                         <?php if (has_post_thumbnail()) { ?>
-                            <img class="icon-wrapper">
+                            <img class="icon-wrapper" alt="this is the new released book">>
                             <?php the_post_thumbnail(); ?>
                             </img>
                         <?php } ?>
