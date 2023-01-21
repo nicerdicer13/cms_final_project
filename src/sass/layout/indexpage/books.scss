@@ -1,195 +1,197 @@
+#books-wrapper {
+    font-family: 'Inter';
+}
+
+@include breakpoint(0, $mobile) {
     #books-wrapper {
-        font-family: 'Inter';
-    }
-    
-    @include breakpoint(0, $mobile) {
-        #books-wrapper {
-            background-color: $bgbooks;
-            height: fit-content;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            padding: 2rem 1rem 2rem 1rem;
-            .book-desktop {
-                height: 30vh;
-            }
-            h3 {
-                text-transform: uppercase;
-                font-size: 0.8rem;
-                color: $primary;
-                margin-bottom: 1rem;
-                text-align: center;
-            }
-            h2 {
-                color: white;
-                font-size: 1.2rem;
-                margin-bottom: 2rem;
-                text-align: center;
-                font-weight: bold;
-            }
-            .display {
-                display: flex;
-                flex-direction: column-reverse;
-                position: relative;
-                left: 25px;
-                margin-bottom: 7vh;
-                div {
-                    h4 {
-                        color: white;
-                        font-weight: bold;
-                        font-size: 1rem;
-                        margin-bottom: 1rem;
-                        text-align: left;
-                        max-width: 80vw;
-                        line-height: 1.5;
-                    }
-                    p {
-                        color: white;
-                        font-size: 0.8rem;
-                        text-align: left;
-                        max-width: 80vw;
-                        margin-bottom: 3rem;
-                        line-height: 1.7;
-                    }
-                    .button {
-                        font-size: 0.9rem;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        background-color: $primary;
-                        border: 1px solid $primary;
-                        padding: 0.6rem 1.1rem;
-                        border-radius: 10px;
-                        margin-top: 35%;
-                        color: $bggray;
-                        align-self: center;
-                    }
-                }
-                .icon-wrapper {
-                    img {
-                        height: 40vh;
-                        position: relative;
-                        right: 120px;
-                        bottom: 40px,
-                    }
-                }
-            }
-            p {
-                color: white;
-                font-size: 1rem;
-                text-align: center;
-            }
-            .three-books-display {
-                display: flex;
-                flex-direction: row;
-                width: fit-content;
-                align-self: center;
-                margin-left: 65vw;
-                margin-top: 3vh;
-                margin-bottom: 3vh;
-                .icon-wrapper {
-                    img {
-                        margin-left: -250px;
-                        height: 20vh;
-                    }
-                }
-            }
-            .button {
-                font-size: 0.9rem;
-                font-weight: bold;
-                text-transform: uppercase;
-                background-color: $primary;
-                border: 1px solid $primary;
-                padding: 0.6rem 1.1rem;
-                border-radius: 10px;
-                color: $bggray;
-                align-self: center;
-            }
+        background-color: $bgbooks;
+        height: fit-content;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem;
+        .book-desktop {
+            height: 30vh;
         }
-    }
-    
-    @include breakpoint($desktop, $max-width) {
-        #books-wrapper {
-            background-color: $bgbooks;
-            height: fit-content;
-            width: 100vw;
+        h3 {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            color: $primary;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        h2 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        .display {
             display: flex;
-            flex-direction: column;
-            padding: 3rem;
-            h3 {
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                color: $primary;
-                margin-bottom: 1rem;
-                text-align: center;
-            }
-            h2 {
-                color: white;
-                font-size: 3rem;
-                margin-bottom: 4rem;
-                text-align: center;
-            }
-            .display {
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                left: 25px;
-                div {
-                    h4 {
-                        color: white;
-                        font-weight: bold;
-                        font-size: 1.8rem;
-                        margin-bottom: 1rem;
-                        text-align: left;
-                        max-width: 50vw;
-                        line-height: 1.5;
-                    }
-                    p {
-                        color: white;
-                        font-size: 1.2rem;
-                        text-align: left;
-                        max-width: 40vw;
-                        margin-bottom: 3rem;
-                        line-height: 1.7;
-                    }
-                    .button {
-                        font-size: 1.2rem;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        background-color: $primary;
-                        border: 1px solid $primary;
-                        padding: 1.1rem 1.7rem;
-                        border-radius: 10px;
-                        color: $bggray;
-                        width: fit-content;
-                    }
+            flex-direction: column-reverse;
+            position: relative;
+            left: 25px;
+            margin-bottom: 7vh;
+            div {
+                h4 {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                    max-width: 80vw;
+                    line-height: 1.5;
                 }
+                p {
+                    color: white;
+                    font-size: 0.8rem;
+                    text-align: left;
+                    max-width: 80vw;
+                    margin-bottom: 3rem;
+                    line-height: 1.7;
+                }
+                .button {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background-color: $primary;
+                    border: 1px solid $primary;
+                    padding: 0.6rem 1.1rem;
+                    border-radius: 10px;
+                    margin-top: 35%;
+                    color: $bggray;
+                    align-self: center;
+                }
+            }
+            .icon-wrapper {
                 img {
+                    height: 40vh;
                     position: relative;
-                    right: 40px;
-                    bottom: 24px;
+                    right: 120px;
+                    bottom: 40px,
                 }
             }
-            p {
-                color: white;
-                font-size: 2rem;
-                text-align: center;
-            }
-            .three-books-display {
-                width: fit-content;
-                align-self: center;
-                margin: 1.5rem;
-            }
-            .button {
-                font-size: 1.2rem;
-                font-weight: bold;
-                text-transform: uppercase;
-                background-color: $primary;
-                border: 1px solid $primary;
-                padding: 1.1rem 1.7rem;
-                border-radius: 10px;
-                color: $bggray;
-                width: fit-content;
-                align-self: center;
+        }
+        p {
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .three-books-display {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            align-self: center;
+            margin-left: 65vw;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+            .icon-wrapper {
+                img {
+                    margin-left: -250px;
+                    height: 20vh;
+                }
             }
         }
+        .button {
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $primary;
+            border: 1px solid $primary;
+            padding: 0.6rem 1.1rem;
+            border-radius: 10px;
+            color: $bggray;
+            align-self: center;
+        }
     }
+}
+
+@include breakpoint($desktop, $max-width) {
+    #books-wrapper {
+        background-color: $bgbooks;
+        height: fit-content;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: $primary;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        h2 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        .display {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: 25px;
+            div {
+                h4 {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                    max-width: 50vw;
+                    line-height: 1.5;
+                }
+                p {
+                    color: white;
+                    font-size: 1.2rem;
+                    text-align: left;
+                    max-width: 60vw;
+                    margin-bottom: 3rem;
+                    line-height: 1.7;
+                }
+                .button {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background-color: $primary;
+                    border: 1px solid $primary;
+                    padding: 1.1rem 1.7rem;
+                    border-radius: 10px;
+                    color: $bggray;
+                    width: fit-content;
+                }
+            }
+            img {
+                position: relative;
+                bottom: 24px;
+                float: right;
+                
+            }
+        }
+        p {
+            margin-top: 10vh;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .three-books-display {
+            width: fit-content;
+            align-self: center;
+            margin: 1.5rem;
+        }
+        .button {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $primary;
+            border: 1px solid $primary;
+            padding: 1.1rem 1.7rem;
+            border-radius: 10px;
+            color: $bggray;
+            width: fit-content;
+            align-self: center;
+        }
+    }
+}

@@ -45,7 +45,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                 <div class="line-2"></div>
                 <div class="line-3"></div>
             </button>
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
+            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
         </nav>
         <?php
         $header_query = new WP_Query(array("p" => $ids_array[0]));
@@ -110,11 +110,12 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                             <a class="button" href="#">Preorder</a>
                         </div>
                         <?php if (has_post_thumbnail()) { ?>
-                            <span class="icon-wrapper">
-                                <?php the_post_thumbnail(); ?>
-                            </span>
+                            <img class="icon-wrapper">
+                            <?php the_post_thumbnail(); ?>
+                            </img>
                         <?php } ?>
                     </div>
+
                     <p class="small-books-sub-heading"><?php echo get_post_custom_values('small-books-sub-heading')[0]; ?></p>
                     <div class="three-books-display">
                         <?php $book_1 = new WP_Query(array("p" => $ids_array[2]));
