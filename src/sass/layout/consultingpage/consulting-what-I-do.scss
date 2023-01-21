@@ -28,6 +28,7 @@
             color: white;
             font-size: 3rem;
         }
+
         .cards {
             height: 30vh;
             width: 100vw;
@@ -36,7 +37,7 @@
             justify-content: center;
             column-gap: 20px;
             position: relative;
-            bottom: 30vh;
+            bottom: 40vh;
             [class^=card-1] {
                 display: flex;
                 flex-direction: column;
@@ -226,6 +227,7 @@ $max-width) {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 70% 30%;
+        text-align: center;
         margin-bottom: 5vh;
         .what-i-do-image {
             grid-row: 1/ span 1;
@@ -243,8 +245,8 @@ $max-width) {
             font-size: 3rem;
         }
         .cards {
-            height: fit-content;
-            width: fit-content;
+            height: 50vh;
+            width: 100vw;
             display: flex;
             flex-direction: row;
             justify-content: center;

@@ -29,7 +29,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
     <meta property="og:locale" content="de_DE">
     <meta property="og:url" content="http://vm-alabaster.multimediatechnology.at/rick">
     <title>Rick Randy</title>
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg">
     <?php wp_head(); ?>
 </head>
 
@@ -44,8 +44,13 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
+<<<<<<< HEAD
             </div>
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
+=======
+            </button>
+            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+>>>>>>> ffc028cd3b13d39d9fe92d769259ef794f1aa18d
         </nav>
         <?php
         $header_query = new WP_Query(array("p" => $ids_array[0]));
@@ -58,8 +63,12 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                     <?php the_content(); ?>
                     <a href="#" class="button">START NOW!</a>
                 </div>
+<<<<<<< HEAD
 
                 <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png" /> 
+=======
+                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png">
+>>>>>>> ffc028cd3b13d39d9fe92d769259ef794f1aa18d
 
                 <div class="stats">
 
@@ -116,6 +125,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                             </span>
                         <?php } ?>
                     </div>
+
                     <p class="small-books-sub-heading"><?php echo get_post_custom_values('small-books-sub-heading')[0]; ?></p>
                     <div class="three-books-display">
                         <?php $book_1 = new WP_Query(array("p" => $ids_array[2]));
@@ -200,16 +210,16 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
             if ($about_me_query->have_posts()) :
                 while ($about_me_query->have_posts()) : $about_me_query->the_post();
                     if (has_post_thumbnail()) { ?>
-                        <img alt="a picture of me with my dog, while climbing a mountain" src="<?php the_post_thumbnail(); ?> 
+                        <img alt="a picture of me with my dog, while climbing a mountain" src="<?php the_post_thumbnail(); ?>">
                     <?php } ?>
                     <div>
                         <h2><?php the_title(); ?></h2>
                         <?php the_content(); ?>
                         <a class=" button">Make me part of your team</a>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </section>
     </main>
     <?php get_footer(); ?>
