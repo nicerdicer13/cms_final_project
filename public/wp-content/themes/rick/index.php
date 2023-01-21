@@ -44,13 +44,8 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
-<<<<<<< HEAD
             </div>
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
-=======
-            </button>
-            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
->>>>>>> ffc028cd3b13d39d9fe92d769259ef794f1aa18d
         </nav>
         <?php
         $header_query = new WP_Query(array("p" => $ids_array[0]));
@@ -63,12 +58,8 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                     <?php the_content(); ?>
                     <a href="#" class="button">START NOW!</a>
                 </div>
-<<<<<<< HEAD
-
                 <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png" /> 
-=======
-                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png">
->>>>>>> ffc028cd3b13d39d9fe92d769259ef794f1aa18d
+
 
                 <div class="stats">
 
