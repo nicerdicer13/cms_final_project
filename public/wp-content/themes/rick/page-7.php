@@ -45,11 +45,11 @@
             <h1>Rick Randy</h1>
         </a>
         <nav id="mainnav">
-            <button id="hamburger" class="closed">
+            <div id="hamburger" class="closed">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
-            </button>
+            </div>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
         </nav>
         <div class='workshop-header'>

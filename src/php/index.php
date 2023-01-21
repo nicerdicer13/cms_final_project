@@ -40,11 +40,11 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
             <h1>Rick Randy</h1>
         </a>
         <nav id="mainnav">
-            <button id="hamburger" class="closed">
+            <div id="hamburger" class="closed">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
-            </button>
+            </div>
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );?>
         </nav>
         <?php
@@ -58,7 +58,8 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                     <?php the_content(); ?>
                     <a href="#" class="button">START NOW!</a>
                 </div>
-                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png" />
+
+                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png" /> 
 
                 <div class="stats">
 
@@ -139,7 +140,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
-                        <?php $book_3 = new WP_Query(array("p" => $ids_array[3]));
+                        <?php $book_3 = new WP_Query(array("p" => $ids_array[4]));
                         if ($book_3->have_posts()) :
                             while ($book_3->have_posts()) : $book_3->the_post();
                                 if (has_post_thumbnail()) { ?>
