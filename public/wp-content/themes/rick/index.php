@@ -29,7 +29,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
     <meta property="og:locale" content="de_DE">
     <meta property="og:url" content="http://vm-alabaster.multimediatechnology.at/rick">
     <title>Rick Randy</title>
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg">
     <?php wp_head(); ?>
 </head>
 
@@ -58,7 +58,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                     <?php the_content(); ?>
                     <a href="#" class="button">START NOW!</a>
                 </div>
-                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png" />
+                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png">
 
                 <div class="stats">
 
@@ -110,9 +110,9 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                             <a class="button" href="#">Preorder</a>
                         </div>
                         <?php if (has_post_thumbnail()) { ?>
-                            <img class="icon-wrapper" alt="this is the new released book">>
-                            <?php the_post_thumbnail(); ?>
-                            </img>
+                            <span class="icon-wrapper">
+                                <?php the_post_thumbnail(); ?>
+                            </span>
                         <?php } ?>
                     </div>
 
@@ -200,16 +200,16 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
             if ($about_me_query->have_posts()) :
                 while ($about_me_query->have_posts()) : $about_me_query->the_post();
                     if (has_post_thumbnail()) { ?>
-                        <img alt="a picture of me with my dog, while climbing a mountain" src="<?php the_post_thumbnail(); ?> 
+                        <img alt="a picture of me with my dog, while climbing a mountain" src="<?php the_post_thumbnail(); ?>">
                     <?php } ?>
                     <div>
                         <h2><?php the_title(); ?></h2>
                         <?php the_content(); ?>
                         <a class=" button">Make me part of your team</a>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </section>
     </main>
     <?php get_footer(); ?>
