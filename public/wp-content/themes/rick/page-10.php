@@ -183,7 +183,8 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
     </div>
 </section>
 <section id='consulting-what-i-do'>
-
+    <div class="what-i-do-image"></div>
+    <div class="what-i-do-dark-background"></div>
     <div class="cards">
         <?php $header_query = new WP_Query(array("p" => $ids_array[192])); ?>
         <?php
