@@ -31,7 +31,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
     <meta property="og:description" content="Rick Randy is a fictional project by Jason Kenny and Tanja Gruber.">
     <meta property="og:locale" content="de_DE">
     <meta property="og:url" content="http://vm-alabaster.multimediatechnology.at/rick">
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.svg">
     <?php wp_head(); ?>
 </head>
 <?php wp_body_open(); ?>
