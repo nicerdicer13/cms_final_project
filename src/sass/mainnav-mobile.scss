@@ -10,12 +10,16 @@
             padding-left: 25px;
             padding-top: 25px;
         }
-        img {
+        .icon-wrapper {
             position: absolute;
-            height: 25vh;
+            height: fit-content;
             width: auto;
-            margin-top: 2rem;
-            margin-left: 8rem;
+            img {
+                width: auto;
+                height: 25vh;
+                margin-top: 2rem;
+                margin-left: 8rem;
+            }
         }
     }
     #mainnav {

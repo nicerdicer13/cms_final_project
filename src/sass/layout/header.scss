@@ -111,10 +111,14 @@ header {
             padding: 0 10vw;
         }
     }
-    .rick-header {
-        margin-left: 40%;
+    .icon-wrapper {
+        height: fit-content;
         width: auto;
+        margin-left: 40%;
         position: relative;
+        .rick-header {
+            width: auto;
+        }
     }
     .stats {
         width: 60vw;

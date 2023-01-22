@@ -127,10 +127,14 @@ html, body {
     padding-left: 25px;
     padding-top: 25px;
   }
-  header img {
+  header .icon-wrapper {
     position: absolute;
-    height: 25vh;
+    height: fit-content;
     width: auto;
+  }
+  header .icon-wrapper img {
+    width: auto;
+    height: 25vh;
     margin-top: 2rem;
     margin-left: 8rem;
   }
@@ -415,10 +419,14 @@ header {
     text-align: center;
     padding: 0 10vw;
   }
-  .rick-header {
-    margin-left: 40%;
+  .icon-wrapper {
+    height: fit-content;
     width: auto;
+    margin-left: 40%;
     position: relative;
+  }
+  .icon-wrapper .rick-header {
+    width: auto;
   }
   .stats {
     width: 60vw;

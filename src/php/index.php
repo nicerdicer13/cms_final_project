@@ -58,9 +58,12 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                     <?php the_content(); ?>
                     <a href="#" class="button">START NOW!</a>
                 </div>
-                <img alt="this is a picture of me" class="rick-header" src="<?php echo get_template_directory_uri(); ?>/images/rick_transparent_background.png" /> 
-
-
+                <?php if (has_post_thumbnail()) { ?>
+                    <span class="icon-wrapper">
+                        <?php the_post_thumbnail(); ?>
+                    </span>
+                <?php } ?>
+                
                 <div class="stats">
 
                     <div>
