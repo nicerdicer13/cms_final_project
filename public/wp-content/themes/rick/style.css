@@ -1562,7 +1562,7 @@ header {
   .students-section {
     margin-left: 10vh;
     margin-right: 30vh;
-    margin-top: 25vh;
+    margin-top: 70vh;
     max-width: 100vw;
     max-height: 70vh;
     padding-bottom: 4rem;
@@ -1601,7 +1601,7 @@ header {
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   .image-students {
     margin-top: 5vh;
-    margin-bottom: 20vh;
+    margin-bottom: 35vh;
     width: 100vw;
     height: auto;
     left: 0;
@@ -1609,7 +1609,7 @@ header {
   }
   .students-section {
     margin-left: 5vh;
-    margin-right: 15vh;
+    margin-right: 10vh;
     margin-top: 7rem;
     max-width: fit-content;
     padding-bottom: 2rem;
