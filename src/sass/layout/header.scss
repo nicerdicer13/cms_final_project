@@ -16,6 +16,15 @@ header {
             font-size: 2.5rem;
             margin-left: 2.5rem;
         }
+        .icon-wrapper {
+            height: fit-content;
+            width: auto;
+            position: relative;
+            margin-left: 40%;
+            .rick-header {
+                width: auto;
+            }
+        }
     }
     #mainnav {
         position: absolute;
@@ -108,15 +117,6 @@ header {
             margin-top: 15vh;
             text-align: center;
             padding: 0 10vw;
-        }
-    }
-    .icon-wrapper {
-        height: fit-content;
-        width: auto;
-        margin-left: 40%;
-        position: relative;
-        .rick-header {
-            width: auto;
         }
     }
     .stats {

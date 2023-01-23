@@ -328,6 +328,15 @@ header {
     font-size: 2.5rem;
     margin-left: 2.5rem;
   }
+  header .icon-wrapper {
+    height: fit-content;
+    width: auto;
+    position: relative;
+    margin-left: 40%;
+  }
+  header .icon-wrapper .rick-header {
+    width: auto;
+  }
   #mainnav {
     position: absolute;
     right: 0;
@@ -417,15 +426,6 @@ header {
     margin-top: 15vh;
     text-align: center;
     padding: 0 10vw;
-  }
-  .icon-wrapper {
-    height: fit-content;
-    width: auto;
-    margin-left: 40%;
-    position: relative;
-  }
-  .icon-wrapper .rick-header {
-    width: auto;
   }
   .stats {
     width: 60vw;
@@ -1013,7 +1013,11 @@ header {
     color: hsl(204deg, 5%, 19%);
     width: fit-content;
   }
-  #books-wrapper .display img {
+  #books-wrapper .display .icon-wrapper {
+    height: fit-content;
+    margin-left: 0px;
+  }
+  #books-wrapper .display .icon-wrapper img {
     position: relative;
     bottom: 24px;
     float: right;
@@ -1028,6 +1032,10 @@ header {
     width: fit-content;
     align-self: center;
     margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-self: center;
   }
   #books-wrapper .button {
     font-size: 1.2rem;

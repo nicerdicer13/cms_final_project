@@ -110,7 +110,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
                     <div class="display">
                         <div>
                             <h4 class="sub-heading"><?php echo get_post_custom_values('sub-heading')[0]; ?></h4>
-                            <p><?php the_content(); ?></p>
+                            <?php the_content(); ?>
                             <a class="button" href="#">Preorder</a>
                         </div>
                         <?php if (has_post_thumbnail()) { ?>

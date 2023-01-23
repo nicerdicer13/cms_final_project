@@ -35,10 +35,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
     <?php wp_head(); ?>
 </head>
 <?php wp_body_open(); ?>
-
 <body>
-
-
     <header>
         <a href="/rick">
             <h1>Rick Randy</h1>

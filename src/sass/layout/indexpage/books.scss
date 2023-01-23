@@ -164,11 +164,14 @@
                     width: fit-content;
                 }
             }
-            img {
-                position: relative;
-                bottom: 24px;
-                float: right;
-                
+            .icon-wrapper {
+                height: fit-content;
+                margin-left: 0px;
+                img {
+                    position: relative;
+                    bottom: 24px;
+                    float: right;
+                }
             }
         }
         p {
@@ -181,6 +184,10 @@
             width: fit-content;
             align-self: center;
             margin: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            align-self: center;
         }
         .button {
             font-size: 1.2rem;
